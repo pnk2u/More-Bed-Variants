@@ -1,24 +1,30 @@
 package de.pnku.mbdv.ui;
 
+import de.pnku.mbdv.MoreBedVariants;
 import de.pnku.mbdv.init.MbdvBlockInit;
 import de.pnku.mbdv.init.MbdvItemInit;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.core.Registry;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.*;
 
+import static de.pnku.mbdv.MoreBedVariantsClient.*;
+
 public class MbdvCreativeTab extends CreativeModeTabs {
 
-    public static final ResourceKey<CreativeModeTab> COLORED_BEDS = createKey("colored_beds");
+    public static CreativeModeTab COLORED_BEDS;
 
-    public static void registerMbdvCreativeTab(Registry<CreativeModeTab> registry) {
-        Registry.register(registry, COLORED_BEDS, CreativeModeTab.builder(CreativeModeTab.Row.BOTTOM, 7).title(Component.translatable("itemGroup.coloredBeds")).icon(() -> {
-            return new ItemStack(MbdvBlockInit.WARPED_ORANGE_BED);
-        }).displayItems((itemDisplayParameters, output) -> {
-            for (BlockItem bedVariantItem :MbdvItemInit.more_bed_items)
-            {
-                output.accept(bedVariantItem);
-            }
-        }).build());
+    public static final CreativeModeTab.Builder MBDV_CMT_BUILDER = FabricItemGroup.builder().title(Component.translatable("itemGroup.coloredBeds")).icon(() -> new ItemStack(MbdvItemInit.ACACIA_ORANGE_BED_I)).displayItems(((displayContext, entries) -> {
+        for (BlockItem bedVariantItem :MbdvItemInit.more_bed_items)
+        {
+            entries.accept(bedVariantItem);
+        }
+    }));
+
+    public static void registerMbdvCreativeTab() {
+        COLORED_BEDS = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, MoreBedVariants.asId("colored_beds"), MBDV_CMT_BUILDER.build());
+        LOGGER.info("Creative Mode Item Tab registered.");
     }
 }
