@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "items": "minecraft:mangrove_planks"
+            "items": [
+              "minecraft:mangrove_planks"
+            ]
           }
         ]
       },
@@ -21,7 +23,9 @@
       "conditions": {
         "items": [
           {
-            "items": "minecraft:pink_wool"
+            "items": [
+              "minecraft:pink_wool"
+            ]
           }
         ]
       },
