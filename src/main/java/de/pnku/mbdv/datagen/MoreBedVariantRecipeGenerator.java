@@ -4,11 +4,13 @@ import de.pnku.mbdv.MoreBedVariants;
 import de.pnku.mbdv.block.MoreBedVariantBlock;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+
+import java.util.function.Consumer;
 
 import static de.pnku.mbdv.init.MbdvBlockInit.more_beds;
 
@@ -18,7 +20,7 @@ public class MoreBedVariantRecipeGenerator extends FabricRecipeProvider {
     }
 
     @Override
-    public void buildRecipes(RecipeOutput recipeOutput) {
+    public void buildRecipes(Consumer<FinishedRecipe> exporter) {
         for (Block bedVariantBlock : more_beds) {
             String planksWood = ((MoreBedVariantBlock) bedVariantBlock).bedWoodType;
             Item bedPlanks = ((MoreBedVariantBlock) bedVariantBlock).getPlanksItem(planksWood);
@@ -31,7 +33,7 @@ public class MoreBedVariantRecipeGenerator extends FabricRecipeProvider {
                     .pattern("___")
                     .define('W', bedWool)
                     .define('_', bedPlanks)
-                    .save(recipeOutput, MoreBedVariants.asId(planksWood + "_" + woolColor + "_bed"));
+                    .save(exporter, MoreBedVariants.asId(planksWood + "_" + woolColor + "_bed"));
         }
     }
 }

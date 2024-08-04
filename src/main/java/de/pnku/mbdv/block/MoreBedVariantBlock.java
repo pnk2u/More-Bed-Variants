@@ -20,14 +20,14 @@ public class MoreBedVariantBlock extends BedBlock {
     public final String bedColor;
 
     public MoreBedVariantBlock(DyeColor dyeColour, MapColor mapColour, String bedWoodType, String bedColor) {
-        super(dyeColour, Properties.ofFullCopy(Blocks.WHITE_BED).mapColor(mapColour));
+        super(dyeColour, Properties.copy(Blocks.WHITE_BED).mapColor(mapColour));
         this.bedWoodType = bedWoodType;
         this.bedColor = bedColor;
         this.registerDefaultState(this.getStateDefinition().any().setValue(PART, BedPart.FOOT).setValue(OCCUPIED, false));
     }
 
     public MoreBedVariantBlock(DyeColor dyeColour, MapColor colour, SoundType sound, String bedWoodType, String bedColor) {
-        super(dyeColour, Properties.ofFullCopy(Blocks.WHITE_BED).mapColor(colour).sound(sound));
+        super(dyeColour, Properties.copy(Blocks.WHITE_BED).mapColor(colour).sound(sound));
         this.bedWoodType = bedWoodType;
         this.bedColor = bedColor;
         this.registerDefaultState(this.getStateDefinition().any().setValue(PART, BedPart.FOOT).setValue(OCCUPIED, false));

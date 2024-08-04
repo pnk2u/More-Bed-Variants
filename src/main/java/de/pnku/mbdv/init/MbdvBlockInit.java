@@ -242,7 +242,7 @@ public class MbdvBlockInit {
         registerBedBlock(ACACIA_BLACK_BED);registerBedBlock(BAMBOO_BLACK_BED);registerBedBlock(BIRCH_BLACK_BED);registerBedBlock(CHERRY_BLACK_BED);registerBedBlock(CRIMSON_BLACK_BED);registerBedBlock(DARK_OAK_BLACK_BED);registerBedBlock(JUNGLE_BLACK_BED);registerBedBlock(MANGROVE_BLACK_BED);registerBedBlock(SPRUCE_BLACK_BED);registerBedBlock(WARPED_BLACK_BED);
 
 
-        MORE_BED_VARIANT_BLOCK_ENTITY = Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE, MoreBedVariants.asId("more_bed_variants"), BlockEntityType.Builder.of(MoreBedVariantBlockEntity::new, MbdvBlockInit.more_beds.toArray(Block[]::new)).build());
+        MORE_BED_VARIANT_BLOCK_ENTITY = Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE, MoreBedVariants.asId("more_bed_variants"), BlockEntityType.Builder.of(MoreBedVariantBlockEntity::new, MbdvBlockInit.more_beds.toArray(Block[]::new)).build(null));
 
     }
 
