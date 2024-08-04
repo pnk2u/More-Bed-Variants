@@ -26,6 +26,6 @@ public class MoreBedVariantsClient implements ClientModInitializer {
             BuiltinItemRendererRegistry.INSTANCE.register(mbdvBedItem,
                     new MoreBedVariantDynamicItemRenderer());
         }
-        MbdvCreativeTab.registerMbdvCreativeTab(BuiltInRegistries.CREATIVE_MODE_TAB);
+        MbdvCreativeTab.registerMbdvCreativeTab();
     }
 }
