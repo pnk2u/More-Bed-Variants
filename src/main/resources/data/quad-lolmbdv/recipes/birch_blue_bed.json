@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "minecraft:blue_wool"
+    },
+    "_": {
+      "item": "minecraft:birch_planks"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "___"
+  ],
+  "result": {
+    "count": 1,
+    "id": "quad-lolmbdv:birch_blue_bed"
+  }
+}

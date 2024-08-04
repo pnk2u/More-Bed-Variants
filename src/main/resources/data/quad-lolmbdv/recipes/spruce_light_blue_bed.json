@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "minecraft:light_blue_wool"
+    },
+    "_": {
+      "item": "minecraft:spruce_planks"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "___"
+  ],
+  "result": {
+    "count": 1,
+    "id": "quad-lolmbdv:spruce_light_blue_bed"
+  }
+}

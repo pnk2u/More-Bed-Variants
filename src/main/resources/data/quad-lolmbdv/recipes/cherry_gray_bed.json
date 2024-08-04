@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "minecraft:gray_wool"
+    },
+    "_": {
+      "item": "minecraft:cherry_planks"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "___"
+  ],
+  "result": {
+    "count": 1,
+    "id": "quad-lolmbdv:cherry_gray_bed"
+  }
+}

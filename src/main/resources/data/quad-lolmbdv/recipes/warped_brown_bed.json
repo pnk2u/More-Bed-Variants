@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "W": {
+      "item": "minecraft:brown_wool"
+    },
+    "_": {
+      "item": "minecraft:warped_planks"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "___"
+  ],
+  "result": {
+    "count": 1,
+    "id": "quad-lolmbdv:warped_brown_bed"
+  }
+}

@@ -1,0 +1,4 @@
+accessWidener v1 named
+
+accessible method net/minecraft/client/renderer/blockentity/BedRenderer renderPiece (Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;Lnet/minecraft/client/model/geom/ModelPart;Lnet/minecraft/core/Direction;Lnet/minecraft/client/resources/model/Material;IIZ)V
+accessible method net/minecraft/world/item/CreativeModeTabs createKey (Ljava/lang/String;)Lnet/minecraft/resources/ResourceKey;
