@@ -131,6 +131,27 @@ public class MoreBedVariantBlock extends BedBlock {
         }
         return null;
     }
+    public Item getDyeItem(String dyeColor) {
+        switch (dyeColor) {
+            case "white" -> { return Items.WHITE_DYE; }
+            case "orange" -> { return Items.ORANGE_DYE; }
+            case "magenta" -> { return Items.MAGENTA_DYE; }
+            case "light_blue" -> { return Items.LIGHT_BLUE_DYE; }
+            case "yellow" -> { return Items.YELLOW_DYE; }
+            case "lime" -> { return Items.LIME_DYE; }
+            case "pink" -> { return Items.PINK_DYE; }
+            case "gray" -> { return Items.GRAY_DYE; }
+            case "light_gray" -> { return Items.LIGHT_GRAY_DYE; }
+            case "cyan" -> { return Items.CYAN_DYE; }
+            case "purple" -> { return Items.PURPLE_DYE; }
+            case "blue" -> { return Items.BLUE_DYE; }
+            case "brown" -> { return Items.BROWN_DYE; }
+            case "green" -> { return Items.GREEN_DYE; }
+            case "red" -> { return Items.RED_DYE; }
+            case "black" -> { return Items.BLACK_DYE; }
+        }
+        return null;
+    }
     public Block getWoolBlock(String woolColor) {
         switch (woolColor) {
             case "white" -> { return Blocks.WHITE_WOOL; }

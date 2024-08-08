@@ -1,6 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
+  "category": "building",
+  "group": "bed_from_planks",
   "key": {
     "W": {
       "item": "minecraft:lime_wool"

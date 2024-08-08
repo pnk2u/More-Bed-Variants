@@ -13,5 +13,6 @@ public class MoreBedVariantDatagen implements DataGeneratorEntrypoint {
         pack.addProvider(MoreBedVariantBlockStateGenerator::new);
         pack.addProvider(MoreBedVariantLootTableGenerator::new);
         pack.addProvider(MoreBedVariantLangGenerator::new);
+        pack.addProvider(MoreBedVariantTagGenerator::new);
     }
 }
