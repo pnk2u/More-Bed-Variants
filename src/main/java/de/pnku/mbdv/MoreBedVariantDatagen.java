@@ -10,8 +10,9 @@ public class MoreBedVariantDatagen implements DataGeneratorEntrypoint {
         FabricDataGenerator.Pack pack = generator.createPack();
 
         pack.addProvider(MoreBedVariantRecipeGenerator::new);
-//        pack.addProvider(MoreBedVariantBlockStateGenerator::new);
-//        pack.addProvider(MoreBedVariantLootTableGenerator::new);
-//        pack.addProvider(MoreBedVariantLangGenerator::new);
+        pack.addProvider(MoreBedVariantBlockStateGenerator::new);
+        pack.addProvider(MoreBedVariantLootTableGenerator::new);
+        pack.addProvider(MoreBedVariantLangGenerator::new);
+        pack.addProvider(MoreBedVariantTagGenerator::new);
     }
 }
