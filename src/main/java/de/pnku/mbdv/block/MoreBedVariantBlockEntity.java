@@ -21,11 +21,6 @@ public class MoreBedVariantBlockEntity extends BlockEntity {
         this.woodType = ((MoreBedVariantBlock)blockState.getBlock()).bedWoodType;
     }
 
-//    public MoreBedVariantBlockEntity(BlockPos pos, BlockState blockState, DyeColor color) {
-//        super(MORE_BED_VARIANT_BLOCK_ENTITY, pos, blockState);
-//        this.color = color;
-//    }
-
     public ClientboundBlockEntityDataPacket getUpdatePacket() {
         return ClientboundBlockEntityDataPacket.create(this);
     }
@@ -33,8 +28,4 @@ public class MoreBedVariantBlockEntity extends BlockEntity {
     public DyeColor getColor() {
         return this.color;
     }
-
-//    public void setColor(DyeColor color) {
-//        this.color = color;
-//    }
 }

@@ -3,6 +3,7 @@ package de.pnku.mbdv.init;
 import de.pnku.mbdv.MoreBedVariants;
 import de.pnku.mbdv.block.MoreBedVariantBlock;
 import de.pnku.mbdv.block.MoreBedVariantBlockEntity;
+import de.pnku.mbdv.poi.MbdvPointOfInterestTypes;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;
@@ -248,5 +249,6 @@ public class MbdvBlockInit {
     private static void registerBedBlock(MoreBedVariantBlock bed) {
         Registry.register(BuiltInRegistries.BLOCK, MoreBedVariants.asId(bed.bedWoodType + "_" + bed.bedColor + "_bed"), bed);
         more_beds.add(bed);
+        MbdvPointOfInterestTypes.registerBedHeadAsPoiBlock(bed);
     }
 }
