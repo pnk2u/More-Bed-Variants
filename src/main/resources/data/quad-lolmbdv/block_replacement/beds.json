@@ -1,0 +1,145 @@
+{
+  "values": [
+    {
+      "structures": "#quad:is/spruce",
+      "block_replacement": {
+        "targets": "minecraft:red_bed",
+        "replacement": "quad-lolmbdv:spruce_red_bed"
+      }
+    },
+    {
+      "structures": "#quad:is/spruce",
+      "block_replacement": {
+        "targets": "minecraft:blue_bed",
+        "replacement": "quad-lolmbdv:spruce_blue_bed"
+      }
+    },
+    {
+      "structures": "#quad:is/spruce",
+      "block_replacement": {
+        "targets": "minecraft:white_bed",
+        "replacement": "quad-lolmbdv:spruce_white_bed"
+      }
+    },
+    {
+      "structures": "#quad:is/spruce",
+      "block_replacement": {
+        "targets": "minecraft:purple_bed",
+        "replacement": "quad-lolmbdv:spruce_purple_bed"
+      }
+    },
+
+
+
+    {
+      "structures": "#quad:is/birch",
+      "block_replacement": {
+        "targets": "minecraft:red_bed",
+        "replacement": "quad-lolmbdv:birch_red_bed"
+      }
+    },
+
+    {
+      "structures": "#quad:is/jungle",
+      "block_replacement": {
+        "targets": "minecraft:red_bed",
+        "replacement": "quad-lolmbdv:jungle_red_bed"
+      }
+    },
+    {
+      "structures": "#quad:is/jungle",
+      "block_replacement": {
+        "targets": "minecraft:cyan_bed",
+        "replacement": "quad-lolmbdv:jungle_cyan_bed"
+      }
+    },
+    {
+      "structures": "#quad:is/jungle",
+      "block_replacement": {
+        "targets": "minecraft:green_bed",
+        "replacement": "quad-lolmbdv:jungle_green_bed"
+      }
+    },
+    {
+      "structures": "#quad:is/jungle",
+      "block_replacement": {
+        "targets": "minecraft:lime_bed",
+        "replacement": "quad-lolmbdv:jungle_lime_bed"
+      }
+    },
+
+
+
+    {
+      "structures": "#quad:is/acacia",
+      "block_replacement": {
+        "targets": "minecraft:red_bed",
+        "replacement": "quad-lolmbdv:acacia_red_bed"
+      }
+    },
+    {
+      "structures": "#quad:is/acacia",
+      "block_replacement": {
+        "targets": "minecraft:yellow_bed",
+        "replacement": "quad-lolmbdv:acacia_yellow_bed"
+      }
+    },
+    {
+      "structures": "#quad:is/acacia",
+      "block_replacement": {
+        "targets": "minecraft:orange_bed",
+        "replacement": "quad-lolmbdv:acacia_orange_bed"
+      }
+    },
+
+
+
+    {
+      "structures": "#quad:is/dark_oak",
+      "block_replacement": {
+        "targets": "minecraft:red_bed",
+        "replacement": "quad-lolmbdv:dark_oak_red_bed"
+      }
+    },
+
+    {
+      "structures": "#quad:is/mangrove",
+      "block_replacement": {
+        "targets": "minecraft:red_bed",
+        "replacement": "quad-lolmbdv:mangrove_red_bed"
+      }
+    },
+
+    {
+      "structures": "#quad:is/cherry",
+      "block_replacement": {
+        "targets": "minecraft:red_bed",
+        "replacement": "quad-lolmbdv:cherry_red_bed"
+      }
+    },
+
+    {
+      "structures": "#quad:is/bamboo",
+      "block_replacement": {
+        "targets": "minecraft:red_bed",
+        "replacement": "quad-lolmbdv:bamboo_red_bed"
+      }
+    },
+
+    {
+      "structures": "#quad:is/crimson",
+      "block_replacement": {
+        "targets": "minecraft:red_bed",
+        "replacement": "quad-lolmbdv:crimson_red_bed"
+      }
+    },
+
+    {
+      "structures": "#quad:is/warped",
+      "block_replacement": {
+        "targets": "minecraft:red_bed",
+        "replacement": "quad-lolmbdv:warped_red_bed"
+      }
+    }
+  ]
+}
