@@ -8,15 +8,9 @@ import de.pnku.mbdv.ui.MbdvCreativeTab;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.rendering.v1.BuiltinItemRendererRegistry;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.BlockItem;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class MoreBedVariantsClient implements ClientModInitializer {
-    public static final String MODID = "quad-lolmsmv";
-    public static final Logger LOGGER = LoggerFactory.getLogger(MODID);
 
     @Override
     public void onInitializeClient() {
