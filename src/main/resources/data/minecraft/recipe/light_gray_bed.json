@@ -3,12 +3,8 @@
   "category": "building",
   "group": "bed_from_planks",
   "key": {
-    "W": {
-      "item": "minecraft:light_gray_wool"
-    },
-    "_": {
-      "item": "minecraft:oak_planks"
-    }
+    "W": "minecraft:light_gray_wool",
+    "_": "minecraft:oak_planks"
   },
   "pattern": [
     "WWW",

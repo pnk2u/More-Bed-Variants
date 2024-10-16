@@ -3,12 +3,8 @@
   "category": "building",
   "group": "bed",
   "ingredients": [
-    {
-      "tag": "quad-lolmbdv:warped_beds"
-    },
-    {
-      "item": "minecraft:orange_dye"
-    }
+    "#quad-lolmbdv:warped_beds",
+    "minecraft:orange_dye"
   ],
   "result": {
     "count": 1,

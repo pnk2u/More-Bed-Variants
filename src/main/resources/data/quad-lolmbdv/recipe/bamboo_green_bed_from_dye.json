@@ -3,12 +3,8 @@
   "category": "building",
   "group": "bed",
   "ingredients": [
-    {
-      "tag": "quad-lolmbdv:bamboo_beds"
-    },
-    {
-      "item": "minecraft:green_dye"
-    }
+    "#quad-lolmbdv:bamboo_beds",
+    "minecraft:green_dye"
   ],
   "result": {
     "count": 1,

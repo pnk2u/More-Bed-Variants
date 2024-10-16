@@ -3,12 +3,8 @@
   "category": "building",
   "group": "bed",
   "ingredients": [
-    {
-      "tag": "quad-lolmbdv:birch_beds"
-    },
-    {
-      "item": "minecraft:purple_dye"
-    }
+    "#quad-lolmbdv:birch_beds",
+    "minecraft:purple_dye"
   ],
   "result": {
     "count": 1,

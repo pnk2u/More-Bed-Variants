@@ -3,12 +3,8 @@
   "category": "building",
   "group": "bed",
   "ingredients": [
-    {
-      "tag": "quad-lolmbdv:jungle_beds"
-    },
-    {
-      "item": "minecraft:white_dye"
-    }
+    "#quad-lolmbdv:jungle_beds",
+    "minecraft:white_dye"
   ],
   "result": {
     "count": 1,

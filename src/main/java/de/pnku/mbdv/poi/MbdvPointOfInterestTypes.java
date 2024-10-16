@@ -15,8 +15,7 @@ public class MbdvPointOfInterestTypes {
         var blockStates = bedVariantBlock.getStateDefinition().getPossibleStates().stream().filter((blockState) -> {
             return blockState.getValue(MoreBedVariantBlock.PART) == BedPart.HEAD;
         }).collect(Collectors.toSet());
-        var holder = BuiltInRegistries.POINT_OF_INTEREST_TYPE.getHolder(PoiTypes.HOME).orElseThrow();
-        var poiType = holder.value();
+        var holder = BuiltInRegistries.POINT_OF_INTEREST_TYPE.get(PoiTypes.HOME).orElseThrow();
         PoiTypes.BEDS = Sets.newHashSet(PoiTypes.BEDS);
         PoiTypes.registerBlockStates(holder, blockStates);
         PoiTypes.BEDS.addAll(blockStates);

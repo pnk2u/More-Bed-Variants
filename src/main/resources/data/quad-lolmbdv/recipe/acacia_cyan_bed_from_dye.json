@@ -3,12 +3,8 @@
   "category": "building",
   "group": "bed",
   "ingredients": [
-    {
-      "tag": "quad-lolmbdv:acacia_beds"
-    },
-    {
-      "item": "minecraft:cyan_dye"
-    }
+    "#quad-lolmbdv:acacia_beds",
+    "minecraft:cyan_dye"
   ],
   "result": {
     "count": 1,

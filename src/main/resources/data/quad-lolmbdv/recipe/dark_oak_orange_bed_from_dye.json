@@ -3,12 +3,8 @@
   "category": "building",
   "group": "bed",
   "ingredients": [
-    {
-      "tag": "quad-lolmbdv:dark_oak_beds"
-    },
-    {
-      "item": "minecraft:orange_dye"
-    }
+    "#quad-lolmbdv:dark_oak_beds",
+    "minecraft:orange_dye"
   ],
   "result": {
     "count": 1,

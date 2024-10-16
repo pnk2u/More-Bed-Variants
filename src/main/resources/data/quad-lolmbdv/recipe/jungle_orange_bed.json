@@ -3,12 +3,8 @@
   "category": "building",
   "group": "bed_from_planks",
   "key": {
-    "W": {
-      "item": "minecraft:orange_wool"
-    },
-    "_": {
-      "item": "minecraft:jungle_planks"
-    }
+    "W": "minecraft:orange_wool",
+    "_": "minecraft:jungle_planks"
   },
   "pattern": [
     "WWW",
