@@ -3,12 +3,8 @@
   "category": "building",
   "group": "bed",
   "ingredients": [
-    {
-      "tag": "quad-lolmbdv:mangrove_beds"
-    },
-    {
-      "item": "minecraft:gray_dye"
-    }
+    "#quad-lolmbdv:mangrove_beds",
+    "minecraft:gray_dye"
   ],
   "result": {
     "count": 1,

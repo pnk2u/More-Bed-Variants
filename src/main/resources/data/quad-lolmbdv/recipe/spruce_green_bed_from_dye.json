@@ -3,12 +3,8 @@
   "category": "building",
   "group": "bed",
   "ingredients": [
-    {
-      "tag": "quad-lolmbdv:spruce_beds"
-    },
-    {
-      "item": "minecraft:green_dye"
-    }
+    "#quad-lolmbdv:spruce_beds",
+    "minecraft:green_dye"
   ],
   "result": {
     "count": 1,

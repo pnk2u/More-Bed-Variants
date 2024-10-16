@@ -16,7 +16,7 @@ public class MbdvCreativeTab extends CreativeModeTabs {
 
     public static CreativeModeTab COLORED_BEDS;
 
-    public static final CreativeModeTab.Builder MBDV_CMT_BUILDER = FabricItemGroup.builder().title(Component.translatable("itemGroup.coloredBeds")).icon(() -> new ItemStack(MbdvItemInit.ACACIA_ORANGE_BED_I)).displayItems(((displayContext, entries) -> {
+    public static final CreativeModeTab.Builder MBDV_CMT_BUILDER = FabricItemGroup.builder().title(Component.translatable("itemGroup.coloredBeds")).icon(() -> new ItemStack(MbdvItemInit.CHERRY_GREEN_BED_I)).displayItems(((displayContext, entries) -> {
         for (BlockItem bedVariantItem :MbdvItemInit.more_bed_items)
         {
             entries.accept(bedVariantItem);
@@ -25,6 +25,5 @@ public class MbdvCreativeTab extends CreativeModeTabs {
 
     public static void registerMbdvCreativeTab() {
         COLORED_BEDS = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, MoreBedVariants.asId("colored_beds"), MBDV_CMT_BUILDER.build());
-        LOGGER.info("Creative Mode Item Tab registered.");
     }
 }

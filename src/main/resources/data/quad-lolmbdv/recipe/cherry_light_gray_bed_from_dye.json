@@ -3,12 +3,8 @@
   "category": "building",
   "group": "bed",
   "ingredients": [
-    {
-      "tag": "quad-lolmbdv:cherry_beds"
-    },
-    {
-      "item": "minecraft:light_gray_dye"
-    }
+    "#quad-lolmbdv:cherry_beds",
+    "minecraft:light_gray_dye"
   ],
   "result": {
     "count": 1,

@@ -17,6 +17,8 @@ import net.minecraft.client.renderer.blockentity.BrightnessCombiner;
 import net.minecraft.client.resources.model.Material;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.BedBlock;
+import net.minecraft.world.level.block.ChestBlock;
 import net.minecraft.world.level.block.DoubleBlockCombiner;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BedPart;
@@ -38,9 +40,9 @@ public class MoreBedVariantRenderer implements BlockEntityRenderer<MoreBedVarian
             Level level = bed.getLevel();
             if (level != null) {
                 BlockState blockstate = bed.getBlockState();
-                DoubleBlockCombiner.NeighborCombineResult<? extends MoreBedVariantBlockEntity> combineResult = DoubleBlockCombiner.combineWithNeigbour(MORE_BED_VARIANT_BLOCK_ENTITY, MoreBedVariantBlock::getBlockType, MoreBedVariantBlock::getConnectedDirection, MoreBedVariantBlockEntity.FACING, blockstate, level, bed.getBlockPos(), (levelAccessor, pos) -> false);
+                DoubleBlockCombiner.NeighborCombineResult<? extends MoreBedVariantBlockEntity> combineResult = DoubleBlockCombiner.combineWithNeigbour(MORE_BED_VARIANT_BLOCK_ENTITY, MoreBedVariantBlock::getBlockType, MoreBedVariantBlock::getConnectedDirection, ChestBlock.FACING, blockstate, level, bed.getBlockPos(), (levelAccessor, pos) -> false);
                 int i = combineResult.apply(new BrightnessCombiner<>()).get(combinedLight);
-                this.renderPiece(poseStack, buffer, blockstate.getValue(MoreBedVariantBlock.PART) == BedPart.HEAD ? this.headRoot : this.footRoot, blockstate.getValue(MoreBedVariantBlockEntity.FACING), material, i, combinedOverlay, false);
+                this.renderPiece(poseStack, buffer, blockstate.getValue(MoreBedVariantBlock.PART) == BedPart.HEAD ? this.headRoot : this.footRoot, blockstate.getValue(MoreBedVariantBlock.FACING), material, i, combinedOverlay, false);
             } else {
                 this.renderPiece(poseStack, buffer, this.headRoot, Direction.SOUTH, material, combinedLight, combinedOverlay, false);
                 this.renderPiece(poseStack, buffer, this.footRoot, Direction.SOUTH, material, combinedLight, combinedOverlay, true);

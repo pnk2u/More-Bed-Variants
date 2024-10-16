@@ -3,12 +3,8 @@
   "category": "building",
   "group": "bed",
   "ingredients": [
-    {
-      "tag": "quad-lolmbdv:crimson_beds"
-    },
-    {
-      "item": "minecraft:red_dye"
-    }
+    "#quad-lolmbdv:crimson_beds",
+    "minecraft:red_dye"
   ],
   "result": {
     "count": 1,

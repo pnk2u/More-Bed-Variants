@@ -1,6 +1,9 @@
 package de.pnku.mbdv.block;
 
+import de.pnku.mbdv.MoreBedVariants;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -20,14 +23,14 @@ public class MoreBedVariantBlock extends BedBlock {
     public final String bedColor;
 
     public MoreBedVariantBlock(DyeColor dyeColour, MapColor mapColour, String bedWoodType, String bedColor) {
-        super(dyeColour, Properties.ofFullCopy(Blocks.WHITE_BED).mapColor(mapColour));
+        super(dyeColour, Properties.ofFullCopy(Blocks.WHITE_BED).mapColor(mapColour).setId(ResourceKey.create(Registries.BLOCK, MoreBedVariants.asId(bedWoodType + "_" + bedColor + "_bed"))));
         this.bedWoodType = bedWoodType;
         this.bedColor = bedColor;
         this.registerDefaultState(this.getStateDefinition().any().setValue(PART, BedPart.FOOT).setValue(OCCUPIED, false));
     }
 
     public MoreBedVariantBlock(DyeColor dyeColour, MapColor colour, SoundType sound, String bedWoodType, String bedColor) {
-        super(dyeColour, Properties.ofFullCopy(Blocks.WHITE_BED).mapColor(colour).sound(sound));
+        super(dyeColour, Properties.ofFullCopy(Blocks.WHITE_BED).mapColor(colour).setId(ResourceKey.create(Registries.BLOCK, MoreBedVariants.asId(bedWoodType + "_" + bedColor + "_bed"))).sound(sound));
         this.bedWoodType = bedWoodType;
         this.bedColor = bedColor;
         this.registerDefaultState(this.getStateDefinition().any().setValue(PART, BedPart.FOOT).setValue(OCCUPIED, false));
