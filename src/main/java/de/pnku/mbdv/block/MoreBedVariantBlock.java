@@ -61,6 +61,9 @@ public class MoreBedVariantBlock extends BedBlock {
             case "dark_oak" -> {
                 return Items.DARK_OAK_PLANKS;
             }
+            case "pale_oak" -> {
+                return Items.PALE_OAK_PLANKS;
+            }
             case "jungle" -> {
                 return Items.JUNGLE_PLANKS;
             }
@@ -96,6 +99,9 @@ public class MoreBedVariantBlock extends BedBlock {
             }
             case "dark_oak" -> {
                 return Blocks.DARK_OAK_PLANKS;
+            }
+            case "pale_oak" -> {
+                return Blocks.PALE_OAK_PLANKS;
             }
             case "jungle" -> {
                 return Blocks.JUNGLE_PLANKS;
