@@ -1,16 +1,12 @@
 package de.pnku.mbdv.ui;
 
 import de.pnku.mbdv.MoreBedVariants;
-import de.pnku.mbdv.init.MbdvBlockInit;
 import de.pnku.mbdv.init.MbdvItemInit;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.*;
-
-import static de.pnku.mbdv.MoreBedVariantsClient.*;
 
 public class MbdvCreativeTab extends CreativeModeTabs {
 

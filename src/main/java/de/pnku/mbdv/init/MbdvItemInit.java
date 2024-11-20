@@ -213,7 +213,7 @@ public class MbdvItemInit {
     }
 
     public static Item.Properties setProperties(MoreBedVariantBlock moreBedVariantBlock) {
-        return new Item.Properties()
+        return new Item.Properties().stacksTo(1)
                 .setId(ResourceKey.create(Registries.ITEM,BuiltInRegistries.BLOCK.getKey(moreBedVariantBlock))).useBlockDescriptionPrefix();
     }
 
