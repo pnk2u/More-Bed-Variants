@@ -1,0 +1,10 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "quad-lolmbdv:item/spruce_black_bed",
+    "model": {
+      "type": "minecraft:bed",
+      "texture": "quad-lolmbdv:spruce_black_bed"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "quad-lolmbdv:item/birch_yellow_bed",
+    "model": {
+      "type": "minecraft:bed",
+      "texture": "quad-lolmbdv:birch_yellow_bed"
+    }
+  }
+}

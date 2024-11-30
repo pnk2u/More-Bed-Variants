@@ -1,0 +1,10 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "quad-lolmbdv:item/mangrove_brown_bed",
+    "model": {
+      "type": "minecraft:bed",
+      "texture": "quad-lolmbdv:mangrove_brown_bed"
+    }
+  }
+}

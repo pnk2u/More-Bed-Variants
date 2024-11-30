@@ -1,0 +1,10 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "quad-lolmbdv:item/crimson_light_blue_bed",
+    "model": {
+      "type": "minecraft:bed",
+      "texture": "quad-lolmbdv:crimson_light_blue_bed"
+    }
+  }
+}

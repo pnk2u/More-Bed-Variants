@@ -1,0 +1,10 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "quad-lolmbdv:item/dark_oak_black_bed",
+    "model": {
+      "type": "minecraft:bed",
+      "texture": "quad-lolmbdv:dark_oak_black_bed"
+    }
+  }
+}

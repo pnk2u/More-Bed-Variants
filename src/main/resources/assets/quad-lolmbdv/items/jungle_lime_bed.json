@@ -1,0 +1,10 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "quad-lolmbdv:item/jungle_lime_bed",
+    "model": {
+      "type": "minecraft:bed",
+      "texture": "quad-lolmbdv:jungle_lime_bed"
+    }
+  }
+}

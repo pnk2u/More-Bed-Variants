@@ -1,0 +1,10 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "quad-lolmbdv:item/acacia_green_bed",
+    "model": {
+      "type": "minecraft:bed",
+      "texture": "quad-lolmbdv:acacia_green_bed"
+    }
+  }
+}
