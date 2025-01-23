@@ -56,14 +56,14 @@ public class MoreBedVariantBlock extends BedBlock {
      * Source: https://github.com/TeamMidnightDust/BetterBeds/blob/main/common/src/main/java/eu/midnightdust/betterbeds/mixin/MixinBedBlock.java
      * Description: The following two methods have been adapted from TeamMidnightDust's BetterBeds.
      */
-            @Override
-            protected @NotNull RenderShape getRenderShape(BlockState state){
-                if (this.bedWoodType.contains("bound_bamboo")){
-                    return RenderShape.MODEL;
-                } else {
-                    return RenderShape.ENTITYBLOCK_ANIMATED;
-                }
-            }
+//            @Override
+//            protected @NotNull RenderShape getRenderShape(BlockState state){
+//                if (this.bedWoodType.contains("bound_bamboo")){
+//                    return RenderShape.MODEL;
+//                } else {
+//                    return RenderShape.;
+//                }
+//            }
 
             @Override
             public boolean skipRendering(BlockState state, BlockState neighborState, Direction offset) {
