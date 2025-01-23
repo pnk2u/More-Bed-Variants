@@ -13,6 +13,7 @@ import java.util.List;
 public class MbdvItemInit {
 
     public static final Item.Properties bedProperties = new Item.Properties().stacksTo(1);
+    public static final Item.Properties boundBambooBedProperties = new Item.Properties().stacksTo(16);
 
     // WHITE
     public static final BlockItem BIRCH_WHITE_BED_I = new BlockItem(MbdvBlockInit.BIRCH_WHITE_BED, bedProperties);
@@ -23,16 +24,16 @@ public class MbdvItemInit {
     public static final BlockItem MANGROVE_WHITE_BED_I = new BlockItem(MbdvBlockInit.MANGROVE_WHITE_BED, bedProperties);
     public static final BlockItem CHERRY_WHITE_BED_I = new BlockItem(MbdvBlockInit.CHERRY_WHITE_BED, bedProperties);
     public static final BlockItem BAMBOO_WHITE_BED_I = new BlockItem(MbdvBlockInit.BAMBOO_WHITE_BED, bedProperties);
-    public static final BlockItem BOUND_BAMBOO_WHITE_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_WHITE_BED, bedProperties);
-    public static final BlockItem STRIPPED_BOUND_BAMBOO_WHITE_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_WHITE_BED, bedProperties);
+    public static final BlockItem BOUND_BAMBOO_WHITE_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_WHITE_BED, boundBambooBedProperties);
+    public static final BlockItem STRIPPED_BOUND_BAMBOO_WHITE_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_WHITE_BED, boundBambooBedProperties);
     public static final BlockItem CRIMSON_WHITE_BED_I = new BlockItem(MbdvBlockInit.CRIMSON_WHITE_BED, bedProperties);
     public static final BlockItem WARPED_WHITE_BED_I = new BlockItem(MbdvBlockInit.WARPED_WHITE_BED, bedProperties);
     // ORANGE
     public static final BlockItem ACACIA_ORANGE_BED_I = new BlockItem(MbdvBlockInit.ACACIA_ORANGE_BED, bedProperties);
     public static final BlockItem BIRCH_ORANGE_BED_I = new BlockItem(MbdvBlockInit.BIRCH_ORANGE_BED, bedProperties);
     public static final BlockItem BAMBOO_ORANGE_BED_I = new BlockItem(MbdvBlockInit.BAMBOO_ORANGE_BED, bedProperties);
-    public static final BlockItem BOUND_BAMBOO_ORANGE_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_ORANGE_BED, bedProperties);
-    public static final BlockItem STRIPPED_BOUND_BAMBOO_ORANGE_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_ORANGE_BED, bedProperties);
+    public static final BlockItem BOUND_BAMBOO_ORANGE_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_ORANGE_BED, boundBambooBedProperties);
+    public static final BlockItem STRIPPED_BOUND_BAMBOO_ORANGE_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_ORANGE_BED, boundBambooBedProperties);
     public static final BlockItem CHERRY_ORANGE_BED_I = new BlockItem(MbdvBlockInit.CHERRY_ORANGE_BED, bedProperties);
     public static final BlockItem CRIMSON_ORANGE_BED_I = new BlockItem(MbdvBlockInit.CRIMSON_ORANGE_BED, bedProperties);
     public static final BlockItem DARK_OAK_ORANGE_BED_I = new BlockItem(MbdvBlockInit.DARK_OAK_ORANGE_BED, bedProperties);
@@ -44,8 +45,8 @@ public class MbdvItemInit {
     public static final BlockItem ACACIA_MAGENTA_BED_I = new BlockItem(MbdvBlockInit.ACACIA_MAGENTA_BED, bedProperties);
     public static final BlockItem BIRCH_MAGENTA_BED_I = new BlockItem(MbdvBlockInit.BIRCH_MAGENTA_BED, bedProperties);
     public static final BlockItem BAMBOO_MAGENTA_BED_I = new BlockItem(MbdvBlockInit.BAMBOO_MAGENTA_BED, bedProperties);
-    public static final BlockItem BOUND_BAMBOO_MAGENTA_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_MAGENTA_BED, bedProperties);
-    public static final BlockItem STRIPPED_BOUND_BAMBOO_MAGENTA_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_MAGENTA_BED, bedProperties);
+    public static final BlockItem BOUND_BAMBOO_MAGENTA_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_MAGENTA_BED, boundBambooBedProperties);
+    public static final BlockItem STRIPPED_BOUND_BAMBOO_MAGENTA_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_MAGENTA_BED, boundBambooBedProperties);
     public static final BlockItem CHERRY_MAGENTA_BED_I = new BlockItem(MbdvBlockInit.CHERRY_MAGENTA_BED, bedProperties);
     public static final BlockItem CRIMSON_MAGENTA_BED_I = new BlockItem(MbdvBlockInit.CRIMSON_MAGENTA_BED, bedProperties);
     public static final BlockItem DARK_OAK_MAGENTA_BED_I = new BlockItem(MbdvBlockInit.DARK_OAK_MAGENTA_BED, bedProperties);
@@ -57,8 +58,8 @@ public class MbdvItemInit {
     public static final BlockItem ACACIA_LIGHT_BLUE_BED_I = new BlockItem(MbdvBlockInit.ACACIA_LIGHT_BLUE_BED, bedProperties);
     public static final BlockItem BIRCH_LIGHT_BLUE_BED_I = new BlockItem(MbdvBlockInit.BIRCH_LIGHT_BLUE_BED, bedProperties);
     public static final BlockItem BAMBOO_LIGHT_BLUE_BED_I = new BlockItem(MbdvBlockInit.BAMBOO_LIGHT_BLUE_BED, bedProperties);
-    public static final BlockItem BOUND_BAMBOO_LIGHT_BLUE_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_LIGHT_BLUE_BED, bedProperties);
-    public static final BlockItem STRIPPED_BOUND_BAMBOO_LIGHT_BLUE_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_LIGHT_BLUE_BED, bedProperties);
+    public static final BlockItem BOUND_BAMBOO_LIGHT_BLUE_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_LIGHT_BLUE_BED, boundBambooBedProperties);
+    public static final BlockItem STRIPPED_BOUND_BAMBOO_LIGHT_BLUE_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_LIGHT_BLUE_BED, boundBambooBedProperties);
     public static final BlockItem CHERRY_LIGHT_BLUE_BED_I = new BlockItem(MbdvBlockInit.CHERRY_LIGHT_BLUE_BED, bedProperties);
     public static final BlockItem CRIMSON_LIGHT_BLUE_BED_I = new BlockItem(MbdvBlockInit.CRIMSON_LIGHT_BLUE_BED, bedProperties);
     public static final BlockItem DARK_OAK_LIGHT_BLUE_BED_I = new BlockItem(MbdvBlockInit.DARK_OAK_LIGHT_BLUE_BED, bedProperties);
@@ -70,8 +71,8 @@ public class MbdvItemInit {
     public static final BlockItem ACACIA_YELLOW_BED_I = new BlockItem(MbdvBlockInit.ACACIA_YELLOW_BED, bedProperties);
     public static final BlockItem BIRCH_YELLOW_BED_I = new BlockItem(MbdvBlockInit.BIRCH_YELLOW_BED, bedProperties);
     public static final BlockItem BAMBOO_YELLOW_BED_I = new BlockItem(MbdvBlockInit.BAMBOO_YELLOW_BED, bedProperties);
-    public static final BlockItem BOUND_BAMBOO_YELLOW_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_YELLOW_BED, bedProperties);
-    public static final BlockItem STRIPPED_BOUND_BAMBOO_YELLOW_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_YELLOW_BED, bedProperties);
+    public static final BlockItem BOUND_BAMBOO_YELLOW_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_YELLOW_BED, boundBambooBedProperties);
+    public static final BlockItem STRIPPED_BOUND_BAMBOO_YELLOW_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_YELLOW_BED, boundBambooBedProperties);
     public static final BlockItem CHERRY_YELLOW_BED_I = new BlockItem(MbdvBlockInit.CHERRY_YELLOW_BED, bedProperties);
     public static final BlockItem CRIMSON_YELLOW_BED_I = new BlockItem(MbdvBlockInit.CRIMSON_YELLOW_BED, bedProperties);
     public static final BlockItem DARK_OAK_YELLOW_BED_I = new BlockItem(MbdvBlockInit.DARK_OAK_YELLOW_BED, bedProperties);
@@ -83,8 +84,8 @@ public class MbdvItemInit {
     public static final BlockItem ACACIA_LIME_BED_I = new BlockItem(MbdvBlockInit.ACACIA_LIME_BED, bedProperties);
     public static final BlockItem BIRCH_LIME_BED_I = new BlockItem(MbdvBlockInit.BIRCH_LIME_BED, bedProperties);
     public static final BlockItem BAMBOO_LIME_BED_I = new BlockItem(MbdvBlockInit.BAMBOO_LIME_BED, bedProperties);
-    public static final BlockItem BOUND_BAMBOO_LIME_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_LIME_BED, bedProperties);
-    public static final BlockItem STRIPPED_BOUND_BAMBOO_LIME_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_LIME_BED, bedProperties);
+    public static final BlockItem BOUND_BAMBOO_LIME_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_LIME_BED, boundBambooBedProperties);
+    public static final BlockItem STRIPPED_BOUND_BAMBOO_LIME_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_LIME_BED, boundBambooBedProperties);
     public static final BlockItem CHERRY_LIME_BED_I = new BlockItem(MbdvBlockInit.CHERRY_LIME_BED, bedProperties);
     public static final BlockItem CRIMSON_LIME_BED_I = new BlockItem(MbdvBlockInit.CRIMSON_LIME_BED, bedProperties);
     public static final BlockItem DARK_OAK_LIME_BED_I = new BlockItem(MbdvBlockInit.DARK_OAK_LIME_BED, bedProperties);
@@ -96,8 +97,8 @@ public class MbdvItemInit {
     public static final BlockItem ACACIA_PINK_BED_I = new BlockItem(MbdvBlockInit.ACACIA_PINK_BED, bedProperties);
     public static final BlockItem BIRCH_PINK_BED_I = new BlockItem(MbdvBlockInit.BIRCH_PINK_BED, bedProperties);
     public static final BlockItem BAMBOO_PINK_BED_I = new BlockItem(MbdvBlockInit.BAMBOO_PINK_BED, bedProperties);
-    public static final BlockItem BOUND_BAMBOO_PINK_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_PINK_BED, bedProperties);
-    public static final BlockItem STRIPPED_BOUND_BAMBOO_PINK_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_PINK_BED, bedProperties);
+    public static final BlockItem BOUND_BAMBOO_PINK_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_PINK_BED, boundBambooBedProperties);
+    public static final BlockItem STRIPPED_BOUND_BAMBOO_PINK_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_PINK_BED, boundBambooBedProperties);
     public static final BlockItem CHERRY_PINK_BED_I = new BlockItem(MbdvBlockInit.CHERRY_PINK_BED, bedProperties);
     public static final BlockItem CRIMSON_PINK_BED_I = new BlockItem(MbdvBlockInit.CRIMSON_PINK_BED, bedProperties);
     public static final BlockItem DARK_OAK_PINK_BED_I = new BlockItem(MbdvBlockInit.DARK_OAK_PINK_BED, bedProperties);
@@ -109,8 +110,8 @@ public class MbdvItemInit {
     public static final BlockItem ACACIA_GRAY_BED_I = new BlockItem(MbdvBlockInit.ACACIA_GRAY_BED, bedProperties);
     public static final BlockItem BIRCH_GRAY_BED_I = new BlockItem(MbdvBlockInit.BIRCH_GRAY_BED, bedProperties);
     public static final BlockItem BAMBOO_GRAY_BED_I = new BlockItem(MbdvBlockInit.BAMBOO_GRAY_BED, bedProperties);
-    public static final BlockItem BOUND_BAMBOO_GRAY_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_GRAY_BED, bedProperties);
-    public static final BlockItem STRIPPED_BOUND_BAMBOO_GRAY_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_GRAY_BED, bedProperties);
+    public static final BlockItem BOUND_BAMBOO_GRAY_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_GRAY_BED, boundBambooBedProperties);
+    public static final BlockItem STRIPPED_BOUND_BAMBOO_GRAY_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_GRAY_BED, boundBambooBedProperties);
     public static final BlockItem CHERRY_GRAY_BED_I = new BlockItem(MbdvBlockInit.CHERRY_GRAY_BED, bedProperties);
     public static final BlockItem CRIMSON_GRAY_BED_I = new BlockItem(MbdvBlockInit.CRIMSON_GRAY_BED, bedProperties);
     public static final BlockItem DARK_OAK_GRAY_BED_I = new BlockItem(MbdvBlockInit.DARK_OAK_GRAY_BED, bedProperties);
@@ -122,8 +123,8 @@ public class MbdvItemInit {
     public static final BlockItem ACACIA_LIGHT_GRAY_BED_I = new BlockItem(MbdvBlockInit.ACACIA_LIGHT_GRAY_BED, bedProperties);
     public static final BlockItem BIRCH_LIGHT_GRAY_BED_I = new BlockItem(MbdvBlockInit.BIRCH_LIGHT_GRAY_BED, bedProperties);
     public static final BlockItem BAMBOO_LIGHT_GRAY_BED_I = new BlockItem(MbdvBlockInit.BAMBOO_LIGHT_GRAY_BED, bedProperties);
-    public static final BlockItem BOUND_BAMBOO_LIGHT_GRAY_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_LIGHT_GRAY_BED, bedProperties);
-    public static final BlockItem STRIPPED_BOUND_BAMBOO_LIGHT_GRAY_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_LIGHT_GRAY_BED, bedProperties);
+    public static final BlockItem BOUND_BAMBOO_LIGHT_GRAY_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_LIGHT_GRAY_BED, boundBambooBedProperties);
+    public static final BlockItem STRIPPED_BOUND_BAMBOO_LIGHT_GRAY_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_LIGHT_GRAY_BED, boundBambooBedProperties);
     public static final BlockItem CHERRY_LIGHT_GRAY_BED_I = new BlockItem(MbdvBlockInit.CHERRY_LIGHT_GRAY_BED, bedProperties);
     public static final BlockItem CRIMSON_LIGHT_GRAY_BED_I = new BlockItem(MbdvBlockInit.CRIMSON_LIGHT_GRAY_BED, bedProperties);
     public static final BlockItem DARK_OAK_LIGHT_GRAY_BED_I = new BlockItem(MbdvBlockInit.DARK_OAK_LIGHT_GRAY_BED, bedProperties);
@@ -135,8 +136,8 @@ public class MbdvItemInit {
     public static final BlockItem ACACIA_CYAN_BED_I = new BlockItem(MbdvBlockInit.ACACIA_CYAN_BED, bedProperties);
     public static final BlockItem BIRCH_CYAN_BED_I = new BlockItem(MbdvBlockInit.BIRCH_CYAN_BED, bedProperties);
     public static final BlockItem BAMBOO_CYAN_BED_I = new BlockItem(MbdvBlockInit.BAMBOO_CYAN_BED, bedProperties);
-    public static final BlockItem BOUND_BAMBOO_CYAN_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_CYAN_BED, bedProperties);
-    public static final BlockItem STRIPPED_BOUND_BAMBOO_CYAN_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_CYAN_BED, bedProperties);
+    public static final BlockItem BOUND_BAMBOO_CYAN_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_CYAN_BED, boundBambooBedProperties);
+    public static final BlockItem STRIPPED_BOUND_BAMBOO_CYAN_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_CYAN_BED, boundBambooBedProperties);
     public static final BlockItem CHERRY_CYAN_BED_I = new BlockItem(MbdvBlockInit.CHERRY_CYAN_BED, bedProperties);
     public static final BlockItem CRIMSON_CYAN_BED_I = new BlockItem(MbdvBlockInit.CRIMSON_CYAN_BED, bedProperties);
     public static final BlockItem DARK_OAK_CYAN_BED_I = new BlockItem(MbdvBlockInit.DARK_OAK_CYAN_BED, bedProperties);
@@ -148,8 +149,8 @@ public class MbdvItemInit {
     public static final BlockItem ACACIA_PURPLE_BED_I = new BlockItem(MbdvBlockInit.ACACIA_PURPLE_BED, bedProperties);
     public static final BlockItem BIRCH_PURPLE_BED_I = new BlockItem(MbdvBlockInit.BIRCH_PURPLE_BED, bedProperties);
     public static final BlockItem BAMBOO_PURPLE_BED_I = new BlockItem(MbdvBlockInit.BAMBOO_PURPLE_BED, bedProperties);
-    public static final BlockItem BOUND_BAMBOO_PURPLE_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_PURPLE_BED, bedProperties);
-    public static final BlockItem STRIPPED_BOUND_BAMBOO_PURPLE_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_PURPLE_BED, bedProperties);
+    public static final BlockItem BOUND_BAMBOO_PURPLE_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_PURPLE_BED, boundBambooBedProperties);
+    public static final BlockItem STRIPPED_BOUND_BAMBOO_PURPLE_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_PURPLE_BED, boundBambooBedProperties);
     public static final BlockItem CHERRY_PURPLE_BED_I = new BlockItem(MbdvBlockInit.CHERRY_PURPLE_BED, bedProperties);
     public static final BlockItem CRIMSON_PURPLE_BED_I = new BlockItem(MbdvBlockInit.CRIMSON_PURPLE_BED, bedProperties);
     public static final BlockItem DARK_OAK_PURPLE_BED_I = new BlockItem(MbdvBlockInit.DARK_OAK_PURPLE_BED, bedProperties);
@@ -161,8 +162,8 @@ public class MbdvItemInit {
     public static final BlockItem ACACIA_BLUE_BED_I = new BlockItem(MbdvBlockInit.ACACIA_BLUE_BED, bedProperties);
     public static final BlockItem BIRCH_BLUE_BED_I = new BlockItem(MbdvBlockInit.BIRCH_BLUE_BED, bedProperties);
     public static final BlockItem BAMBOO_BLUE_BED_I = new BlockItem(MbdvBlockInit.BAMBOO_BLUE_BED, bedProperties);
-    public static final BlockItem BOUND_BAMBOO_BLUE_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_BLUE_BED, bedProperties);
-    public static final BlockItem STRIPPED_BOUND_BAMBOO_BLUE_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_BLUE_BED, bedProperties);
+    public static final BlockItem BOUND_BAMBOO_BLUE_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_BLUE_BED, boundBambooBedProperties);
+    public static final BlockItem STRIPPED_BOUND_BAMBOO_BLUE_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_BLUE_BED, boundBambooBedProperties);
     public static final BlockItem CHERRY_BLUE_BED_I = new BlockItem(MbdvBlockInit.CHERRY_BLUE_BED, bedProperties);
     public static final BlockItem CRIMSON_BLUE_BED_I = new BlockItem(MbdvBlockInit.CRIMSON_BLUE_BED, bedProperties);
     public static final BlockItem DARK_OAK_BLUE_BED_I = new BlockItem(MbdvBlockInit.DARK_OAK_BLUE_BED, bedProperties);
@@ -174,8 +175,8 @@ public class MbdvItemInit {
     public static final BlockItem ACACIA_BROWN_BED_I = new BlockItem(MbdvBlockInit.ACACIA_BROWN_BED, bedProperties);
     public static final BlockItem BIRCH_BROWN_BED_I = new BlockItem(MbdvBlockInit.BIRCH_BROWN_BED, bedProperties);
     public static final BlockItem BAMBOO_BROWN_BED_I = new BlockItem(MbdvBlockInit.BAMBOO_BROWN_BED, bedProperties);
-    public static final BlockItem BOUND_BAMBOO_BROWN_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_BROWN_BED, bedProperties);
-    public static final BlockItem STRIPPED_BOUND_BAMBOO_BROWN_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_BROWN_BED, bedProperties);
+    public static final BlockItem BOUND_BAMBOO_BROWN_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_BROWN_BED, boundBambooBedProperties);
+    public static final BlockItem STRIPPED_BOUND_BAMBOO_BROWN_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_BROWN_BED, boundBambooBedProperties);
     public static final BlockItem CHERRY_BROWN_BED_I = new BlockItem(MbdvBlockInit.CHERRY_BROWN_BED, bedProperties);
     public static final BlockItem CRIMSON_BROWN_BED_I = new BlockItem(MbdvBlockInit.CRIMSON_BROWN_BED, bedProperties);
     public static final BlockItem DARK_OAK_BROWN_BED_I = new BlockItem(MbdvBlockInit.DARK_OAK_BROWN_BED, bedProperties);
@@ -187,8 +188,8 @@ public class MbdvItemInit {
     public static final BlockItem ACACIA_GREEN_BED_I = new BlockItem(MbdvBlockInit.ACACIA_GREEN_BED, bedProperties);
     public static final BlockItem BIRCH_GREEN_BED_I = new BlockItem(MbdvBlockInit.BIRCH_GREEN_BED, bedProperties);
     public static final BlockItem BAMBOO_GREEN_BED_I = new BlockItem(MbdvBlockInit.BAMBOO_GREEN_BED, bedProperties);
-    public static final BlockItem BOUND_BAMBOO_GREEN_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_GREEN_BED, bedProperties);
-    public static final BlockItem STRIPPED_BOUND_BAMBOO_GREEN_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_GREEN_BED, bedProperties);
+    public static final BlockItem BOUND_BAMBOO_GREEN_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_GREEN_BED, boundBambooBedProperties);
+    public static final BlockItem STRIPPED_BOUND_BAMBOO_GREEN_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_GREEN_BED, boundBambooBedProperties);
     public static final BlockItem CHERRY_GREEN_BED_I = new BlockItem(MbdvBlockInit.CHERRY_GREEN_BED, bedProperties);
     public static final BlockItem CRIMSON_GREEN_BED_I = new BlockItem(MbdvBlockInit.CRIMSON_GREEN_BED, bedProperties);
     public static final BlockItem DARK_OAK_GREEN_BED_I = new BlockItem(MbdvBlockInit.DARK_OAK_GREEN_BED, bedProperties);
@@ -200,8 +201,8 @@ public class MbdvItemInit {
     public static final BlockItem ACACIA_RED_BED_I = new BlockItem(MbdvBlockInit.ACACIA_RED_BED, bedProperties);
     public static final BlockItem BIRCH_RED_BED_I = new BlockItem(MbdvBlockInit.BIRCH_RED_BED, bedProperties);
     public static final BlockItem BAMBOO_RED_BED_I = new BlockItem(MbdvBlockInit.BAMBOO_RED_BED, bedProperties);
-    public static final BlockItem BOUND_BAMBOO_RED_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_RED_BED, bedProperties);
-    public static final BlockItem STRIPPED_BOUND_BAMBOO_RED_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_RED_BED, bedProperties);
+    public static final BlockItem BOUND_BAMBOO_RED_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_RED_BED, boundBambooBedProperties);
+    public static final BlockItem STRIPPED_BOUND_BAMBOO_RED_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_RED_BED, boundBambooBedProperties);
     public static final BlockItem CHERRY_RED_BED_I = new BlockItem(MbdvBlockInit.CHERRY_RED_BED, bedProperties);
     public static final BlockItem CRIMSON_RED_BED_I = new BlockItem(MbdvBlockInit.CRIMSON_RED_BED, bedProperties);
     public static final BlockItem DARK_OAK_RED_BED_I = new BlockItem(MbdvBlockInit.DARK_OAK_RED_BED, bedProperties);
@@ -213,8 +214,8 @@ public class MbdvItemInit {
     public static final BlockItem ACACIA_BLACK_BED_I = new BlockItem(MbdvBlockInit.ACACIA_BLACK_BED, bedProperties);
     public static final BlockItem BIRCH_BLACK_BED_I = new BlockItem(MbdvBlockInit.BIRCH_BLACK_BED, bedProperties);
     public static final BlockItem BAMBOO_BLACK_BED_I = new BlockItem(MbdvBlockInit.BAMBOO_BLACK_BED, bedProperties);
-    public static final BlockItem BOUND_BAMBOO_BLACK_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_BLACK_BED, bedProperties);
-    public static final BlockItem STRIPPED_BOUND_BAMBOO_BLACK_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_BLACK_BED, bedProperties);
+    public static final BlockItem BOUND_BAMBOO_BLACK_BED_I = new BlockItem(MbdvBlockInit.BOUND_BAMBOO_BLACK_BED, boundBambooBedProperties);
+    public static final BlockItem STRIPPED_BOUND_BAMBOO_BLACK_BED_I = new BlockItem(MbdvBlockInit.STRIPPED_BOUND_BAMBOO_BLACK_BED, boundBambooBedProperties);
     public static final BlockItem CHERRY_BLACK_BED_I = new BlockItem(MbdvBlockInit.CHERRY_BLACK_BED, bedProperties);
     public static final BlockItem CRIMSON_BLACK_BED_I = new BlockItem(MbdvBlockInit.CRIMSON_BLACK_BED, bedProperties);
     public static final BlockItem DARK_OAK_BLACK_BED_I = new BlockItem(MbdvBlockInit.DARK_OAK_BLACK_BED, bedProperties);
