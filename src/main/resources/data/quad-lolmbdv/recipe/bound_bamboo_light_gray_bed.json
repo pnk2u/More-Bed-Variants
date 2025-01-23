@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bed_from_planks",
+  "key": {
+    "W": {
+      "item": "minecraft:light_gray_wool"
+    },
+    "_": {
+      "item": "minecraft:bamboo_block"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "___"
+  ],
+  "result": {
+    "count": 2,
+    "id": "quad-lolmbdv:bamboo_light_gray_bed"
+  }
+}

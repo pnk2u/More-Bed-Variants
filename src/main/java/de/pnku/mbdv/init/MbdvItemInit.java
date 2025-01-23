@@ -245,7 +245,7 @@ public class MbdvItemInit {
     }
 
     public static Item.Properties setProperties(MoreBedVariantBlock moreBedVariantBlock) {
-        Item.Properties bedProperties = new Item.Properties().stacksTo(1)
+        Item.Properties bedProperties = new Item.Properties().stacksTo((moreBedVariantBlock.bedWoodType.contains("bound")) ? 16 : 1)
                 .setId(ResourceKey.create(Registries.ITEM,BuiltInRegistries.BLOCK.getKey(moreBedVariantBlock))).useBlockDescriptionPrefix();
         return (moreBedVariantBlock.bedWoodType.equals("warped") || moreBedVariantBlock.bedWoodType.equals("crimson")) ? bedProperties.fireResistant() : bedProperties;
     }
