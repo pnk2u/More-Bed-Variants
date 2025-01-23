@@ -1,9 +1,11 @@
 package de.pnku.mbdv.init;
 
 import de.pnku.mbdv.MoreBedVariants;
+import de.pnku.mbdv.block.BoundBambooBedBlockEntity;
 import de.pnku.mbdv.block.MoreBedVariantBlock;
 import de.pnku.mbdv.block.MoreBedVariantBlockEntity;
 import de.pnku.mbdv.poi.MbdvPointOfInterestTypes;
+import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityType;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.DyeColor;
@@ -21,6 +23,8 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock ACACIA_WHITE_BED = new MoreBedVariantBlock(DyeColor.WHITE, MapColor.COLOR_ORANGE, "acacia", "white");
     public static final MoreBedVariantBlock BIRCH_WHITE_BED = new MoreBedVariantBlock(DyeColor.WHITE, MapColor.SAND, "birch", "white");
     public static final MoreBedVariantBlock BAMBOO_WHITE_BED = new MoreBedVariantBlock(DyeColor.WHITE, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bamboo", "white");
+    public static final MoreBedVariantBlock BOUND_BAMBOO_WHITE_BED = new MoreBedVariantBlock(DyeColor.WHITE, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bound_bamboo", "white");
+    public static final MoreBedVariantBlock STRIPPED_BOUND_BAMBOO_WHITE_BED = new MoreBedVariantBlock(DyeColor.WHITE, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "stripped_bound_bamboo", "white");
     public static final MoreBedVariantBlock CHERRY_WHITE_BED = new MoreBedVariantBlock(DyeColor.WHITE, MapColor.TERRACOTTA_WHITE, SoundType.CHERRY_WOOD, "cherry", "white");
     public static final MoreBedVariantBlock CRIMSON_WHITE_BED = new MoreBedVariantBlock(DyeColor.WHITE, MapColor.CRIMSON_STEM, SoundType.NETHER_WOOD, "crimson", "white");
     public static final MoreBedVariantBlock DARK_OAK_WHITE_BED = new MoreBedVariantBlock(DyeColor.WHITE, MapColor.COLOR_BROWN, "dark_oak", "white");
@@ -33,6 +37,8 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock ACACIA_ORANGE_BED = new MoreBedVariantBlock(DyeColor.ORANGE, MapColor.COLOR_ORANGE, "acacia", "orange");
     public static final MoreBedVariantBlock BIRCH_ORANGE_BED = new MoreBedVariantBlock(DyeColor.ORANGE, MapColor.SAND, "birch", "orange");
     public static final MoreBedVariantBlock BAMBOO_ORANGE_BED = new MoreBedVariantBlock(DyeColor.ORANGE, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bamboo", "orange");
+    public static final MoreBedVariantBlock BOUND_BAMBOO_ORANGE_BED = new MoreBedVariantBlock(DyeColor.ORANGE, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bound_bamboo", "orange");
+    public static final MoreBedVariantBlock STRIPPED_BOUND_BAMBOO_ORANGE_BED = new MoreBedVariantBlock(DyeColor.ORANGE, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "stripped_bound_bamboo", "orange");
     public static final MoreBedVariantBlock CHERRY_ORANGE_BED = new MoreBedVariantBlock(DyeColor.ORANGE, MapColor.TERRACOTTA_ORANGE, SoundType.CHERRY_WOOD, "cherry", "orange");
     public static final MoreBedVariantBlock CRIMSON_ORANGE_BED = new MoreBedVariantBlock(DyeColor.ORANGE, MapColor.CRIMSON_STEM, SoundType.NETHER_WOOD, "crimson", "orange");
     public static final MoreBedVariantBlock DARK_OAK_ORANGE_BED = new MoreBedVariantBlock(DyeColor.ORANGE, MapColor.COLOR_BROWN, "dark_oak", "orange");
@@ -45,6 +51,8 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock ACACIA_MAGENTA_BED = new MoreBedVariantBlock(DyeColor.MAGENTA, MapColor.COLOR_ORANGE, "acacia", "magenta");
     public static final MoreBedVariantBlock BIRCH_MAGENTA_BED = new MoreBedVariantBlock(DyeColor.MAGENTA, MapColor.SAND, "birch", "magenta");
     public static final MoreBedVariantBlock BAMBOO_MAGENTA_BED = new MoreBedVariantBlock(DyeColor.MAGENTA, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bamboo", "magenta");
+    public static final MoreBedVariantBlock BOUND_BAMBOO_MAGENTA_BED = new MoreBedVariantBlock(DyeColor.MAGENTA, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bound_bamboo", "magenta");
+    public static final MoreBedVariantBlock STRIPPED_BOUND_BAMBOO_MAGENTA_BED = new MoreBedVariantBlock(DyeColor.MAGENTA, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "stripped_bound_bamboo", "magenta");
     public static final MoreBedVariantBlock CHERRY_MAGENTA_BED = new MoreBedVariantBlock(DyeColor.MAGENTA, MapColor.TERRACOTTA_MAGENTA, SoundType.CHERRY_WOOD, "cherry", "magenta");
     public static final MoreBedVariantBlock CRIMSON_MAGENTA_BED = new MoreBedVariantBlock(DyeColor.MAGENTA, MapColor.CRIMSON_STEM, SoundType.NETHER_WOOD, "crimson", "magenta");
     public static final MoreBedVariantBlock DARK_OAK_MAGENTA_BED = new MoreBedVariantBlock(DyeColor.MAGENTA, MapColor.COLOR_BROWN, "dark_oak", "magenta");
@@ -57,6 +65,8 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock ACACIA_LIGHT_BLUE_BED = new MoreBedVariantBlock(DyeColor.LIGHT_BLUE, MapColor.COLOR_ORANGE, "acacia", "light_blue");
     public static final MoreBedVariantBlock BIRCH_LIGHT_BLUE_BED = new MoreBedVariantBlock(DyeColor.LIGHT_BLUE, MapColor.SAND, "birch", "light_blue");
     public static final MoreBedVariantBlock BAMBOO_LIGHT_BLUE_BED = new MoreBedVariantBlock(DyeColor.LIGHT_BLUE, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bamboo", "light_blue");
+    public static final MoreBedVariantBlock BOUND_BAMBOO_LIGHT_BLUE_BED = new MoreBedVariantBlock(DyeColor.LIGHT_BLUE, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bound_bamboo", "light_blue");
+    public static final MoreBedVariantBlock STRIPPED_BOUND_BAMBOO_LIGHT_BLUE_BED = new MoreBedVariantBlock(DyeColor.LIGHT_BLUE, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "stripped_bound_bamboo", "light_blue");
     public static final MoreBedVariantBlock CHERRY_LIGHT_BLUE_BED = new MoreBedVariantBlock(DyeColor.LIGHT_BLUE, MapColor.TERRACOTTA_LIGHT_BLUE, SoundType.CHERRY_WOOD, "cherry", "light_blue");
     public static final MoreBedVariantBlock CRIMSON_LIGHT_BLUE_BED = new MoreBedVariantBlock(DyeColor.LIGHT_BLUE, MapColor.CRIMSON_STEM, SoundType.NETHER_WOOD, "crimson", "light_blue");
     public static final MoreBedVariantBlock DARK_OAK_LIGHT_BLUE_BED = new MoreBedVariantBlock(DyeColor.LIGHT_BLUE, MapColor.COLOR_BROWN, "dark_oak", "light_blue");
@@ -69,6 +79,8 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock ACACIA_YELLOW_BED = new MoreBedVariantBlock(DyeColor.YELLOW, MapColor.COLOR_ORANGE, "acacia", "yellow");
     public static final MoreBedVariantBlock BIRCH_YELLOW_BED = new MoreBedVariantBlock(DyeColor.YELLOW, MapColor.SAND, "birch", "yellow");
     public static final MoreBedVariantBlock BAMBOO_YELLOW_BED = new MoreBedVariantBlock(DyeColor.YELLOW, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bamboo", "yellow");
+    public static final MoreBedVariantBlock BOUND_BAMBOO_YELLOW_BED = new MoreBedVariantBlock(DyeColor.YELLOW, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bound_bamboo", "yellow");
+    public static final MoreBedVariantBlock STRIPPED_BOUND_BAMBOO_YELLOW_BED = new MoreBedVariantBlock(DyeColor.YELLOW, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "stripped_bound_bamboo", "yellow");
     public static final MoreBedVariantBlock CHERRY_YELLOW_BED = new MoreBedVariantBlock(DyeColor.YELLOW, MapColor.TERRACOTTA_YELLOW, SoundType.CHERRY_WOOD, "cherry", "yellow");
     public static final MoreBedVariantBlock CRIMSON_YELLOW_BED = new MoreBedVariantBlock(DyeColor.YELLOW, MapColor.CRIMSON_STEM, SoundType.NETHER_WOOD, "crimson", "yellow");
     public static final MoreBedVariantBlock DARK_OAK_YELLOW_BED = new MoreBedVariantBlock(DyeColor.YELLOW, MapColor.COLOR_BROWN, "dark_oak", "yellow");
@@ -81,6 +93,8 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock ACACIA_LIME_BED = new MoreBedVariantBlock(DyeColor.LIME, MapColor.COLOR_ORANGE, "acacia", "lime");
     public static final MoreBedVariantBlock BIRCH_LIME_BED = new MoreBedVariantBlock(DyeColor.LIME, MapColor.SAND, "birch", "lime");
     public static final MoreBedVariantBlock BAMBOO_LIME_BED = new MoreBedVariantBlock(DyeColor.LIME, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bamboo", "lime");
+    public static final MoreBedVariantBlock BOUND_BAMBOO_LIME_BED = new MoreBedVariantBlock(DyeColor.LIME, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bound_bamboo", "lime");
+    public static final MoreBedVariantBlock STRIPPED_BOUND_BAMBOO_LIME_BED = new MoreBedVariantBlock(DyeColor.LIME, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "stripped_bound_bamboo", "lime");
     public static final MoreBedVariantBlock CHERRY_LIME_BED = new MoreBedVariantBlock(DyeColor.LIME, MapColor.TERRACOTTA_GREEN, SoundType.CHERRY_WOOD, "cherry", "lime");
     public static final MoreBedVariantBlock CRIMSON_LIME_BED = new MoreBedVariantBlock(DyeColor.LIME, MapColor.CRIMSON_STEM, SoundType.NETHER_WOOD, "crimson", "lime");
     public static final MoreBedVariantBlock DARK_OAK_LIME_BED = new MoreBedVariantBlock(DyeColor.LIME, MapColor.COLOR_BROWN, "dark_oak", "lime");
@@ -93,6 +107,8 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock ACACIA_PINK_BED = new MoreBedVariantBlock(DyeColor.PINK, MapColor.COLOR_ORANGE, "acacia", "pink");
     public static final MoreBedVariantBlock BIRCH_PINK_BED = new MoreBedVariantBlock(DyeColor.PINK, MapColor.SAND, "birch", "pink");
     public static final MoreBedVariantBlock BAMBOO_PINK_BED = new MoreBedVariantBlock(DyeColor.PINK, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bamboo", "pink");
+    public static final MoreBedVariantBlock BOUND_BAMBOO_PINK_BED = new MoreBedVariantBlock(DyeColor.PINK, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bound_bamboo", "pink");
+    public static final MoreBedVariantBlock STRIPPED_BOUND_BAMBOO_PINK_BED = new MoreBedVariantBlock(DyeColor.PINK, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "stripped_bound_bamboo", "pink");
     public static final MoreBedVariantBlock CHERRY_PINK_BED = new MoreBedVariantBlock(DyeColor.PINK, MapColor.TERRACOTTA_PINK, SoundType.CHERRY_WOOD, "cherry", "pink");
     public static final MoreBedVariantBlock CRIMSON_PINK_BED = new MoreBedVariantBlock(DyeColor.PINK, MapColor.CRIMSON_STEM, SoundType.NETHER_WOOD, "crimson", "pink");
     public static final MoreBedVariantBlock DARK_OAK_PINK_BED = new MoreBedVariantBlock(DyeColor.PINK, MapColor.COLOR_BROWN, "dark_oak", "pink");
@@ -105,6 +121,8 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock ACACIA_GRAY_BED = new MoreBedVariantBlock(DyeColor.GRAY, MapColor.COLOR_ORANGE, "acacia", "gray");
     public static final MoreBedVariantBlock BIRCH_GRAY_BED = new MoreBedVariantBlock(DyeColor.GRAY, MapColor.SAND, "birch", "gray");
     public static final MoreBedVariantBlock BAMBOO_GRAY_BED = new MoreBedVariantBlock(DyeColor.GRAY, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bamboo", "gray");
+    public static final MoreBedVariantBlock BOUND_BAMBOO_GRAY_BED = new MoreBedVariantBlock(DyeColor.GRAY, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bound_bamboo", "gray");
+    public static final MoreBedVariantBlock STRIPPED_BOUND_BAMBOO_GRAY_BED = new MoreBedVariantBlock(DyeColor.GRAY, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "stripped_bound_bamboo", "gray");
     public static final MoreBedVariantBlock CHERRY_GRAY_BED = new MoreBedVariantBlock(DyeColor.GRAY, MapColor.TERRACOTTA_GRAY, SoundType.CHERRY_WOOD, "cherry", "gray");
     public static final MoreBedVariantBlock CRIMSON_GRAY_BED = new MoreBedVariantBlock(DyeColor.GRAY, MapColor.CRIMSON_STEM, SoundType.NETHER_WOOD, "crimson", "gray");
     public static final MoreBedVariantBlock DARK_OAK_GRAY_BED = new MoreBedVariantBlock(DyeColor.GRAY, MapColor.COLOR_BROWN, "dark_oak", "gray");
@@ -117,6 +135,8 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock ACACIA_LIGHT_GRAY_BED = new MoreBedVariantBlock(DyeColor.LIGHT_GRAY, MapColor.COLOR_ORANGE, "acacia", "light_gray");
     public static final MoreBedVariantBlock BIRCH_LIGHT_GRAY_BED = new MoreBedVariantBlock(DyeColor.LIGHT_GRAY, MapColor.SAND, "birch", "light_gray");
     public static final MoreBedVariantBlock BAMBOO_LIGHT_GRAY_BED = new MoreBedVariantBlock(DyeColor.LIGHT_GRAY, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bamboo", "light_gray");
+    public static final MoreBedVariantBlock BOUND_BAMBOO_LIGHT_GRAY_BED = new MoreBedVariantBlock(DyeColor.LIGHT_GRAY, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bound_bamboo", "light_gray");
+    public static final MoreBedVariantBlock STRIPPED_BOUND_BAMBOO_LIGHT_GRAY_BED = new MoreBedVariantBlock(DyeColor.LIGHT_GRAY, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "stripped_bound_bamboo", "light_gray");
     public static final MoreBedVariantBlock CHERRY_LIGHT_GRAY_BED = new MoreBedVariantBlock(DyeColor.LIGHT_GRAY, MapColor.TERRACOTTA_LIGHT_GRAY, SoundType.CHERRY_WOOD, "cherry", "light_gray");
     public static final MoreBedVariantBlock CRIMSON_LIGHT_GRAY_BED = new MoreBedVariantBlock(DyeColor.LIGHT_GRAY, MapColor.CRIMSON_STEM, SoundType.NETHER_WOOD, "crimson", "light_gray");
     public static final MoreBedVariantBlock DARK_OAK_LIGHT_GRAY_BED = new MoreBedVariantBlock(DyeColor.LIGHT_GRAY, MapColor.COLOR_BROWN, "dark_oak", "light_gray");
@@ -129,6 +149,8 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock ACACIA_CYAN_BED = new MoreBedVariantBlock(DyeColor.CYAN, MapColor.COLOR_ORANGE, "acacia", "cyan");
     public static final MoreBedVariantBlock BIRCH_CYAN_BED = new MoreBedVariantBlock(DyeColor.CYAN, MapColor.SAND, "birch", "cyan");
     public static final MoreBedVariantBlock BAMBOO_CYAN_BED = new MoreBedVariantBlock(DyeColor.CYAN, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bamboo", "cyan");
+    public static final MoreBedVariantBlock BOUND_BAMBOO_CYAN_BED = new MoreBedVariantBlock(DyeColor.CYAN, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bound_bamboo", "cyan");
+    public static final MoreBedVariantBlock STRIPPED_BOUND_BAMBOO_CYAN_BED = new MoreBedVariantBlock(DyeColor.CYAN, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "stripped_bound_bamboo", "cyan");
     public static final MoreBedVariantBlock CHERRY_CYAN_BED = new MoreBedVariantBlock(DyeColor.CYAN, MapColor.TERRACOTTA_CYAN, SoundType.CHERRY_WOOD, "cherry", "cyan");
     public static final MoreBedVariantBlock CRIMSON_CYAN_BED = new MoreBedVariantBlock(DyeColor.CYAN, MapColor.CRIMSON_STEM, SoundType.NETHER_WOOD, "crimson", "cyan");
     public static final MoreBedVariantBlock DARK_OAK_CYAN_BED = new MoreBedVariantBlock(DyeColor.CYAN, MapColor.COLOR_BROWN, "dark_oak", "cyan");
@@ -141,6 +163,8 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock ACACIA_PURPLE_BED = new MoreBedVariantBlock(DyeColor.PURPLE, MapColor.COLOR_ORANGE, "acacia", "purple");
     public static final MoreBedVariantBlock BIRCH_PURPLE_BED = new MoreBedVariantBlock(DyeColor.PURPLE, MapColor.SAND, "birch", "purple");
     public static final MoreBedVariantBlock BAMBOO_PURPLE_BED = new MoreBedVariantBlock(DyeColor.PURPLE, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bamboo", "purple");
+    public static final MoreBedVariantBlock BOUND_BAMBOO_PURPLE_BED = new MoreBedVariantBlock(DyeColor.PURPLE, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bound_bamboo", "purple");
+    public static final MoreBedVariantBlock STRIPPED_BOUND_BAMBOO_PURPLE_BED = new MoreBedVariantBlock(DyeColor.PURPLE, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "stripped_bound_bamboo", "purple");
     public static final MoreBedVariantBlock CHERRY_PURPLE_BED = new MoreBedVariantBlock(DyeColor.PURPLE, MapColor.TERRACOTTA_PURPLE, SoundType.CHERRY_WOOD, "cherry", "purple");
     public static final MoreBedVariantBlock CRIMSON_PURPLE_BED = new MoreBedVariantBlock(DyeColor.PURPLE, MapColor.CRIMSON_STEM, SoundType.NETHER_WOOD, "crimson", "purple");
     public static final MoreBedVariantBlock DARK_OAK_PURPLE_BED = new MoreBedVariantBlock(DyeColor.PURPLE, MapColor.COLOR_BROWN, "dark_oak", "purple");
@@ -153,6 +177,8 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock ACACIA_BLUE_BED = new MoreBedVariantBlock(DyeColor.BLUE, MapColor.COLOR_ORANGE, "acacia", "blue");
     public static final MoreBedVariantBlock BIRCH_BLUE_BED = new MoreBedVariantBlock(DyeColor.BLUE, MapColor.SAND, "birch", "blue");
     public static final MoreBedVariantBlock BAMBOO_BLUE_BED = new MoreBedVariantBlock(DyeColor.BLUE, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bamboo", "blue");
+    public static final MoreBedVariantBlock BOUND_BAMBOO_BLUE_BED = new MoreBedVariantBlock(DyeColor.BLUE, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bound_bamboo", "blue");
+    public static final MoreBedVariantBlock STRIPPED_BOUND_BAMBOO_BLUE_BED = new MoreBedVariantBlock(DyeColor.BLUE, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "stripped_bound_bamboo", "blue");
     public static final MoreBedVariantBlock CHERRY_BLUE_BED = new MoreBedVariantBlock(DyeColor.BLUE, MapColor.TERRACOTTA_BLUE, SoundType.CHERRY_WOOD, "cherry", "blue");
     public static final MoreBedVariantBlock CRIMSON_BLUE_BED = new MoreBedVariantBlock(DyeColor.BLUE, MapColor.CRIMSON_STEM, SoundType.NETHER_WOOD, "crimson", "blue");
     public static final MoreBedVariantBlock DARK_OAK_BLUE_BED = new MoreBedVariantBlock(DyeColor.BLUE, MapColor.COLOR_BROWN, "dark_oak", "blue");
@@ -165,6 +191,8 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock ACACIA_BROWN_BED = new MoreBedVariantBlock(DyeColor.BROWN, MapColor.COLOR_ORANGE, "acacia", "brown");
     public static final MoreBedVariantBlock BIRCH_BROWN_BED = new MoreBedVariantBlock(DyeColor.BROWN, MapColor.SAND, "birch", "brown");
     public static final MoreBedVariantBlock BAMBOO_BROWN_BED = new MoreBedVariantBlock(DyeColor.BROWN, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bamboo", "brown");
+    public static final MoreBedVariantBlock BOUND_BAMBOO_BROWN_BED = new MoreBedVariantBlock(DyeColor.BROWN, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bound_bamboo", "brown");
+    public static final MoreBedVariantBlock STRIPPED_BOUND_BAMBOO_BROWN_BED = new MoreBedVariantBlock(DyeColor.BROWN, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "stripped_bound_bamboo", "brown");
     public static final MoreBedVariantBlock CHERRY_BROWN_BED = new MoreBedVariantBlock(DyeColor.BROWN, MapColor.TERRACOTTA_BROWN, SoundType.CHERRY_WOOD, "cherry", "brown");
     public static final MoreBedVariantBlock CRIMSON_BROWN_BED = new MoreBedVariantBlock(DyeColor.BROWN, MapColor.CRIMSON_STEM, SoundType.NETHER_WOOD, "crimson", "brown");
     public static final MoreBedVariantBlock DARK_OAK_BROWN_BED = new MoreBedVariantBlock(DyeColor.BROWN, MapColor.COLOR_BROWN, "dark_oak", "brown");
@@ -177,6 +205,8 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock ACACIA_GREEN_BED = new MoreBedVariantBlock(DyeColor.GREEN, MapColor.COLOR_ORANGE, "acacia", "green");
     public static final MoreBedVariantBlock BIRCH_GREEN_BED = new MoreBedVariantBlock(DyeColor.GREEN, MapColor.SAND, "birch", "green");
     public static final MoreBedVariantBlock BAMBOO_GREEN_BED = new MoreBedVariantBlock(DyeColor.GREEN, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bamboo", "green");
+    public static final MoreBedVariantBlock BOUND_BAMBOO_GREEN_BED = new MoreBedVariantBlock(DyeColor.GREEN, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bound_bamboo", "green");
+    public static final MoreBedVariantBlock STRIPPED_BOUND_BAMBOO_GREEN_BED = new MoreBedVariantBlock(DyeColor.GREEN, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "stripped_bound_bamboo", "green");
     public static final MoreBedVariantBlock CHERRY_GREEN_BED = new MoreBedVariantBlock(DyeColor.GREEN, MapColor.TERRACOTTA_GREEN, SoundType.CHERRY_WOOD, "cherry", "green");
     public static final MoreBedVariantBlock CRIMSON_GREEN_BED = new MoreBedVariantBlock(DyeColor.GREEN, MapColor.CRIMSON_STEM, SoundType.NETHER_WOOD, "crimson", "green");
     public static final MoreBedVariantBlock DARK_OAK_GREEN_BED = new MoreBedVariantBlock(DyeColor.GREEN, MapColor.COLOR_BROWN, "dark_oak", "green");
@@ -189,6 +219,8 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock ACACIA_RED_BED = new MoreBedVariantBlock(DyeColor.RED, MapColor.COLOR_ORANGE, "acacia", "red");
     public static final MoreBedVariantBlock BIRCH_RED_BED = new MoreBedVariantBlock(DyeColor.RED, MapColor.SAND, "birch", "red");
     public static final MoreBedVariantBlock BAMBOO_RED_BED = new MoreBedVariantBlock(DyeColor.RED, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bamboo", "red");
+    public static final MoreBedVariantBlock BOUND_BAMBOO_RED_BED = new MoreBedVariantBlock(DyeColor.RED, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bound_bamboo", "red");
+    public static final MoreBedVariantBlock STRIPPED_BOUND_BAMBOO_RED_BED = new MoreBedVariantBlock(DyeColor.RED, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "stripped_bound_bamboo", "red");
     public static final MoreBedVariantBlock CHERRY_RED_BED = new MoreBedVariantBlock(DyeColor.RED, MapColor.TERRACOTTA_RED, SoundType.CHERRY_WOOD, "cherry", "red");
     public static final MoreBedVariantBlock CRIMSON_RED_BED = new MoreBedVariantBlock(DyeColor.RED, MapColor.CRIMSON_STEM, SoundType.NETHER_WOOD, "crimson", "red");
     public static final MoreBedVariantBlock DARK_OAK_RED_BED = new MoreBedVariantBlock(DyeColor.RED, MapColor.COLOR_BROWN, "dark_oak", "red");
@@ -201,6 +233,8 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock ACACIA_BLACK_BED = new MoreBedVariantBlock(DyeColor.BLACK, MapColor.COLOR_ORANGE, "acacia", "black");
     public static final MoreBedVariantBlock BIRCH_BLACK_BED = new MoreBedVariantBlock(DyeColor.BLACK, MapColor.SAND, "birch", "black");
     public static final MoreBedVariantBlock BAMBOO_BLACK_BED = new MoreBedVariantBlock(DyeColor.BLACK, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bamboo", "black");
+    public static final MoreBedVariantBlock BOUND_BAMBOO_BLACK_BED = new MoreBedVariantBlock(DyeColor.BLACK, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "bound_bamboo", "black");
+    public static final MoreBedVariantBlock STRIPPED_BOUND_BAMBOO_BLACK_BED = new MoreBedVariantBlock(DyeColor.BLACK, MapColor.COLOR_YELLOW, SoundType.BAMBOO_WOOD, "stripped_bound_bamboo", "black");
     public static final MoreBedVariantBlock CHERRY_BLACK_BED = new MoreBedVariantBlock(DyeColor.BLACK, MapColor.TERRACOTTA_BLACK, SoundType.CHERRY_WOOD, "cherry", "black");
     public static final MoreBedVariantBlock CRIMSON_BLACK_BED = new MoreBedVariantBlock(DyeColor.BLACK, MapColor.CRIMSON_STEM, SoundType.NETHER_WOOD, "crimson", "black");
     public static final MoreBedVariantBlock DARK_OAK_BLACK_BED = new MoreBedVariantBlock(DyeColor.BLACK, MapColor.COLOR_BROWN, "dark_oak", "black");
@@ -212,13 +246,17 @@ public class MbdvBlockInit {
 
 
     public static BlockEntityType<MoreBedVariantBlockEntity> MORE_BED_VARIANT_BLOCK_ENTITY;
+    public static BlockEntityType<BoundBambooBedBlockEntity> BOUND_BAMBOO_BED_BLOCK_ENTITY;
 
     public static final List<Block> more_beds = new ArrayList<>();
+    public static final List<Block> more_bound_bamboo_beds = new ArrayList<>();
 
     public static void registerBedBlocks() {
         // WHITE
         registerBedBlock(ACACIA_WHITE_BED);
         registerBedBlock(BAMBOO_WHITE_BED);
+        registerBoundBambooBedBlock(BOUND_BAMBOO_WHITE_BED);
+        registerBoundBambooBedBlock(STRIPPED_BOUND_BAMBOO_WHITE_BED);
         registerBedBlock(BIRCH_WHITE_BED);
         registerBedBlock(CHERRY_WHITE_BED);
         registerBedBlock(CRIMSON_WHITE_BED);
@@ -229,41 +267,46 @@ public class MbdvBlockInit {
         registerBedBlock(SPRUCE_WHITE_BED);
         registerBedBlock(WARPED_WHITE_BED);
         // ORANGE
-        registerBedBlock(ACACIA_ORANGE_BED);registerBedBlock(BAMBOO_ORANGE_BED);registerBedBlock(BIRCH_ORANGE_BED);registerBedBlock(CHERRY_ORANGE_BED);registerBedBlock(CRIMSON_ORANGE_BED);registerBedBlock(DARK_OAK_ORANGE_BED);registerBedBlock(PALE_OAK_ORANGE_BED);registerBedBlock(JUNGLE_ORANGE_BED);registerBedBlock(MANGROVE_ORANGE_BED);registerBedBlock(SPRUCE_ORANGE_BED);registerBedBlock(WARPED_ORANGE_BED);
+        registerBedBlock(ACACIA_ORANGE_BED);registerBedBlock(BAMBOO_ORANGE_BED);registerBoundBambooBedBlock(BOUND_BAMBOO_ORANGE_BED);registerBoundBambooBedBlock(STRIPPED_BOUND_BAMBOO_ORANGE_BED);registerBedBlock(BIRCH_ORANGE_BED);registerBedBlock(CHERRY_ORANGE_BED);registerBedBlock(CRIMSON_ORANGE_BED);registerBedBlock(DARK_OAK_ORANGE_BED);registerBedBlock(PALE_OAK_ORANGE_BED);registerBedBlock(JUNGLE_ORANGE_BED);registerBedBlock(MANGROVE_ORANGE_BED);registerBedBlock(SPRUCE_ORANGE_BED);registerBedBlock(WARPED_ORANGE_BED);
         // MAGENTA
-        registerBedBlock(ACACIA_MAGENTA_BED);registerBedBlock(BAMBOO_MAGENTA_BED);registerBedBlock(BIRCH_MAGENTA_BED);registerBedBlock(CHERRY_MAGENTA_BED);registerBedBlock(CRIMSON_MAGENTA_BED);registerBedBlock(DARK_OAK_MAGENTA_BED);registerBedBlock(PALE_OAK_MAGENTA_BED);registerBedBlock(JUNGLE_MAGENTA_BED);registerBedBlock(MANGROVE_MAGENTA_BED);registerBedBlock(SPRUCE_MAGENTA_BED);registerBedBlock(WARPED_MAGENTA_BED);
+        registerBedBlock(ACACIA_MAGENTA_BED);registerBedBlock(BAMBOO_MAGENTA_BED);registerBoundBambooBedBlock(BOUND_BAMBOO_MAGENTA_BED);registerBoundBambooBedBlock(STRIPPED_BOUND_BAMBOO_MAGENTA_BED);registerBedBlock(BIRCH_MAGENTA_BED);registerBedBlock(CHERRY_MAGENTA_BED);registerBedBlock(CRIMSON_MAGENTA_BED);registerBedBlock(DARK_OAK_MAGENTA_BED);registerBedBlock(PALE_OAK_MAGENTA_BED);registerBedBlock(JUNGLE_MAGENTA_BED);registerBedBlock(MANGROVE_MAGENTA_BED);registerBedBlock(SPRUCE_MAGENTA_BED);registerBedBlock(WARPED_MAGENTA_BED);
         // LIGHT_BLUE
-        registerBedBlock(ACACIA_LIGHT_BLUE_BED);registerBedBlock(BAMBOO_LIGHT_BLUE_BED);registerBedBlock(BIRCH_LIGHT_BLUE_BED);registerBedBlock(CHERRY_LIGHT_BLUE_BED);registerBedBlock(CRIMSON_LIGHT_BLUE_BED);registerBedBlock(DARK_OAK_LIGHT_BLUE_BED);registerBedBlock(PALE_OAK_LIGHT_BLUE_BED);registerBedBlock(JUNGLE_LIGHT_BLUE_BED);registerBedBlock(MANGROVE_LIGHT_BLUE_BED);registerBedBlock(SPRUCE_LIGHT_BLUE_BED);registerBedBlock(WARPED_LIGHT_BLUE_BED);
+        registerBedBlock(ACACIA_LIGHT_BLUE_BED);registerBedBlock(BAMBOO_LIGHT_BLUE_BED);registerBoundBambooBedBlock(BOUND_BAMBOO_LIGHT_BLUE_BED);registerBoundBambooBedBlock(STRIPPED_BOUND_BAMBOO_LIGHT_BLUE_BED);registerBedBlock(BIRCH_LIGHT_BLUE_BED);registerBedBlock(CHERRY_LIGHT_BLUE_BED);registerBedBlock(CRIMSON_LIGHT_BLUE_BED);registerBedBlock(DARK_OAK_LIGHT_BLUE_BED);registerBedBlock(PALE_OAK_LIGHT_BLUE_BED);registerBedBlock(JUNGLE_LIGHT_BLUE_BED);registerBedBlock(MANGROVE_LIGHT_BLUE_BED);registerBedBlock(SPRUCE_LIGHT_BLUE_BED);registerBedBlock(WARPED_LIGHT_BLUE_BED);
         // YELLOW
-        registerBedBlock(ACACIA_YELLOW_BED);registerBedBlock(BAMBOO_YELLOW_BED);registerBedBlock(BIRCH_YELLOW_BED);registerBedBlock(CHERRY_YELLOW_BED);registerBedBlock(CRIMSON_YELLOW_BED);registerBedBlock(DARK_OAK_YELLOW_BED);registerBedBlock(PALE_OAK_YELLOW_BED);registerBedBlock(JUNGLE_YELLOW_BED);registerBedBlock(MANGROVE_YELLOW_BED);registerBedBlock(SPRUCE_YELLOW_BED);registerBedBlock(WARPED_YELLOW_BED);
+        registerBedBlock(ACACIA_YELLOW_BED);registerBedBlock(BAMBOO_YELLOW_BED);registerBoundBambooBedBlock(BOUND_BAMBOO_YELLOW_BED);registerBoundBambooBedBlock(STRIPPED_BOUND_BAMBOO_YELLOW_BED);registerBedBlock(BIRCH_YELLOW_BED);registerBedBlock(CHERRY_YELLOW_BED);registerBedBlock(CRIMSON_YELLOW_BED);registerBedBlock(DARK_OAK_YELLOW_BED);registerBedBlock(PALE_OAK_YELLOW_BED);registerBedBlock(JUNGLE_YELLOW_BED);registerBedBlock(MANGROVE_YELLOW_BED);registerBedBlock(SPRUCE_YELLOW_BED);registerBedBlock(WARPED_YELLOW_BED);
         // LIME
-        registerBedBlock(ACACIA_LIME_BED);registerBedBlock(BAMBOO_LIME_BED);registerBedBlock(BIRCH_LIME_BED);registerBedBlock(CHERRY_LIME_BED);registerBedBlock(CRIMSON_LIME_BED);registerBedBlock(DARK_OAK_LIME_BED);registerBedBlock(PALE_OAK_LIME_BED);registerBedBlock(JUNGLE_LIME_BED);registerBedBlock(MANGROVE_LIME_BED);registerBedBlock(SPRUCE_LIME_BED);registerBedBlock(WARPED_LIME_BED);
+        registerBedBlock(ACACIA_LIME_BED);registerBedBlock(BAMBOO_LIME_BED);registerBoundBambooBedBlock(BOUND_BAMBOO_LIME_BED);registerBoundBambooBedBlock(STRIPPED_BOUND_BAMBOO_LIME_BED);registerBedBlock(BIRCH_LIME_BED);registerBedBlock(CHERRY_LIME_BED);registerBedBlock(CRIMSON_LIME_BED);registerBedBlock(DARK_OAK_LIME_BED);registerBedBlock(PALE_OAK_LIME_BED);registerBedBlock(JUNGLE_LIME_BED);registerBedBlock(MANGROVE_LIME_BED);registerBedBlock(SPRUCE_LIME_BED);registerBedBlock(WARPED_LIME_BED);
         // PINK
-        registerBedBlock(ACACIA_PINK_BED);registerBedBlock(BAMBOO_PINK_BED);registerBedBlock(BIRCH_PINK_BED);registerBedBlock(CHERRY_PINK_BED);registerBedBlock(CRIMSON_PINK_BED);registerBedBlock(DARK_OAK_PINK_BED);registerBedBlock(PALE_OAK_PINK_BED);registerBedBlock(JUNGLE_PINK_BED);registerBedBlock(MANGROVE_PINK_BED);registerBedBlock(SPRUCE_PINK_BED);registerBedBlock(WARPED_PINK_BED);
+        registerBedBlock(ACACIA_PINK_BED);registerBedBlock(BAMBOO_PINK_BED);registerBoundBambooBedBlock(BOUND_BAMBOO_PINK_BED);registerBoundBambooBedBlock(STRIPPED_BOUND_BAMBOO_PINK_BED);registerBedBlock(BIRCH_PINK_BED);registerBedBlock(CHERRY_PINK_BED);registerBedBlock(CRIMSON_PINK_BED);registerBedBlock(DARK_OAK_PINK_BED);registerBedBlock(PALE_OAK_PINK_BED);registerBedBlock(JUNGLE_PINK_BED);registerBedBlock(MANGROVE_PINK_BED);registerBedBlock(SPRUCE_PINK_BED);registerBedBlock(WARPED_PINK_BED);
         // GRAY
-        registerBedBlock(ACACIA_GRAY_BED);registerBedBlock(BAMBOO_GRAY_BED);registerBedBlock(BIRCH_GRAY_BED);registerBedBlock(CHERRY_GRAY_BED);registerBedBlock(CRIMSON_GRAY_BED);registerBedBlock(DARK_OAK_GRAY_BED);registerBedBlock(PALE_OAK_GRAY_BED);registerBedBlock(JUNGLE_GRAY_BED);registerBedBlock(MANGROVE_GRAY_BED);registerBedBlock(SPRUCE_GRAY_BED);registerBedBlock(WARPED_GRAY_BED);
+        registerBedBlock(ACACIA_GRAY_BED);registerBedBlock(BAMBOO_GRAY_BED);registerBoundBambooBedBlock(BOUND_BAMBOO_GRAY_BED);registerBoundBambooBedBlock(STRIPPED_BOUND_BAMBOO_GRAY_BED);registerBedBlock(BIRCH_GRAY_BED);registerBedBlock(CHERRY_GRAY_BED);registerBedBlock(CRIMSON_GRAY_BED);registerBedBlock(DARK_OAK_GRAY_BED);registerBedBlock(PALE_OAK_GRAY_BED);registerBedBlock(JUNGLE_GRAY_BED);registerBedBlock(MANGROVE_GRAY_BED);registerBedBlock(SPRUCE_GRAY_BED);registerBedBlock(WARPED_GRAY_BED);
         // LIGHT_GRAY
-        registerBedBlock(ACACIA_LIGHT_GRAY_BED);registerBedBlock(BAMBOO_LIGHT_GRAY_BED);registerBedBlock(BIRCH_LIGHT_GRAY_BED);registerBedBlock(CHERRY_LIGHT_GRAY_BED);registerBedBlock(CRIMSON_LIGHT_GRAY_BED);registerBedBlock(DARK_OAK_LIGHT_GRAY_BED);registerBedBlock(PALE_OAK_LIGHT_GRAY_BED);registerBedBlock(JUNGLE_LIGHT_GRAY_BED);registerBedBlock(MANGROVE_LIGHT_GRAY_BED);registerBedBlock(SPRUCE_LIGHT_GRAY_BED);registerBedBlock(WARPED_LIGHT_GRAY_BED);
+        registerBedBlock(ACACIA_LIGHT_GRAY_BED);registerBedBlock(BAMBOO_LIGHT_GRAY_BED);registerBoundBambooBedBlock(BOUND_BAMBOO_LIGHT_GRAY_BED);registerBoundBambooBedBlock(STRIPPED_BOUND_BAMBOO_LIGHT_GRAY_BED);registerBedBlock(BIRCH_LIGHT_GRAY_BED);registerBedBlock(CHERRY_LIGHT_GRAY_BED);registerBedBlock(CRIMSON_LIGHT_GRAY_BED);registerBedBlock(DARK_OAK_LIGHT_GRAY_BED);registerBedBlock(PALE_OAK_LIGHT_GRAY_BED);registerBedBlock(JUNGLE_LIGHT_GRAY_BED);registerBedBlock(MANGROVE_LIGHT_GRAY_BED);registerBedBlock(SPRUCE_LIGHT_GRAY_BED);registerBedBlock(WARPED_LIGHT_GRAY_BED);
         // CYAN
-        registerBedBlock(ACACIA_CYAN_BED);registerBedBlock(BAMBOO_CYAN_BED);registerBedBlock(BIRCH_CYAN_BED);registerBedBlock(CHERRY_CYAN_BED);registerBedBlock(CRIMSON_CYAN_BED);registerBedBlock(DARK_OAK_CYAN_BED);registerBedBlock(PALE_OAK_CYAN_BED);registerBedBlock(JUNGLE_CYAN_BED);registerBedBlock(MANGROVE_CYAN_BED);registerBedBlock(SPRUCE_CYAN_BED);registerBedBlock(WARPED_CYAN_BED);
+        registerBedBlock(ACACIA_CYAN_BED);registerBedBlock(BAMBOO_CYAN_BED);registerBoundBambooBedBlock(BOUND_BAMBOO_CYAN_BED);registerBoundBambooBedBlock(STRIPPED_BOUND_BAMBOO_CYAN_BED);registerBedBlock(BIRCH_CYAN_BED);registerBedBlock(CHERRY_CYAN_BED);registerBedBlock(CRIMSON_CYAN_BED);registerBedBlock(DARK_OAK_CYAN_BED);registerBedBlock(PALE_OAK_CYAN_BED);registerBedBlock(JUNGLE_CYAN_BED);registerBedBlock(MANGROVE_CYAN_BED);registerBedBlock(SPRUCE_CYAN_BED);registerBedBlock(WARPED_CYAN_BED);
         // PURPLE
-        registerBedBlock(ACACIA_PURPLE_BED);registerBedBlock(BAMBOO_PURPLE_BED);registerBedBlock(BIRCH_PURPLE_BED);registerBedBlock(CHERRY_PURPLE_BED);registerBedBlock(CRIMSON_PURPLE_BED);registerBedBlock(DARK_OAK_PURPLE_BED);registerBedBlock(PALE_OAK_PURPLE_BED);registerBedBlock(JUNGLE_PURPLE_BED);registerBedBlock(MANGROVE_PURPLE_BED);registerBedBlock(SPRUCE_PURPLE_BED);registerBedBlock(WARPED_PURPLE_BED);
+        registerBedBlock(ACACIA_PURPLE_BED);registerBedBlock(BAMBOO_PURPLE_BED);registerBoundBambooBedBlock(BOUND_BAMBOO_PURPLE_BED);registerBoundBambooBedBlock(STRIPPED_BOUND_BAMBOO_PURPLE_BED);registerBedBlock(BIRCH_PURPLE_BED);registerBedBlock(CHERRY_PURPLE_BED);registerBedBlock(CRIMSON_PURPLE_BED);registerBedBlock(DARK_OAK_PURPLE_BED);registerBedBlock(PALE_OAK_PURPLE_BED);registerBedBlock(JUNGLE_PURPLE_BED);registerBedBlock(MANGROVE_PURPLE_BED);registerBedBlock(SPRUCE_PURPLE_BED);registerBedBlock(WARPED_PURPLE_BED);
         // BLUE
-        registerBedBlock(ACACIA_BLUE_BED);registerBedBlock(BAMBOO_BLUE_BED);registerBedBlock(BIRCH_BLUE_BED);registerBedBlock(CHERRY_BLUE_BED);registerBedBlock(CRIMSON_BLUE_BED);registerBedBlock(DARK_OAK_BLUE_BED);registerBedBlock(PALE_OAK_BLUE_BED);registerBedBlock(JUNGLE_BLUE_BED);registerBedBlock(MANGROVE_BLUE_BED);registerBedBlock(SPRUCE_BLUE_BED);registerBedBlock(WARPED_BLUE_BED);
+        registerBedBlock(ACACIA_BLUE_BED);registerBedBlock(BAMBOO_BLUE_BED);registerBoundBambooBedBlock(BOUND_BAMBOO_BLUE_BED);registerBoundBambooBedBlock(STRIPPED_BOUND_BAMBOO_BLUE_BED);registerBedBlock(BIRCH_BLUE_BED);registerBedBlock(CHERRY_BLUE_BED);registerBedBlock(CRIMSON_BLUE_BED);registerBedBlock(DARK_OAK_BLUE_BED);registerBedBlock(PALE_OAK_BLUE_BED);registerBedBlock(JUNGLE_BLUE_BED);registerBedBlock(MANGROVE_BLUE_BED);registerBedBlock(SPRUCE_BLUE_BED);registerBedBlock(WARPED_BLUE_BED);
         // BROWN
-        registerBedBlock(ACACIA_BROWN_BED);registerBedBlock(BAMBOO_BROWN_BED);registerBedBlock(BIRCH_BROWN_BED);registerBedBlock(CHERRY_BROWN_BED);registerBedBlock(CRIMSON_BROWN_BED);registerBedBlock(DARK_OAK_BROWN_BED);registerBedBlock(PALE_OAK_BROWN_BED);registerBedBlock(JUNGLE_BROWN_BED);registerBedBlock(MANGROVE_BROWN_BED);registerBedBlock(SPRUCE_BROWN_BED);registerBedBlock(WARPED_BROWN_BED);
+        registerBedBlock(ACACIA_BROWN_BED);registerBedBlock(BAMBOO_BROWN_BED);registerBoundBambooBedBlock(BOUND_BAMBOO_BROWN_BED);registerBoundBambooBedBlock(STRIPPED_BOUND_BAMBOO_BROWN_BED);registerBedBlock(BIRCH_BROWN_BED);registerBedBlock(CHERRY_BROWN_BED);registerBedBlock(CRIMSON_BROWN_BED);registerBedBlock(DARK_OAK_BROWN_BED);registerBedBlock(PALE_OAK_BROWN_BED);registerBedBlock(JUNGLE_BROWN_BED);registerBedBlock(MANGROVE_BROWN_BED);registerBedBlock(SPRUCE_BROWN_BED);registerBedBlock(WARPED_BROWN_BED);
         // GREEN
-        registerBedBlock(ACACIA_GREEN_BED);registerBedBlock(BAMBOO_GREEN_BED);registerBedBlock(BIRCH_GREEN_BED);registerBedBlock(CHERRY_GREEN_BED);registerBedBlock(CRIMSON_GREEN_BED);registerBedBlock(DARK_OAK_GREEN_BED);registerBedBlock(PALE_OAK_GREEN_BED);registerBedBlock(JUNGLE_GREEN_BED);registerBedBlock(MANGROVE_GREEN_BED);registerBedBlock(SPRUCE_GREEN_BED);registerBedBlock(WARPED_GREEN_BED);
+        registerBedBlock(ACACIA_GREEN_BED);registerBedBlock(BAMBOO_GREEN_BED);registerBoundBambooBedBlock(BOUND_BAMBOO_GREEN_BED);registerBoundBambooBedBlock(STRIPPED_BOUND_BAMBOO_GREEN_BED);registerBedBlock(BIRCH_GREEN_BED);registerBedBlock(CHERRY_GREEN_BED);registerBedBlock(CRIMSON_GREEN_BED);registerBedBlock(DARK_OAK_GREEN_BED);registerBedBlock(PALE_OAK_GREEN_BED);registerBedBlock(JUNGLE_GREEN_BED);registerBedBlock(MANGROVE_GREEN_BED);registerBedBlock(SPRUCE_GREEN_BED);registerBedBlock(WARPED_GREEN_BED);
         // RED
-        registerBedBlock(ACACIA_RED_BED);registerBedBlock(BAMBOO_RED_BED);registerBedBlock(BIRCH_RED_BED);registerBedBlock(CHERRY_RED_BED);registerBedBlock(CRIMSON_RED_BED);registerBedBlock(DARK_OAK_RED_BED);registerBedBlock(PALE_OAK_RED_BED);registerBedBlock(JUNGLE_RED_BED);registerBedBlock(MANGROVE_RED_BED);registerBedBlock(SPRUCE_RED_BED);registerBedBlock(WARPED_RED_BED);
+        registerBedBlock(ACACIA_RED_BED);registerBedBlock(BAMBOO_RED_BED);registerBoundBambooBedBlock(BOUND_BAMBOO_RED_BED);registerBoundBambooBedBlock(STRIPPED_BOUND_BAMBOO_RED_BED);registerBedBlock(BIRCH_RED_BED);registerBedBlock(CHERRY_RED_BED);registerBedBlock(CRIMSON_RED_BED);registerBedBlock(DARK_OAK_RED_BED);registerBedBlock(PALE_OAK_RED_BED);registerBedBlock(JUNGLE_RED_BED);registerBedBlock(MANGROVE_RED_BED);registerBedBlock(SPRUCE_RED_BED);registerBedBlock(WARPED_RED_BED);
         // BLACK
-        registerBedBlock(ACACIA_BLACK_BED);registerBedBlock(BAMBOO_BLACK_BED);registerBedBlock(BIRCH_BLACK_BED);registerBedBlock(CHERRY_BLACK_BED);registerBedBlock(CRIMSON_BLACK_BED);registerBedBlock(DARK_OAK_BLACK_BED);registerBedBlock(PALE_OAK_BLACK_BED);registerBedBlock(JUNGLE_BLACK_BED);registerBedBlock(MANGROVE_BLACK_BED);registerBedBlock(SPRUCE_BLACK_BED);registerBedBlock(WARPED_BLACK_BED);
+        registerBedBlock(ACACIA_BLACK_BED);registerBedBlock(BAMBOO_BLACK_BED);registerBoundBambooBedBlock(BOUND_BAMBOO_BLACK_BED);registerBoundBambooBedBlock(STRIPPED_BOUND_BAMBOO_BLACK_BED);registerBedBlock(BIRCH_BLACK_BED);registerBedBlock(CHERRY_BLACK_BED);registerBedBlock(CRIMSON_BLACK_BED);registerBedBlock(DARK_OAK_BLACK_BED);registerBedBlock(PALE_OAK_BLACK_BED);registerBedBlock(JUNGLE_BLACK_BED);registerBedBlock(MANGROVE_BLACK_BED);registerBedBlock(SPRUCE_BLACK_BED);registerBedBlock(WARPED_BLACK_BED);
 
-
+        List<Block> planks_beds = more_beds; planks_beds.removeAll(more_bound_bamboo_beds);
         MORE_BED_VARIANT_BLOCK_ENTITY =
                 Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE,
                         MoreBedVariants.asId("more_bed_variants"),
-                        FabricBlockEntityTypeBuilder.create(MoreBedVariantBlockEntity::new, MbdvBlockInit.more_beds.toArray(Block[]::new))
+                        FabricBlockEntityTypeBuilder.create(MoreBedVariantBlockEntity::new, planks_beds.toArray(Block[]::new))
+                                .build());
+        BOUND_BAMBOO_BED_BLOCK_ENTITY =
+                Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE,
+                        MoreBedVariants.asId("more_bound_bamboo_beds"),
+                        FabricBlockEntityTypeBuilder.create(BoundBambooBedBlockEntity::new, more_bound_bamboo_beds.toArray(Block[]::new))
                                 .build());
 
     }
@@ -272,5 +315,10 @@ public class MbdvBlockInit {
         Registry.register(BuiltInRegistries.BLOCK, MoreBedVariants.asId(bed.bedWoodType + "_" + bed.bedColor + "_bed"), bed);
         more_beds.add(bed);
         MbdvPointOfInterestTypes.registerBedHeadAsPoiBlock(bed);
+    }
+
+    private static void registerBoundBambooBedBlock(MoreBedVariantBlock bed) {
+        more_bound_bamboo_beds.add(bed);
+        registerBedBlock(bed);
     }
 }

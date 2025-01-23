@@ -4,17 +4,21 @@ import de.pnku.mbdv.MoreBedVariants;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.core.Direction;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.level.block.BedBlock;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.entity.BedBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BedPart;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.VoxelShape;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 
@@ -39,8 +43,62 @@ public class MoreBedVariantBlock extends BedBlock {
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
+        if (this.bedWoodType.contains("bound_bamboo")){
+            return new BoundBambooBedBlockEntity(pos, state);
+        } else {
             return new MoreBedVariantBlockEntity(pos, state);
+        }
     }
+
+    /*
+     * Adapted from: BetterBeds
+     * Original Author: Motschen/TeamMidnightDust
+     * Source: https://github.com/TeamMidnightDust/BetterBeds/blob/main/common/src/main/java/eu/midnightdust/betterbeds/mixin/MixinBedBlock.java
+     * Description: The following two methods have been adapted from TeamMidnightDust's BetterBeds.
+     */
+            @Override
+            protected @NotNull RenderShape getRenderShape(BlockState state){
+                if (this.bedWoodType.contains("bound_bamboo")){
+                    return RenderShape.MODEL;
+                } else {
+                    return RenderShape.ENTITYBLOCK_ANIMATED;
+                }
+            }
+
+            @Override
+            public boolean skipRendering(BlockState state, BlockState neighborState, Direction offset) {
+                if (this.bedWoodType.contains("bound_bamboo")){
+                    return neighborState.getBlock() instanceof MoreBedVariantBlock || neighborState.getBlock() instanceof BedBlock;
+                } else {
+                    return false;
+                }
+            }
+    /**/
+
+    @Override
+    protected @NotNull VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+        if (this.bedWoodType.contains("bound_bamboo")){
+            // From SlabBlock -> Bottom Shape
+            return Block.box((double)0.0F, (double)0.0F, (double)0.0F, (double)16.0F, (double)8.0F, (double)16.0F);
+        } else {
+            Direction direction = getConnectedDirection(state).getOpposite();
+            switch (direction) {
+                case NORTH -> {
+                    return NORTH_SHAPE;
+                }
+                case SOUTH -> {
+                    return SOUTH_SHAPE;
+                }
+                case WEST -> {
+                    return WEST_SHAPE;
+                }
+                default -> {
+                    return EAST_SHAPE;
+                }
+            }
+        }
+    }
+
     public Item getPlanksItem(String planksWood) {
         switch (planksWood) {
             case "acacia" -> {
