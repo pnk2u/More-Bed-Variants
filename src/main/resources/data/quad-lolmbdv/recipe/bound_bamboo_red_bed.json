@@ -3,12 +3,8 @@
   "category": "building",
   "group": "bed_from_planks",
   "key": {
-    "W": {
-      "item": "minecraft:red_wool"
-    },
-    "_": {
-      "item": "minecraft:bamboo_block"
-    }
+    "W": "minecraft:red_wool",
+    "_": "minecraft:bamboo_block"
   },
   "pattern": [
     "WWW",

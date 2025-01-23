@@ -3,12 +3,8 @@
   "category": "building",
   "group": "bed",
   "ingredients": [
-    {
-      "tag": "quad-lolmbdv:bound_bamboo_beds"
-    },
-    {
-      "item": "minecraft:purple_dye"
-    }
+    "#quad-lolmbdv:bound_bamboo_beds",
+    "minecraft:purple_dye"
   ],
   "result": {
     "count": 1,
