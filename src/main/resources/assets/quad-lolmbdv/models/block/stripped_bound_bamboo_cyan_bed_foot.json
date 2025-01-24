@@ -1,0 +1,7 @@
+{
+  "parent": "quad-lolmbdv:block/template_bound_bamboo_bed_foot",
+  "textures": {
+    "bed": "quad-lolmbdv:block/stripped_bound_bamboo_cyan_bed",
+    "particle": "block/cyan_wool"
+  }
+}

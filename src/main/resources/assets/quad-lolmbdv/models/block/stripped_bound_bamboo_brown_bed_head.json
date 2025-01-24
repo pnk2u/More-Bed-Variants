@@ -1,0 +1,7 @@
+{
+  "parent": "quad-lolmbdv:block/template_bound_bamboo_bed_head",
+  "textures": {
+    "bed": "quad-lolmbdv:block/stripped_bound_bamboo_brown_bed",
+    "particle": "block/brown_wool"
+  }
+}

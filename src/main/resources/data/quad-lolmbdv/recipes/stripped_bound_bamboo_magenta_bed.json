@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "bed_from_planks",
+  "key": {
+    "W": {
+      "item": "minecraft:magenta_wool"
+    },
+    "_": {
+      "item": "minecraft:stripped_bamboo_block"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "___"
+  ],
+  "result": {
+    "count": 2,
+    "id": "quad-lolmbdv:stripped_bound_bamboo_magenta_bed"
+  }
+}
