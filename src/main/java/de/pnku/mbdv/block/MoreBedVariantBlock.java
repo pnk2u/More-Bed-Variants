@@ -54,7 +54,8 @@ public class MoreBedVariantBlock extends BedBlock {
      * Description: The following two methods have been adapted from TeamMidnightDust's BetterBeds.
      */
             @Override
-            protected @NotNull RenderShape getRenderShape(BlockState state){
+            @NotNull
+            public RenderShape getRenderShape(BlockState state){
                 if (this.bedWoodType.contains("bound_bamboo")){
                     return RenderShape.MODEL;
                 } else {
@@ -73,7 +74,8 @@ public class MoreBedVariantBlock extends BedBlock {
     /**/
 
     @Override
-    protected @NotNull VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+    @NotNull
+    public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
         if (this.bedWoodType.contains("bound_bamboo")){
             // From SlabBlock -> Bottom Shape
             return Block.box((double)0.0F, (double)0.0F, (double)0.0F, (double)16.0F, (double)8.0F, (double)16.0F);
