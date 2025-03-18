@@ -22,6 +22,7 @@ import net.minecraft.world.level.block.ChestBlock;
 import net.minecraft.world.level.block.DoubleBlockCombiner;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BedPart;
+import net.minecraft.world.phys.Vec3;
 
 import static de.pnku.mbdv.init.MbdvBlockInit.MORE_BED_VARIANT_BLOCK_ENTITY;
 
@@ -35,7 +36,7 @@ public class MoreBedVariantRenderer implements BlockEntityRenderer<MoreBedVarian
         }
 
         @Override
-        public void render(MoreBedVariantBlockEntity bed, float partialTicks, PoseStack poseStack, MultiBufferSource buffer, int combinedLight, int combinedOverlay) {
+        public void render(MoreBedVariantBlockEntity bed, float partialTicks, PoseStack poseStack, MultiBufferSource buffer, int combinedLight, int combinedOverlay, Vec3 vec3) {
             Material material = new Material(Sheets.BED_SHEET, MoreBedVariants.asId("entity/bed/" + ((MoreBedVariantBlockEntity) bed).woodType + "_" + bed.getColor() + "_bed"));
             Level level = bed.getLevel();
             if (level != null) {

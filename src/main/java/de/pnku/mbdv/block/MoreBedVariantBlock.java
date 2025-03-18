@@ -1,6 +1,9 @@
 package de.pnku.mbdv.block;
 
+import com.mojang.math.OctahedralGroup;
+import com.mojang.math.Quadrant;
 import de.pnku.mbdv.MoreBedVariants;
+import net.minecraft.Util;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -21,10 +24,14 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Map;
+
 
 public class MoreBedVariantBlock extends BedBlock {
     public final String bedWoodType;
     public final String bedColor;
+
+    private static final Map SHAPES;
 
     public MoreBedVariantBlock(DyeColor dyeColour, MapColor mapColour, String bedWoodType, String bedColor) {
         super(dyeColour, Properties.ofFullCopy(Blocks.WHITE_BED).mapColor(mapColour).setId(ResourceKey.create(Registries.BLOCK, MoreBedVariants.asId(bedWoodType + "_" + bedColor + "_bed"))));
@@ -81,22 +88,16 @@ public class MoreBedVariantBlock extends BedBlock {
             // From SlabBlock -> Bottom Shape
             return Block.box((double)0.0F, (double)0.0F, (double)0.0F, (double)16.0F, (double)8.0F, (double)16.0F);
         } else {
-            Direction direction = getConnectedDirection(state).getOpposite();
-            switch (direction) {
-                case NORTH -> {
-                    return NORTH_SHAPE;
-                }
-                case SOUTH -> {
-                    return SOUTH_SHAPE;
-                }
-                case WEST -> {
-                    return WEST_SHAPE;
-                }
-                default -> {
-                    return EAST_SHAPE;
-                }
-            }
+            return (VoxelShape)SHAPES.get(getConnectedDirection(state).getOpposite());
         }
+    }
+
+    static {
+        SHAPES = Util.make(() -> {
+            VoxelShape voxelShape = Block.box((double)0.0F, (double)0.0F, (double)0.0F, (double)3.0F, (double)3.0F, (double)3.0F);
+            VoxelShape voxelShape2 = Shapes.rotate(voxelShape, OctahedralGroup.fromXYAngles(Quadrant.R0, Quadrant.R90));
+            return Shapes.rotateHorizontal(Shapes.or(Block.column((double)16.0F, (double)3.0F, (double)9.0F), new VoxelShape[]{voxelShape, voxelShape2}));
+        });
     }
 
     public Item getPlanksItem(String planksWood) {
