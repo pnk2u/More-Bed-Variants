@@ -36,7 +36,7 @@ fabricApi {
 	//configureDataGeneration()
 }
 
-def getMostRecentParchmentVersion(minecraftVersion) {
+def getParchmentWithDecrementedMC(minecraftVersion) {
 	def url = 'https://versioning.parchmentmc.org/versions'
 	def json = new JsonSlurper().parseText(new URI(url).toURL().text)
 	def releases = json.releases
@@ -44,9 +44,11 @@ def getMostRecentParchmentVersion(minecraftVersion) {
 	// Truncate version after first non-integer/dot
 	def releaseVersion = minecraftVersion.replaceAll(/[^0-9.].*/, '')
 
-	def versionParts = releaseVersion.split('\\.')
-	if (versionParts.length < 3) throw new GradleException("Invalid Minecraft version format: $minecraftVersion")
-	def (major, minor, patch) = versionParts*.toInteger()
+	def versionParts = releaseVersion.toString().split('\\.')
+	if (versionParts.size() == 2) versionParts << "0"
+	if (versionParts.size() < 2 || versionParts.size() > 3) throw new GradleException("Invalid Minecraft version format: $minecraftVersion")
+	def (major, minor, patch) = versionParts.collect {it as Integer}
+	def decrementedVersion = patch < 1 ? "$major.${minor - 1}.99" : "$major.$minor.${patch - 1}"
 
 	while (!releases["$major.$minor.$patch"]) {
 		if (patch > 0) {
@@ -62,13 +64,13 @@ def getMostRecentParchmentVersion(minecraftVersion) {
 	if (releases[foundVersion]) {
 		def parchmentDate = releases[foundVersion]
 		logger.print("Parchment: " + foundVersion + " + " + parchmentDate as String + "\n")
-		return [foundVersion, parchmentDate]
+		return [decrementedVersion, foundVersion, parchmentDate]
 	}
 
 	throw new GradleException("No valid Parchment version found for $minecraftVersion or earlier.")
 }
 
-def (pMinecraftVersion, mostRecentParchmentDate) = getMostRecentParchmentVersion(project.minecraft_version)
+def (decrementedVersion, pMinecraftVersion, mostRecentParchmentDate) = getParchmentWithDecrementedMC(project.minecraft_version)
 
 dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
@@ -84,7 +86,7 @@ processResources {
 	var replaceProperties = [
 			loader_version: loader_version, mod_id: mod_id, mod_name: mod_name,
 			mod_license: mod_license, mod_version: mod_version, mod_authors: mod_authors,
-			mod_description: mod_description, quad_version: quad_version
+			mod_description: mod_description, quad_version: quad_version, minecraft_version_0: decrementedVersion
 	]
 	inputs.properties replaceProperties
 
