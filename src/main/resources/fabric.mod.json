@@ -9,7 +9,7 @@
 	],
 	"contact": {
 		"email": "contact@pnku.de",
-		"homepage": "https://pnku.de/",
+		"homepage": "https://www.pnku.de/",
 		"sources": "https://github.com/pnk2u/More-Bed-Variants",
 		"issues": "https://github.com/pnk2u/More-Bed-Variants/issues"
 	},
@@ -17,11 +17,8 @@
 	"icon": "logo.png",
 	"environment": "*",
 	"entrypoints": {
-		"fabric-datagen": [
-			"de.pnku.mbdv.MoreBedVariantDatagen"
-		],
 		"main": [
-          "de.pnku.mbdv.MoreBedVariants"
+			"de.pnku.mbdv.MoreBedVariants"
 		],
 		"client": [
 			"de.pnku.mbdv.MoreBedVariantsClient"
@@ -30,7 +27,7 @@
 	"accessWidener": "quad-lolmbdv.accesswidener",
 	"depends": {
 		"fabricloader": ">=${loader_version}",
-		"minecraft": ">=1.21",
+		"minecraft": ">${minecraft_version_0}",
 		"java": ">=21",
 		"fabric-api": ">=0.100.0"
 	},
