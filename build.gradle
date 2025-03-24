@@ -1,5 +1,7 @@
+import groovy.json.JsonSlurper
+
 plugins {
-	id 'fabric-loom' version '1.9-SNAPSHOT'
+	id 'fabric-loom' version '1.10-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -30,17 +32,49 @@ loom {
 	accessWidenerPath = file("src/main/resources/quad-lolmbdv.accesswidener")
 }
 
-
-
 fabricApi {
-	configureDataGeneration()
+	//configureDataGeneration()
 }
+
+def getMostRecentParchmentVersion(minecraftVersion) {
+	def url = 'https://versioning.parchmentmc.org/versions'
+	def json = new JsonSlurper().parseText(new URI(url).toURL().text)
+	def releases = json.releases
+
+	// Truncate version after first non-integer/dot
+	def releaseVersion = minecraftVersion.replaceAll(/[^0-9.].*/, '')
+
+	def versionParts = releaseVersion.split('\\.')
+	if (versionParts.length < 3) throw new GradleException("Invalid Minecraft version format: $minecraftVersion")
+	def (major, minor, patch) = versionParts*.toInteger()
+
+	while (!releases["$major.$minor.$patch"]) {
+		if (patch > 0) {
+			patch--
+		} else {
+			if (minor == 0) break
+			minor--
+			patch = 7
+		}
+	}
+
+	def foundVersion = "$major.$minor.$patch"
+	if (releases[foundVersion]) {
+		def parchmentDate = releases[foundVersion]
+		logger.print("Parchment: " + foundVersion + " + " + parchmentDate as String + "\n")
+		return [foundVersion, parchmentDate]
+	}
+
+	throw new GradleException("No valid Parchment version found for $minecraftVersion or earlier.")
+}
+
+def (pMinecraftVersion, mostRecentParchmentDate) = getMostRecentParchmentVersion(project.minecraft_version)
 
 dependencies {
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings loom.layered() {
 		officialMojangMappings()
-		parchment("org.parchmentmc.data:parchment-${project.minecraft_version}:${project.parchment_date}@zip")
+		parchment("org.parchmentmc.data:parchment-${pMinecraftVersion}:${mostRecentParchmentDate}@zip")
 	}
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
