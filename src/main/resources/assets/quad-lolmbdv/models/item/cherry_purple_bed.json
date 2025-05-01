@@ -1,6 +1,9 @@
 {
-  "parent": "minecraft:item/template_bed",
-  "textures": {
-    "particle": "minecraft:block/purple_wool"
-  }
+  "parent": "quad-lolmbdv:item/bed",
+  "textures":
+    {
+     "bed": "minecraft:entity/bed/purple",
+     "bed_frame": "quad-lolmbdv:entity/bed/cherry",
+     "particle": "minecraft:block/cherry_planks"
+    }
 }

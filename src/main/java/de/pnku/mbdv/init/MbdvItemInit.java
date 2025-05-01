@@ -275,13 +275,13 @@ public class MbdvItemInit {
     }
 
     private static void registerWhiteBedItem(BlockItem whiteBed, Item bedAfter) {
-        Registry.register(BuiltInRegistries.ITEM, MoreBedVariants.asId(((MoreBedVariantBlock) whiteBed.getBlock()).bedWoodType + "_" + ((MoreBedVariantBlock) whiteBed.getBlock()).bedColor + "_bed"), whiteBed);
+        Registry.register(BuiltInRegistries.ITEM, MoreBedVariants.withModId(((MoreBedVariantBlock) whiteBed.getBlock()).bedWoodType + "_" + ((MoreBedVariantBlock) whiteBed.getBlock()).bedColor + "_bed"), whiteBed);
 
         ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.COLORED_BLOCKS).register(entries -> entries.addAfter(bedAfter, whiteBed));
         more_bed_items.add(whiteBed);
     }
     private static void registerOtherBedItem (BlockItem otherBed) {
-        Registry.register(BuiltInRegistries.ITEM, MoreBedVariants.asId(((MoreBedVariantBlock) otherBed.getBlock()).bedWoodType + "_" + ((MoreBedVariantBlock) otherBed.getBlock()).bedColor + "_bed"), otherBed);
+        Registry.register(BuiltInRegistries.ITEM, MoreBedVariants.withModId(((MoreBedVariantBlock) otherBed.getBlock()).bedWoodType + "_" + ((MoreBedVariantBlock) otherBed.getBlock()).bedColor + "_bed"), otherBed);
 
         more_bed_items.add(otherBed);
     }

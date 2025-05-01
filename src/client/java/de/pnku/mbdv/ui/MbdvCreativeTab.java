@@ -20,6 +20,6 @@ public class MbdvCreativeTab extends CreativeModeTabs {
     }));
 
     public static void registerMbdvCreativeTab() {
-        COLORED_BEDS = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, MoreBedVariants.asId("colored_beds"), MBDV_CMT_BUILDER.build());
+        COLORED_BEDS = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, MoreBedVariants.withModId("colored_beds"), MBDV_CMT_BUILDER.build());
     }
 }

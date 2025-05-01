@@ -1,6 +1,8 @@
 {
-  "parent": "minecraft:item/template_bed",
-  "textures": {
-    "particle": "minecraft:block/lime_wool"
-  }
+  "parent": "quad-lolmbdv:item/bed",
+  "textures":
+    {
+     "bed": "quad-lolmbdv:entity/bed/dark_oak_lime_bed",
+     "particle": "minecraft:block/dark_oak_planks"
+    }
 }
