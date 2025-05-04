@@ -1,9 +1,9 @@
 {
   "required": false,
-  "package": "de.pnku.mbdv.mixin.client",
+  "package": "de.pnku.mbdv.mixin",
   "compatibilityLevel": "JAVA_21",
-  "client": [
-    "BlockEntityRenderersMixin"
+  "mixins": [
+    "BedBlockMixin"
   ],
   "injectors": {
     "defaultRequire": 1

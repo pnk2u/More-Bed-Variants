@@ -3,8 +3,6 @@ package de.pnku.mbdv.block;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.DyeColor;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -47,7 +45,7 @@ public class MoreBedVariantBlock extends BedBlock {
      * <b>Adapted from:</b> <i>BetterBeds</i> <br>
      * <b>Original Author:</b> <i>Motschen/TeamMidnightDust</i> <br>
      * <b>Source:</b> <a href="https://github.com/TeamMidnightDust/BetterBeds/blob/main/common/src/main/java/eu/midnightdust/betterbeds/mixin/MixinBedBlock.java">MixinBedBlock</a> <br>
-     * <b>Description:</b> The following two methods (<code>getRenderShape</code> and <code>skipRendering</code>) have been adapted from <i>TeamMidnightDust</i>'s <i>BetterBeds</i>. <br>
+     * <b>Description:</b> The following two methods (<code>getRenderShape</code> and <code>skipRendering</code>) have been adapted from <i>Motschen</i>'s <i>BetterBeds</i>. <br>
      **/
             @Override
             protected @NotNull RenderShape getRenderShape(BlockState state){

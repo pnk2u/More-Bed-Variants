@@ -1,8 +1,0 @@
-{
-  "parent": "quad-lolmbdv:item/bed",
-  "textures":
-    {
-     "bed": "quad-lolmbdv:entity/bed/cherry_light_blue_bed",
-     "particle": "minecraft:block/cherry_planks"
-    }
-}

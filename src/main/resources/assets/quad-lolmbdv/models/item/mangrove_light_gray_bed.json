@@ -1,8 +1,0 @@
-{
-  "parent": "quad-lolmbdv:item/bed",
-  "textures":
-    {
-     "bed": "quad-lolmbdv:entity/bed/mangrove_light_gray_bed",
-     "particle": "minecraft:block/mangrove_planks"
-    }
-}
