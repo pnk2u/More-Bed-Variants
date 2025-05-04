@@ -25,10 +25,10 @@ public abstract class BedBlockMixin extends HorizontalDirectionalBlock {
         super(properties);
     }
 
-    @Override
-    public @NotNull RenderShape getRenderShape(BlockState state){
-        return RenderShape.MODEL;
-    }
+//    @Override
+//    public @NotNull RenderShape getRenderShape(BlockState state){
+//        return RenderShape.MODEL;
+//    }
 
     @Override
     protected boolean skipRendering(BlockState state, BlockState neighborState, Direction offset) {

@@ -22,14 +22,14 @@ public class MoreBedVariantBlock extends BedBlock {
     public final String bedColor;
 
     public MoreBedVariantBlock(DyeColor dyeColour, MapColor mapColour, String bedWoodType, String bedColor) {
-        super(dyeColour, Properties.ofFullCopy(Blocks.WHITE_BED).mapColor(mapColour).setId(ResourceKey.create(Registries.BLOCK, MoreBedVariants.asId(bedWoodType + "_" + bedColor + "_bed"))));
+        super(dyeColour, Properties.ofFullCopy(Blocks.WHITE_BED).mapColor(mapColour).setId(ResourceKey.create(Registries.BLOCK, MoreBedVariants.withModId(bedWoodType + "_" + bedColor + "_bed"))));
         this.bedWoodType = bedWoodType;
         this.bedColor = bedColor;
         this.registerDefaultState(this.getStateDefinition().any().setValue(PART, BedPart.FOOT).setValue(OCCUPIED, false));
     }
 
     public MoreBedVariantBlock(DyeColor dyeColour, MapColor colour, SoundType sound, String bedWoodType, String bedColor) {
-        super(dyeColour, Properties.ofFullCopy(Blocks.WHITE_BED).mapColor(colour).setId(ResourceKey.create(Registries.BLOCK, MoreBedVariants.asId(bedWoodType + "_" + bedColor + "_bed"))).sound(sound));
+        super(dyeColour, Properties.ofFullCopy(Blocks.WHITE_BED).mapColor(colour).setId(ResourceKey.create(Registries.BLOCK, MoreBedVariants.withModId(bedWoodType + "_" + bedColor + "_bed"))).sound(sound));
         this.bedWoodType = bedWoodType;
         this.bedColor = bedColor;
         this.registerDefaultState(this.getStateDefinition().any().setValue(PART, BedPart.FOOT).setValue(OCCUPIED, false));
