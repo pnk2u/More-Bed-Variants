@@ -1,15 +1,35 @@
 package de.pnku.mbdv;
 
-import de.pnku.mbdv.init.MbdvBlockInit;
-import de.pnku.mbdv.renderer.MoreBedVariantRenderer;
 import de.pnku.mbdv.ui.MbdvCreativeTab;
 import net.fabricmc.api.ClientModInitializer;
-import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
+import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
+import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
+import net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.network.chat.Component;
+
+import static de.pnku.mbdv.MoreBedVariants.*;
+
 public class MoreBedVariantsClient implements ClientModInitializer {
 
     @Override
     public void onInitializeClient() {
-        BlockEntityRenderers.register(MbdvBlockInit.MORE_BED_VARIANT_BLOCK_ENTITY, MoreBedVariantRenderer::new);
+        if (FabricLoader.getInstance().isModLoaded("enhancedblockentities")) {
+            ResourceManagerHelper.registerBuiltinResourcePack(
+                    withModId("enhanced-beds-lighting-fix"),
+                    FabricLoader.getInstance().getModContainer(MODID).orElseThrow(),
+                    Component.translatable("resourcepack.quad-lolmbdv.enhanced-beds-lighting-fix.title"),
+                    ResourcePackActivationType.ALWAYS_ENABLED);
+        }
+            ResourceManagerHelper.registerBuiltinResourcePack(
+                    withModId("more-fancy-bed-variants"),
+                    FabricLoader.getInstance().getModContainer(MODID).orElseThrow(),
+                    Component.translatable("resourcepack.quad-lolmbdv.more-fancy-bed-variants.title"),
+                    ResourcePackActivationType.NORMAL);
+            ResourceManagerHelper.registerBuiltinResourcePack(
+                    withModId("more-fancy-connected-bed-variants"),
+                    FabricLoader.getInstance().getModContainer(MODID).orElseThrow(),
+                    Component.translatable("resourcepack.quad-lolmbdv.more-fancy-connected-bed-variants.title"),
+                    ResourcePackActivationType.NORMAL);
         MbdvCreativeTab.registerMbdvCreativeTab();
     }
 }

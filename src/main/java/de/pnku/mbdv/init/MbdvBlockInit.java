@@ -300,19 +300,19 @@ public class MbdvBlockInit {
         List<Block> planks_beds = more_beds; planks_beds.removeAll(more_bound_bamboo_beds);
         MORE_BED_VARIANT_BLOCK_ENTITY =
                 Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE,
-                        MoreBedVariants.asId("more_bed_variants"),
+                        MoreBedVariants.withModId("more_bed_variants"),
                         FabricBlockEntityTypeBuilder.create(MoreBedVariantBlockEntity::new, planks_beds.toArray(Block[]::new))
                                 .build());
         BOUND_BAMBOO_BED_BLOCK_ENTITY =
                 Registry.register(BuiltInRegistries.BLOCK_ENTITY_TYPE,
-                        MoreBedVariants.asId("more_bound_bamboo_beds"),
+                        MoreBedVariants.withModId("more_bound_bamboo_beds"),
                         FabricBlockEntityTypeBuilder.create(BoundBambooBedBlockEntity::new, more_bound_bamboo_beds.toArray(Block[]::new))
                                 .build());
 
     }
 
     private static void registerBedBlock(MoreBedVariantBlock bed) {
-        Registry.register(BuiltInRegistries.BLOCK, MoreBedVariants.asId(bed.bedWoodType + "_" + bed.bedColor + "_bed"), bed);
+        Registry.register(BuiltInRegistries.BLOCK, MoreBedVariants.withModId(bed.bedWoodType + "_" + bed.bedColor + "_bed"), bed);
         more_beds.add(bed);
         MbdvPointOfInterestTypes.registerBedHeadAsPoiBlock(bed);
     }
