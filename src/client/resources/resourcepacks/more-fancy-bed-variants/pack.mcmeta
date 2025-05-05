@@ -1,10 +1,6 @@
 {
   "pack": {
     "description": {"translate":  "resourcepack.quad-lolmbdv.more-fancy-bed-variants.description"},
-    "pack_format": 34,
-    "supported_formats": {
-      "min_inclusive": 15,
-      "max_inclusive": 58
-    }
+    "pack_format": 15
   }
 }

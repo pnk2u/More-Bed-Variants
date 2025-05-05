@@ -18,7 +18,7 @@ public class MoreBedVariantsClient implements ClientModInitializer {
                     withModId("enhanced-beds-lighting-fix"),
                     FabricLoader.getInstance().getModContainer(MODID).orElseThrow(),
                     Component.translatable("resourcepack.quad-lolmbdv.enhanced-beds-lighting-fix.title"),
-                    ResourcePackActivationType.ALWAYS_ENABLED);
+                    ResourcePackActivationType.NORMAL);
         }
             ResourceManagerHelper.registerBuiltinResourcePack(
                     withModId("more-fancy-bed-variants"),

@@ -31,7 +31,7 @@ public abstract class BedBlockMixin extends HorizontalDirectionalBlock {
     }
 
     @Override
-    protected boolean skipRendering(BlockState state, BlockState neighborState, Direction offset) {
+    public boolean skipRendering(BlockState state, BlockState neighborState, Direction offset) {
         return neighborState.getBlock() instanceof MoreBedVariantBlock || neighborState.getBlock() instanceof BedBlock;
     }
 }
