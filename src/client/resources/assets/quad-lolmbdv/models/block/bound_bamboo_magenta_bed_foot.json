@@ -1,0 +1,8 @@
+{
+  "parent": "quad-lolmbdv:block/template_bound_bamboo_bed_foot",
+  "textures": {
+    "bed": "minecraft:entity/bed/magenta",
+    "bed_frame": "quad-lolmbdv:block/bound_bamboo_bed_frame",
+    "particle": "block/magenta_wool"
+  }
+}

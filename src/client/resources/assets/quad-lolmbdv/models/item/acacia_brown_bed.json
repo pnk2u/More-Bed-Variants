@@ -1,0 +1,9 @@
+{
+  "parent": "quad-lolmbdv:item/bed",
+  "textures":
+    {
+     "bed": "minecraft:entity/bed/brown",
+     "bed_frame": "quad-lolmbdv:entity/bed/acacia",
+     "particle": "minecraft:block/acacia_planks"
+    }
+}
