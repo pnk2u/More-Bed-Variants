@@ -35,7 +35,7 @@
 				"north": {"uv": [5.5, 7, 9.5, 5.5], "texture": "#bed"},
 				"east": {"uv": [1.5, 11, 0, 7], "rotation": 90, "texture": "#bed"},
 				"up": {"uv": [5.5, 11, 1.5, 7], "texture": "#bed"},
-				"down": {"uv": [7, 7, 11, 11], "texture": "#bed"}
+				"down": {"uv": [11, 11, 7, 7], "texture": "#bed"}
 			}
 		}
 	]
