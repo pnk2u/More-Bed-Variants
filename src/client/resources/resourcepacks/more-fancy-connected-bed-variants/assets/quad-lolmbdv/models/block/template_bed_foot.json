@@ -34,7 +34,7 @@
 				"west": {"uv": [6.5, 7, 7, 11], "rotation": 90, "texture": "#bed_frame"},
 				"north": {"uv": [5.5, 6, 9.5, 5.5], "texture": "#bed_frame"},
 				"east": {"uv": [0.5, 11, 0, 7], "rotation": 90, "texture": "#bed_frame"},
-				"down": {"uv": [7, 7, 11, 11], "texture": "#bed_frame"}
+				"down": {"uv": [11, 11, 7, 7], "texture": "#bed_frame"}
 			}
 		},
 		{
