@@ -1,0 +1,11 @@
+{
+  "required": false,
+  "package": "de.pnku.mbdv.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "BedBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

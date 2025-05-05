@@ -1,0 +1,9 @@
+{
+  "parent": "quad-lolmbdv:block/template_bed_head",
+  "textures":
+    {
+     "bed": "minecraft:entity/bed/red",
+     "bed_frame": "quad-lolmbdv:entity/bed/spruce",
+     "particle": "minecraft:block/spruce_planks"
+    }
+}
