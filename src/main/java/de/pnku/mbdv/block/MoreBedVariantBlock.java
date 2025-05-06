@@ -32,31 +32,19 @@ public class MoreBedVariantBlock extends BedBlock {
         this.registerDefaultState(this.getStateDefinition().any().setValue(PART, BedPart.FOOT).setValue(OCCUPIED, false));
     }
 
-    @Nullable
     @Override
-    public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
+    public @NotNull BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
         if (this.bedWoodType.contains("bound_bamboo")){
             return new BoundBambooBedBlockEntity(pos, state);
         } else {
             return new MoreBedVariantBlockEntity(pos, state);
         }
     }
-    /**
-     * <b>Adapted from:</b> <i>BetterBeds</i> <br>
-     * <b>Original Author:</b> <i>Motschen/TeamMidnightDust</i> <br>
-     * <b>Source:</b> <a href="https://github.com/TeamMidnightDust/BetterBeds/blob/main/common/src/main/java/eu/midnightdust/betterbeds/mixin/MixinBedBlock.java">MixinBedBlock</a> <br>
-     * <b>Description:</b> The following two methods (<code>getRenderShape</code> and <code>skipRendering</code>) have been adapted from <i>Motschen</i>'s <i>BetterBeds</i>. <br>
-     **/
-            @Override
-            protected @NotNull RenderShape getRenderShape(BlockState state){
-                    return RenderShape.MODEL;
-            }
 
-            @Override
-            public boolean skipRendering(BlockState state, BlockState neighborState, Direction offset) {
-                    return neighborState.getBlock() instanceof MoreBedVariantBlock || neighborState.getBlock() instanceof BedBlock;
-            }
-    /**/
+    @Override
+    public boolean skipRendering(BlockState state, BlockState neighborState, Direction face) {
+        return face.getAxis() != Direction.Axis.Y && neighborState.getBlock() instanceof BedBlock;
+    }
 
     @Override
     protected @NotNull VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
