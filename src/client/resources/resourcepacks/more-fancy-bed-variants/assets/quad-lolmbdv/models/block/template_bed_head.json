@@ -1,5 +1,5 @@
 {
-	"credit": "made by Motschen",
+	"credit": "pnku, adapted fromMotschen",
 	"texture_size": [64, 64],
 	"textures": {
 		"particle": "block/oak_planks"
