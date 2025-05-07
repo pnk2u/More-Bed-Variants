@@ -86,7 +86,7 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	// Compat: Better Beds / EBE
-	modRuntimeOnly "maven.modrinth:better-beds:${project.betterbeds_version}"
+	//modRuntimeOnly "maven.modrinth:better-beds:${project.betterbeds_version}"
 	//modRuntimeOnly "maven.modrinth:ebe:${project.ebe_version}"
 }
 
@@ -108,8 +108,6 @@ tasks.withType(JavaCompile).configureEach {
 }
 
 java {
-	withSourcesJar()
-
 	sourceCompatibility = JavaVersion.VERSION_17
 	targetCompatibility = JavaVersion.VERSION_17
 }
