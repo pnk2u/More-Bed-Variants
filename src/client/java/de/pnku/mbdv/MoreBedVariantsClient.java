@@ -25,18 +25,18 @@ public class MoreBedVariantsClient implements ClientModInitializer {
             ResourceManagerHelper.registerBuiltinResourcePack(
                     withModId("enhanced-beds-lighting-fix"),
                     FabricLoader.getInstance().getModContainer(MODID).orElseThrow(),
-                    Component.translatable("resourcepack.quad-lolmbdv.enhanced-beds-lighting-fix.title"),
+                    Component.translatable("resourcePack.quad-lolmbdv.enhanced-beds-lighting-fix.name"),
                     ResourcePackActivationType.ALWAYS_ENABLED);
         }
             ResourceManagerHelper.registerBuiltinResourcePack(
                     withModId("more-pillowed-bed-variants"),
                     FabricLoader.getInstance().getModContainer(MODID).orElseThrow(),
-                    Component.translatable("resourcepack.quad-lolmbdv.more-pillowed-bed-variants.title"),
+                    Component.translatable("resourcePack.quad-lolmbdv.more-pillowed-bed-variants.name"),
                     ResourcePackActivationType.NORMAL);
             ResourceManagerHelper.registerBuiltinResourcePack(
                     withModId("more-pillowed-connected-bed-variants"),
                     FabricLoader.getInstance().getModContainer(MODID).orElseThrow(),
-                    Component.translatable("resourcepack.quad-lolmbdv.more-pillowed-connected-bed-variants.title"),
+                    Component.translatable("resourcePack.quad-lolmbdv.more-pillowed-connected-bed-variants.name"),
                     ResourcePackActivationType.NORMAL);
 
         MbdvCreativeTab.registerMbdvCreativeTab();

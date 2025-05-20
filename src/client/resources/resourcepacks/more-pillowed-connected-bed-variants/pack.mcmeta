@@ -1,6 +1,6 @@
 {
   "pack": {
-    "description": {"translate":  "resourcepack.quad-lolmbdv.more-pillowed-connected-bed-variants.description"},
+    "description": {"translate":  "resourcePack.quad-lolmbdv.more-pillowed-connected-bed-variants.description"},
     "pack_format": 34,
     "supported_formats": {
       "min_inclusive": 15,
