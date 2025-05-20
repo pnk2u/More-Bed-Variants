@@ -6,13 +6,20 @@ import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-import static net.minecraft.world.level.block.BedBlock.*;
-
 public interface IBedShape {
     BooleanProperty mBedV$NORTH =   BlockStateProperties.NORTH;
     BooleanProperty mBedV$EAST =    BlockStateProperties.EAST;
     BooleanProperty mBedV$SOUTH =   BlockStateProperties.SOUTH;
     BooleanProperty mBedV$WEST =    BlockStateProperties.WEST;
+    VoxelShape BASE = Block.box((double)0.0F, (double)3.0F, (double)0.0F, (double)16.0F, (double)9.0F, (double)16.0F);
+    VoxelShape LEG_NORTH_WEST = Block.box((double)0.0F, (double)0.0F, (double)0.0F, (double)3.0F, (double)3.0F, (double)3.0F);
+    VoxelShape LEG_SOUTH_WEST = Block.box((double)0.0F, (double)0.0F, (double)13.0F, (double)3.0F, (double)3.0F, (double)16.0F);
+    VoxelShape LEG_NORTH_EAST = Block.box((double)13.0F, (double)0.0F, (double)0.0F, (double)16.0F, (double)3.0F, (double)3.0F);
+    VoxelShape LEG_SOUTH_EAST = Block.box((double)13.0F, (double)0.0F, (double)13.0F, (double)16.0F, (double)3.0F, (double)16.0F);
+    VoxelShape NORTH_SHAPE = Shapes.or(BASE, LEG_NORTH_WEST, LEG_NORTH_EAST);
+    VoxelShape SOUTH_SHAPE = Shapes.or(BASE, LEG_SOUTH_WEST, LEG_SOUTH_EAST);
+    VoxelShape WEST_SHAPE = Shapes.or(BASE, LEG_NORTH_WEST, LEG_SOUTH_WEST);
+    VoxelShape EAST_SHAPE = Shapes.or(BASE, LEG_NORTH_EAST, LEG_SOUTH_EAST);
     VoxelShape FLAT_SHAPE_LEG_NW = Shapes.or(BASE, LEG_NORTH_WEST);
     VoxelShape FLAT_SHAPE_LEG_NE = Shapes.or(BASE, LEG_NORTH_EAST);
     VoxelShape FLAT_SHAPE_LEG_SW = Shapes.or(BASE, LEG_SOUTH_WEST);
