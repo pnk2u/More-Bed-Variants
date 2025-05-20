@@ -103,6 +103,18 @@ processResources {
 	}
 }
 
+//blockstates/*.json Minifier
+
+tasks.named("processClientResources").configure {
+	doLast {
+		fileTree(dir: layout.buildDirectory.file("resources/"), include: ["**/blockstates/**/*.json"]).each { file ->
+			def content = file.text
+			content = content.replaceAll("\\s(?=[\\s\":\\[\\]{}])", "")
+			file.text = content
+		}
+	}
+}
+
 tasks.withType(JavaCompile).configureEach {
 	it.options.release = 21
 }

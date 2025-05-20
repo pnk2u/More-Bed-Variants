@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_bed_head_both_legs_connected",
+  "textures": {
+    "bed": "minecraft:entity/bed/black"
+  }
+}

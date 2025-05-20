@@ -1,0 +1,9 @@
+{
+  "parent": "quad-lolmbdv:block/template_bed_foot_both_legs_connected",
+  "textures":
+    {
+     "bed": "minecraft:entity/bed/brown",
+     "bed_frame": "quad-lolmbdv:entity/bed/crimson",
+     "particle": "minecraft:block/crimson_planks"
+    }
+}
