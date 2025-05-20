@@ -14,11 +14,5 @@
   "block.minecraft.purple_bed": "Violettes Eichenholzbett",
   "block.minecraft.red_bed": "Rotes Eichenholzbett",
   "block.minecraft.white_bed": "Weißes Eichenholzbett",
-  "block.minecraft.yellow_bed": "Gelbes Eichenholzbett",
-  "resourcepack.quad-lolmbdv.enhanced-beds-lighting-fix.title": "Bettbeleuchtungs-Fix für §o§dEBE§r",
-  "resourcepack.quad-lolmbdv.enhanced-beds-lighting-fix.description": "§o§dE§rnhanced §o§dB§rlock §o§dE§rntities",
-  "resourcepack.quad-lolmbdv.more-pillowed-bed-variants.title": "More §aPillowed§r Bed Variants",
-  "resourcepack.quad-lolmbdv.more-pillowed-bed-variants.description": "Ein §aKissen§r für §ljedes§r Bett.",
-  "resourcepack.quad-lolmbdv.more-pillowed-connected-bed-variants.title": "More §aPillowed§r (§eC§r) Bed Variants",
-  "resourcepack.quad-lolmbdv.more-pillowed-connected-bed-variants.description": "'§fMore §aPillowed§r§f Bed Variants§7', aber Betten sind '§ec§r§7onnected'."
+  "block.minecraft.yellow_bed": "Gelbes Eichenholzbett"
 }
