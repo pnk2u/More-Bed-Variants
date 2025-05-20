@@ -1,0 +1,9 @@
+{
+  "parent": "quad-lolmbdv:block/template_bed_head_left_leg_connected",
+  "textures":
+    {
+     "bed": "minecraft:entity/bed/blue",
+     "bed_frame": "quad-lolmbdv:entity/bed/warped",
+     "particle": "minecraft:block/warped_planks"
+    }
+}

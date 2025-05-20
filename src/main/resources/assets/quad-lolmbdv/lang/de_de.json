@@ -1,0 +1,7 @@
+{
+  "commands.setbedshape.warn": "§cBitte wähle die Bettform aus: \"§7§nvanilla§r§c\", \"§7§npillowed connected§r§c\" (§omit Kissen und verbunden§r§c) oder \"§7§npillowed unconnected§r§c\" (§omit Kissen unverbunden§r§c)",
+  "commands.setbedshape.vanilla": "§7Bettform: §fVanilla (§oflach§r§f)§r",
+  "commands.setbedshape.pillowed.warn": "§cBitte entscheide, ob die Bettformen verbunden sein sollen, indem du \"§7§nconnected§r§c\" (§overbunden§r§c) oder \"§7§nunconnected§r§c\" (§ounverbunden§r§c) hinzufügst.",
+  "commands.setbedshape.pillowed.connected": "§7Bettform: §fMit Kissen (§overbunden§r§f)§r",
+  "commands.setbedshape.pillowed.unconnected": "§7Bettform: §fMit Kissen (§ounverbunden§r§f)§r"
+}

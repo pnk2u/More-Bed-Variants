@@ -1,0 +1,7 @@
+{
+  "commands.setbedshape.warn": "§cPlease choose the bed shape by adding: \"§7§nvanilla§r§c\", \"§7§npillowed connected§r§c\" or \"§7§npillowed unconnected§r§c\"",
+  "commands.setbedshape.vanilla": "§7Set bed shape to: §fVanilla (§oflat§r§f)§r",
+  "commands.setbedshape.pillowed.warn": "§cPlease choose if bed shapes should connect or not by adding \"§7§nconnected§r§c\" or \"§7§nunconnected§r§c\".",
+  "commands.setbedshape.pillowed.connected": "§7Set bed shape to: §fPillowed (§oconnected§r§f)§r",
+  "commands.setbedshape.pillowed.unconnected": "§7Set bed shape to: §fPillowed (§ounconnected§r§f)§r"
+}

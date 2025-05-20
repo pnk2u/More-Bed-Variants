@@ -13,13 +13,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.util.Map;
 
-/**
-* <b>Adapted from:</b> <i>BetterBeds</i> <br>
-* <b>Original Author:</b> <i>Motschen/TeamMidnightDust</i> <br>
-* <b>Source:</b> <a href="https://github.com/TeamMidnightDust/BetterBeds/blob/main/common/src/main/java/eu/midnightdust/betterbeds/mixin/MixinBlockEntityRendererDispatcher.java">MixinBlockEntityRendererDispatcher</a> <br>
-* <b>Description:</b> This Mixin has been adapted from <i>Motschen</i>'s <i>BetterBeds</i>. <br>
-**/
-
 @Mixin(BlockEntityRenderers.class)
 public class BlockEntityRenderersMixin {
 

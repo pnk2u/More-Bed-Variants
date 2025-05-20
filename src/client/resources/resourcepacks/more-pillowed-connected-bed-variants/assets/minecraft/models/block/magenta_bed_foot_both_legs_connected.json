@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_bed_foot_both_legs_connected",
+  "textures": {
+    "bed": "minecraft:entity/bed/magenta"
+  }
+}

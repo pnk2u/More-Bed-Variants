@@ -1,0 +1,9 @@
+{
+  "parent": "quad-lolmbdv:block/template_bed_foot_left_leg_connected",
+  "textures":
+    {
+     "bed": "minecraft:entity/bed/pink",
+     "bed_frame": "quad-lolmbdv:entity/bed/jungle",
+     "particle": "minecraft:block/jungle_planks"
+    }
+}
