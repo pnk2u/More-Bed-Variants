@@ -1,5 +1,6 @@
 package de.pnku.mbdv.block;
 
+import de.pnku.mbdv.MoreBedVariants;
 import de.pnku.mbdv.util.IBedShape;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.loader.api.FabricLoader;

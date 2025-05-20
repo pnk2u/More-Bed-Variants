@@ -50,10 +50,10 @@ public class MoreBedVariantsClient implements ClientModInitializer {
                 }
 
                 @Override
-                public @NotNull CompletableFuture<Void> reload(PreparationBarrier preparationBarrier, ResourceManager resourceManager, ProfilerFiller preparationsProfiler, ProfilerFiller reloadProfiler, Executor backgroundExecutor, Executor gameExecutor) {
+                public @NotNull CompletableFuture<Void> reload(PreparationBarrier preparationBarrier, ResourceManager resourceManager, Executor backgroundExecutor, Executor gameExecutor) {
                     return CompletableFuture.runAsync(() -> {}, backgroundExecutor).thenCompose(preparationBarrier::wait).thenRunAsync(() ->
                     {
-                     BedShapeState.needsToBeChecked = true;
+                        BedShapeState.needsToBeChecked = true;
                     }, gameExecutor);
                 }
 
