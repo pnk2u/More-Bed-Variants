@@ -1,0 +1,63 @@
+{
+  "credit": "Made with Blockbench",
+  "texture_size": [64, 64],
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 4, 16],
+      "faces": {
+        "south": {"uv": [2, 1, 6, 0], "texture": "#bed_frame", "cullface": "south"},
+        "west": {"uv": [7, 2, 8, 6], "rotation": 90, "texture": "#bed_frame", "cullface": "west"},
+        "down": {"uv": [8, 0, 12, 4], "texture": "#bed_frame", "cullface": "down"}
+      }
+    },
+    {
+      "from": [0, 4, 0],
+      "to": [16, 8, 16],
+      "faces": {
+        "south": {"uv": [1.5, 1.5, 5.5, 0.5], "texture": "#bed", "cullface": "south"},
+        "west": {"uv": [5.5, 1.5, 6.5, 5.5], "rotation": 90, "texture": "#bed", "cullface": "west"},
+        "up": {"uv": [5.5, 5.5, 1.5, 1.5], "texture": "#bed"}
+      }
+    },
+    {
+      "from": [0, 8, 8],
+      "to": [16, 9, 16],
+      "faces": {
+        "north": {"uv": [1.5, 3.25, 5.5, 3.5], "texture": "#bed"},
+        "south": {"uv": [1.5, 1.5, 5.5, 1.75], "texture": "#bed", "cullface": "south"},
+        "west": {"uv": [5.25, 1.5, 5.5, 3.5], "rotation": 90, "texture": "#bed", "cullface": "west"},
+        "up": {"uv": [5.5, 3.5, 1.5, 1.5], "texture": "#bed"}
+      }
+    },
+    {
+      "from": [2, 9, 9],
+      "to": [11, 10, 14],
+      "faces": {
+        "north": {"uv": [1.75, 3.25, 5.25, 3.5], "texture": "#bed"},
+        "south": {"uv": [1.75, 0.5, 5.25, 0.75], "texture": "#bed"},
+        "west": {"uv": [2.25, 3.25, 2, 2], "rotation": 90, "texture": "#bed"},
+        "up": {"uv": [5, 3.25, 2.75, 2], "texture": "#bed"}
+      }
+    },
+    {
+      "from": [11, 9, 9],
+      "to": [16, 10, 14],
+      "faces": {
+        "north": {"uv": [1.75, 3.25, 5.25, 3.5], "texture": "#bed"},
+        "south": {"uv": [3.5, 2.25, 2.25, 2], "texture": "#bed"},
+        "up": {"uv": [3.5, 3.25, 2.25, 2], "texture": "#bed"}
+      }
+    },
+    {
+      "from": [3, 9, 14],
+      "to": [15, 10, 15],
+      "faces": {
+        "east": {"uv": [4.75, 2, 4.5, 1.75], "rotation": 90, "texture": "#bed"},
+        "south": {"uv": [1.75, 0.5, 5.25, 0.75], "texture": "#bed"},
+        "west": {"uv": [2.5, 2, 2.25, 1.75], "rotation": 90, "texture": "#bed"},
+        "up": {"uv": [4.75, 2, 2.25, 1.75], "texture": "#bed"}
+      }
+    }
+  ]
+}

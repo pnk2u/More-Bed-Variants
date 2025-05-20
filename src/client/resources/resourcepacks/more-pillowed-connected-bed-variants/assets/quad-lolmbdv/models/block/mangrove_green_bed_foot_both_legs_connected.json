@@ -1,0 +1,9 @@
+{
+  "parent": "quad-lolmbdv:block/template_bed_foot_both_legs_connected",
+  "textures":
+    {
+     "bed": "minecraft:entity/bed/green",
+     "bed_frame": "quad-lolmbdv:entity/bed/mangrove",
+     "particle": "minecraft:block/mangrove_planks"
+    }
+}

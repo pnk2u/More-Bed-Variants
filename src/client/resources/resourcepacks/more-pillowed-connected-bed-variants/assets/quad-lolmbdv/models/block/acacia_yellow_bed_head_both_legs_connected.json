@@ -1,0 +1,9 @@
+{
+  "parent": "quad-lolmbdv:block/template_bed_head_both_legs_connected",
+  "textures":
+    {
+     "bed": "minecraft:entity/bed/yellow",
+     "bed_frame": "quad-lolmbdv:entity/bed/acacia",
+     "particle": "minecraft:block/acacia_planks"
+    }
+}
