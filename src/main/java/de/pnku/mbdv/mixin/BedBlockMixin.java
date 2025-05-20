@@ -49,9 +49,9 @@ public abstract class BedBlockMixin extends HorizontalDirectionalBlock implement
         this.registerDefaultState(this.stateDefinition.any().setValue(PART, BedPart.FOOT).setValue(OCCUPIED, false).setValue(mBedV$NORTH, false).setValue(mBedV$EAST, false).setValue(mBedV$SOUTH, false).setValue(mBedV$WEST, false));
     }
 
-    @Override
-    public @NotNull RenderShape getRenderShape(BlockState state){
-        return RenderShape.MODEL;
+    @Inject(method = "getRenderShape", at = @At("HEAD"), cancellable = true)
+    public void injectedGetRenderShapeAtHead(BlockState state, CallbackInfoReturnable<RenderShape> cir){
+        cir.setReturnValue(RenderShape.MODEL);
     }
 
     @Override
