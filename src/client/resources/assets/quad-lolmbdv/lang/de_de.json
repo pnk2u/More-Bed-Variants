@@ -191,11 +191,5 @@
   "block.quad-lolmbdv.warped_purple_bed": "Violettes Wirrbett",
   "block.quad-lolmbdv.warped_red_bed": "Rotes Wirrbett",
   "block.quad-lolmbdv.warped_white_bed": "Weißes Wirrbett",
-  "block.quad-lolmbdv.warped_yellow_bed": "Gelbes Wirrbett",
-  "resourcepack.quad-lolmbdv.enhanced-beds-lighting-fix.title": "Bettbeleuchtungs-Fix für §o§dEBE§r",
-  "resourcepack.quad-lolmbdv.enhanced-beds-lighting-fix.description": "§o§dE§rnhanced §o§dB§rlock §o§dE§rntities",
-  "resourcepack.quad-lolmbdv.more-pillowed-bed-variants.title": "More §aPillowed§r Bed Variants",
-  "resourcepack.quad-lolmbdv.more-pillowed-bed-variants.description": "Ein §aKissen§r für §ljedes§r Bett.",
-  "resourcepack.quad-lolmbdv.more-pillowed-connected-bed-variants.title": "More §aPillowed§r (§eC§r) Bed Variants",
-  "resourcepack.quad-lolmbdv.more-pillowed-connected-bed-variants.description": "'§fMore §aPillowed§r§f Bed Variants§7', aber Betten sind '§ec§r§7onnected'."
+  "block.quad-lolmbdv.warped_yellow_bed": "Gelbes Wirrbett"
 }

@@ -191,11 +191,5 @@
   "block.quad-lolmbdv.warped_purple_bed": "Purple Warped Bed",
   "block.quad-lolmbdv.warped_red_bed": "Red Warped Bed",
   "block.quad-lolmbdv.warped_white_bed": "White Warped Bed",
-  "block.quad-lolmbdv.warped_yellow_bed": "Yellow Warped Bed",
-  "resourcepack.quad-lolmbdv.enhanced-beds-lighting-fix.title": "Bed Lighting Fix for §o§dEBE§r",
-  "resourcepack.quad-lolmbdv.enhanced-beds-lighting-fix.description": "§o§dE§rnhanced §o§dB§rlock §o§dE§rntities",
-  "resourcepack.quad-lolmbdv.more-pillowed-bed-variants.title": "More §aPillowed§r Bed Variants",
-  "resourcepack.quad-lolmbdv.more-pillowed-bed-variants.description": "Adds a §apillow§r to §lall§r beds.",
-  "resourcepack.quad-lolmbdv.more-pillowed-connected-bed-variants.title": "More §aPillowed§r (§eC§r) Bed Variants",
-  "resourcepack.quad-lolmbdv.more-pillowed-connected-bed-variants.description": "Same as '§fMore §aPillowed§r§f Bed Variants§7', but beds §ec§r§7onnect."
+  "block.quad-lolmbdv.warped_yellow_bed": "Yellow Warped Bed"
 }
