@@ -1,10 +1,18 @@
 {
-	"credit": "Adapted from FoundationGames' EBE",
+	"credit": "pnku",
 	"texture_size": [64, 64],
 	"textures": {
 		"particle": "block/oak_planks"
 	},
 	"elements": [
+		{
+			"from": [0.1, 2.5, 13],
+			"to": [3, 3.5, 15.9],
+			"faces": {
+				"south": {"uv": [13.25, 2.75, 14, 3], "texture": "#bed_frame", "cullface": "south"},
+				"west": {"uv": [12.5, 2.75, 13.25, 3], "texture": "#bed_frame", "cullface": "west"}
+			}
+		},
 		{
 			"from": [0, 0, 13],
 			"to": [3, 3, 16],
@@ -13,7 +21,15 @@
 				"east": {"uv": [14, 2.25, 14.75, 3], "texture": "#bed_frame"},
 				"south": {"uv": [13.25, 2.25, 14, 3], "texture": "#bed_frame", "cullface": "south"},
 				"west": {"uv": [12.5, 2.25, 13.25, 3], "texture": "#bed_frame", "cullface": "west"},
-				"down": {"uv": [14, 1.5, 14.75, 2.25], "rotation": 270, "texture": "#bed_frame", "cullface": "down"}
+				"down": {"uv": [14.75, 2.25, 14, 1.5], "rotation": 90, "texture": "#bed_frame"}
+			}
+		},
+		{
+			"from": [13, 2.5, 13],
+			"to": [15.9, 3.5, 15.9],
+			"faces": {
+				"east": {"uv": [13.25, 5.75, 14, 6], "texture": "#bed_frame", "cullface": "east"},
+				"south": {"uv": [12.5, 5.75, 13.25, 6], "texture": "#bed_frame", "cullface": "south"}
 			}
 		},
 		{
@@ -24,26 +40,35 @@
 				"east": {"uv": [13.25, 5.25, 14, 6], "texture": "#bed_frame", "cullface": "east"},
 				"south": {"uv": [12.5, 5.25, 13.25, 6], "texture": "#bed_frame", "cullface": "south"},
 				"west": {"uv": [14.75, 5.25, 15.5, 6], "texture": "#bed_frame"},
-				"down": {"uv": [14, 4.5, 14.75, 5.25], "rotation": 180, "texture": "#bed_frame", "cullface": "down"}
+				"down": {"uv": [14.75, 5.25, 14, 4.5], "texture": "#bed_frame"}
 			}
 		},
 		{
 			"from": [0, 3, 0],
 			"to": [16, 5, 16],
 			"faces": {
-				"east": {"uv": [0.5, 5.5, 0, 1.5], "rotation": 90, "texture": "#bed_frame"},
-				"south": {"uv": [5.5, 0.5, 1.5, 0], "texture": "#bed_frame"},
-				"west": {"uv": [6.5, 1.5, 7, 5.5], "rotation": 90, "texture": "#bed_frame"},
-				"down": {"uv": [7, 1.5, 11, 5.5], "rotation": 180, "texture": "#bed_frame"}
+				"east": {"uv": [0.5, 5.5, 0, 1.5], "rotation": 90, "texture": "#bed_frame", "cullface": "east"},
+				"south": {"uv": [5.5, 0.5, 1.5, 0], "texture": "#bed_frame", "cullface": "south"},
+				"west": {"uv": [6.5, 1.5, 7, 5.5], "rotation": 90, "texture": "#bed_frame", "cullface": "west"},
+				"down": {"uv": [7, 1.5, 11, 5.5], "texture": "#bed_frame"}
+			}
+		},
+		{
+			"from": [0.1, 4.5, 0],
+			"to": [15.9, 5.5, 15.9],
+			"faces": {
+				"east": {"uv": [0.75, 5.5, 0.5, 1.5], "rotation": 90, "texture": "#bed", "cullface": "east"},
+				"south": {"uv": [5.5, 0.75, 1.5, 0.5], "texture": "#bed", "cullface": "south"},
+				"west": {"uv": [6.25, 1.5, 6.5, 5.5], "rotation": 90, "texture": "#bed", "cullface": "west"}
 			}
 		},
 		{
 			"from": [0, 5, 0],
 			"to": [16, 9, 16],
 			"faces": {
-				"east": {"uv": [1.5, 5.5, 0.5, 1.5], "rotation": 90, "texture": "#bed"},
-				"south": {"uv": [5.5, 1.5, 1.5, 0.5], "texture": "#bed"},
-				"west": {"uv": [5.5, 1.5, 6.5, 5.5], "rotation": 90, "texture": "#bed"},
+				"east": {"uv": [1.5, 5.5, 0.5, 1.5], "rotation": 90, "texture": "#bed", "cullface": "east"},
+				"south": {"uv": [5.5, 1.5, 1.5, 0.5], "texture": "#bed", "cullface": "south"},
+				"west": {"uv": [5.5, 1.5, 6.5, 5.5], "rotation": 90, "texture": "#bed", "cullface": "west"},
 				"up": {"uv": [5.5, 5.5, 1.5, 1.5], "texture": "#bed"}
 			}
 		}

@@ -1,11 +1,19 @@
 package de.pnku.mbdv;
 
 import de.pnku.mbdv.ui.MbdvCreativeTab;
+import de.pnku.mbdv.util.BedShapeState;
 import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
-import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
+import net.fabricmc.fabric.api.resource.*;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.packs.PackType;
+import net.minecraft.server.packs.resources.ResourceManager;
+import net.minecraft.util.profiling.ProfilerFiller;
+import org.jetbrains.annotations.NotNull;
+
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.Executor;
 
 import static de.pnku.mbdv.MoreBedVariants.*;
 
@@ -17,19 +25,42 @@ public class MoreBedVariantsClient implements ClientModInitializer {
             ResourceManagerHelper.registerBuiltinResourcePack(
                     withModId("enhanced-beds-lighting-fix"),
                     FabricLoader.getInstance().getModContainer(MODID).orElseThrow(),
-                    Component.translatable("resourcepack.quad-lolmbdv.enhanced-beds-lighting-fix.title"),
+                    Component.translatable("resourcePack.quad-lolmbdv.enhanced-beds-lighting-fix.name"),
                     ResourcePackActivationType.NORMAL);
         }
             ResourceManagerHelper.registerBuiltinResourcePack(
-                    withModId("more-fancy-bed-variants"),
+                    withModId("more-pillowed-bed-variants"),
                     FabricLoader.getInstance().getModContainer(MODID).orElseThrow(),
-                    Component.translatable("resourcepack.quad-lolmbdv.more-fancy-bed-variants.title"),
+                    Component.translatable("resourcePack.quad-lolmbdv.more-pillowed-bed-variants.name"),
                     ResourcePackActivationType.NORMAL);
             ResourceManagerHelper.registerBuiltinResourcePack(
-                    withModId("more-fancy-connected-bed-variants"),
+                    withModId("more-pillowed-connected-bed-variants"),
                     FabricLoader.getInstance().getModContainer(MODID).orElseThrow(),
-                    Component.translatable("resourcepack.quad-lolmbdv.more-fancy-connected-bed-variants.title"),
+                    Component.translatable("resourcePack.quad-lolmbdv.more-pillowed-connected-bed-variants.name"),
                     ResourcePackActivationType.NORMAL);
+
         MbdvCreativeTab.registerMbdvCreativeTab();
+
+        ResourceManagerHelper.get(PackType.CLIENT_RESOURCES).registerReloadListener(
+            new IdentifiableResourceReloadListener() {
+                final ResourceLocation mBedVListener = withModId("resource_reload_listener");
+                @Override
+                public ResourceLocation getFabricId() {
+                    return mBedVListener;
+                }
+
+                @Override
+                public @NotNull CompletableFuture<Void> reload(PreparationBarrier preparationBarrier, ResourceManager resourceManager, ProfilerFiller preparationsProfiler, ProfilerFiller reloadProfiler, Executor backgroundExecutor, Executor gameExecutor) {
+                    return CompletableFuture.runAsync(() -> {}, backgroundExecutor).thenCompose(preparationBarrier::wait).thenRunAsync(() ->
+                    {
+                     BedShapeState.needsToBeChecked = true;
+                    }, gameExecutor);
+                }
+
+                @Override
+                public @NotNull String getName() {
+                    return mBedVListener.toString();
+                }
+        });
     }
 }

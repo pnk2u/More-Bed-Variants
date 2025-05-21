@@ -1,0 +1,124 @@
+{
+  "variants": {
+    "facing=south,part=head,east=false,west=false": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_head"
+    },
+    "facing=south,part=head,east=true,west=false": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_head_left_side_connected"
+    },
+    "facing=south,part=head,east=false,west=true": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_head_right_side_connected"
+    },
+    "facing=south,part=head,east=true,west=true": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_head_both_sides_connected"
+    },
+    "facing=south,part=foot,east=false,west=false": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_foot"
+    },
+    "facing=south,part=foot,east=false,west=true": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_foot"
+    },
+    "facing=south,part=foot,east=true,west=false": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_foot"
+    },
+    "facing=south,part=foot,east=true,west=true": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_foot_both_sides_connected"
+    },
+    "facing=west,part=head,north=false,south=false": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_head",
+      "y": 90
+    },
+    "facing=west,part=head,north=true,south=false": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_head_right_side_connected",
+      "y": 90
+    },
+    "facing=west,part=head,north=false,south=true": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_head_left_side_connected",
+      "y": 90
+    },
+    "facing=west,part=head,north=true,south=true": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_head_both_sides_connected",
+      "y": 90
+    },
+    "facing=west,part=foot,north=false,south=false": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_foot",
+      "y": 90
+    },
+    "facing=west,part=foot,north=false,south=true": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_foot",
+      "y": 90
+    },
+    "facing=west,part=foot,north=true,south=false": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_foot",
+      "y": 90
+    },
+    "facing=west,part=foot,north=true,south=true": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_foot_both_sides_connected",
+      "y": 90
+    },
+    "facing=north,part=head,east=false,west=false": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_head",
+      "y": 180
+    },
+    "facing=north,part=head,east=true,west=false": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_head_right_side_connected",
+      "y": 180
+    },
+    "facing=north,part=head,east=false,west=true": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_head_left_side_connected",
+      "y": 180
+    },
+    "facing=north,part=head,east=true,west=true": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_head_both_sides_connected",
+      "y": 180
+    },
+    "facing=north,part=foot,east=false,west=false": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_foot",
+      "y": 180
+    },
+    "facing=north,part=foot,east=false,west=true": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_foot",
+      "y": 180
+    },
+    "facing=north,part=foot,east=true,west=false": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_foot",
+      "y": 180
+    },
+    "facing=north,part=foot,east=true,west=true": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_foot_both_sides_connected",
+      "y": 180
+    },
+    "facing=east,part=head,north=false,south=false": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_head",
+      "y": 270
+    },
+    "facing=east,part=head,north=true,south=false": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_head_left_side_connected",
+      "y": 270
+    },
+    "facing=east,part=head,north=false,south=true": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_head_right_side_connected",
+      "y": 270
+    },
+    "facing=east,part=head,north=true,south=true": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_head_both_sides_connected",
+      "y": 270
+    },
+    "facing=east,part=foot,north=false,south=false": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_foot",
+      "y": 270
+    },
+    "facing=east,part=foot,north=false,south=true": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_foot",
+      "y": 270
+    },
+    "facing=east,part=foot,north=true,south=false": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_foot",
+      "y": 270
+    },
+    "facing=east,part=foot,north=true,south=true": {
+      "model": "quad-lolmbdv:block/bound_bamboo_purple_bed_foot_both_sides_connected",
+      "y": 270
+    }
+  }
+}

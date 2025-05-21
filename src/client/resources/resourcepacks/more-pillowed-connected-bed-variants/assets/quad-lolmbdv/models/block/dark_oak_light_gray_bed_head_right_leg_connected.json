@@ -1,0 +1,9 @@
+{
+  "parent": "quad-lolmbdv:block/template_bed_head_right_leg_connected",
+  "textures":
+    {
+     "bed": "minecraft:entity/bed/light_gray",
+     "bed_frame": "quad-lolmbdv:entity/bed/dark_oak",
+     "particle": "minecraft:block/dark_oak_planks"
+    }
+}
