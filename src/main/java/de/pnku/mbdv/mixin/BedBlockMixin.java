@@ -52,11 +52,6 @@ public abstract class BedBlockMixin extends HorizontalDirectionalBlock implement
     }
 
     @Override
-    public @NotNull RenderShape getRenderShape(BlockState state){
-        return RenderShape.MODEL;
-    }
-
-    @Override
     public boolean skipRendering(BlockState state, BlockState neighborState, Direction face) {
         boolean isHeightMatch;
         boolean isBoundBamboo = state.getBlock() instanceof MoreBedVariantBlock block && block.bedWoodType.contains("bound_bamboo");
