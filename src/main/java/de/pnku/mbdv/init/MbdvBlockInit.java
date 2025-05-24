@@ -28,7 +28,7 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock CHERRY_WHITE_BED = new MoreBedVariantBlock(DyeColor.WHITE, SoundType.CHERRY_WOOD, "cherry", "white");
     public static final MoreBedVariantBlock CRIMSON_WHITE_BED = new MoreBedVariantBlock(DyeColor.WHITE, SoundType.NETHER_WOOD, "crimson", "white");
     public static final MoreBedVariantBlock DARK_OAK_WHITE_BED = new MoreBedVariantBlock(DyeColor.WHITE, "dark_oak", "white");
-    public static final MoreBedVariantBlock PALE_OAK_WHITE_BED = new MoreBedVariantBlock(DyeColor.WHITE, MapColor.COLOR_BROWN, "pale_oak", "white");
+    public static final MoreBedVariantBlock PALE_OAK_WHITE_BED = new MoreBedVariantBlock(DyeColor.WHITE, "pale_oak", "white");
     public static final MoreBedVariantBlock JUNGLE_WHITE_BED = new MoreBedVariantBlock(DyeColor.WHITE, "jungle", "white");
     public static final MoreBedVariantBlock MANGROVE_WHITE_BED = new MoreBedVariantBlock(DyeColor.WHITE, "mangrove", "white");
     public static final MoreBedVariantBlock SPRUCE_WHITE_BED = new MoreBedVariantBlock(DyeColor.WHITE, "spruce", "white");
@@ -42,7 +42,7 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock CHERRY_ORANGE_BED = new MoreBedVariantBlock(DyeColor.ORANGE, SoundType.CHERRY_WOOD, "cherry", "orange");
     public static final MoreBedVariantBlock CRIMSON_ORANGE_BED = new MoreBedVariantBlock(DyeColor.ORANGE, SoundType.NETHER_WOOD, "crimson", "orange");
     public static final MoreBedVariantBlock DARK_OAK_ORANGE_BED = new MoreBedVariantBlock(DyeColor.ORANGE, "dark_oak", "orange");
-    public static final MoreBedVariantBlock PALE_OAK_ORANGE_BED = new MoreBedVariantBlock(DyeColor.ORANGE, MapColor.COLOR_BROWN, "pale_oak", "orange");
+    public static final MoreBedVariantBlock PALE_OAK_ORANGE_BED = new MoreBedVariantBlock(DyeColor.ORANGE, "pale_oak", "orange");
     public static final MoreBedVariantBlock JUNGLE_ORANGE_BED = new MoreBedVariantBlock(DyeColor.ORANGE, "jungle", "orange");
     public static final MoreBedVariantBlock MANGROVE_ORANGE_BED = new MoreBedVariantBlock(DyeColor.ORANGE, "mangrove", "orange");
     public static final MoreBedVariantBlock SPRUCE_ORANGE_BED = new MoreBedVariantBlock(DyeColor.ORANGE, "spruce", "orange");
@@ -56,7 +56,7 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock CHERRY_MAGENTA_BED = new MoreBedVariantBlock(DyeColor.MAGENTA, SoundType.CHERRY_WOOD, "cherry", "magenta");
     public static final MoreBedVariantBlock CRIMSON_MAGENTA_BED = new MoreBedVariantBlock(DyeColor.MAGENTA, SoundType.NETHER_WOOD, "crimson", "magenta");
     public static final MoreBedVariantBlock DARK_OAK_MAGENTA_BED = new MoreBedVariantBlock(DyeColor.MAGENTA, "dark_oak", "magenta");
-    public static final MoreBedVariantBlock PALE_OAK_MAGENTA_BED = new MoreBedVariantBlock(DyeColor.MAGENTA, MapColor.COLOR_BROWN, "pale_oak", "magenta");
+    public static final MoreBedVariantBlock PALE_OAK_MAGENTA_BED = new MoreBedVariantBlock(DyeColor.MAGENTA, "pale_oak", "magenta");
     public static final MoreBedVariantBlock JUNGLE_MAGENTA_BED = new MoreBedVariantBlock(DyeColor.MAGENTA, "jungle", "magenta");
     public static final MoreBedVariantBlock MANGROVE_MAGENTA_BED = new MoreBedVariantBlock(DyeColor.MAGENTA, "mangrove", "magenta");
     public static final MoreBedVariantBlock SPRUCE_MAGENTA_BED = new MoreBedVariantBlock(DyeColor.MAGENTA, "spruce", "magenta");
@@ -70,7 +70,7 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock CHERRY_LIGHT_BLUE_BED = new MoreBedVariantBlock(DyeColor.LIGHT_BLUE, SoundType.CHERRY_WOOD, "cherry", "light_blue");
     public static final MoreBedVariantBlock CRIMSON_LIGHT_BLUE_BED = new MoreBedVariantBlock(DyeColor.LIGHT_BLUE, SoundType.NETHER_WOOD, "crimson", "light_blue");
     public static final MoreBedVariantBlock DARK_OAK_LIGHT_BLUE_BED = new MoreBedVariantBlock(DyeColor.LIGHT_BLUE, "dark_oak", "light_blue");
-    public static final MoreBedVariantBlock PALE_OAK_LIGHT_BLUE_BED = new MoreBedVariantBlock(DyeColor.LIGHT_BLUE, MapColor.COLOR_BROWN, "pale_oak", "light_blue");
+    public static final MoreBedVariantBlock PALE_OAK_LIGHT_BLUE_BED = new MoreBedVariantBlock(DyeColor.LIGHT_BLUE, "pale_oak", "light_blue");
     public static final MoreBedVariantBlock JUNGLE_LIGHT_BLUE_BED = new MoreBedVariantBlock(DyeColor.LIGHT_BLUE, "jungle", "light_blue");
     public static final MoreBedVariantBlock MANGROVE_LIGHT_BLUE_BED = new MoreBedVariantBlock(DyeColor.LIGHT_BLUE, "mangrove", "light_blue");
     public static final MoreBedVariantBlock SPRUCE_LIGHT_BLUE_BED = new MoreBedVariantBlock(DyeColor.LIGHT_BLUE, "spruce", "light_blue");
@@ -84,7 +84,7 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock CHERRY_YELLOW_BED = new MoreBedVariantBlock(DyeColor.YELLOW, SoundType.CHERRY_WOOD, "cherry", "yellow");
     public static final MoreBedVariantBlock CRIMSON_YELLOW_BED = new MoreBedVariantBlock(DyeColor.YELLOW, SoundType.NETHER_WOOD, "crimson", "yellow");
     public static final MoreBedVariantBlock DARK_OAK_YELLOW_BED = new MoreBedVariantBlock(DyeColor.YELLOW, "dark_oak", "yellow");
-    public static final MoreBedVariantBlock PALE_OAK_YELLOW_BED = new MoreBedVariantBlock(DyeColor.YELLOW, MapColor.COLOR_BROWN, "pale_oak", "yellow");
+    public static final MoreBedVariantBlock PALE_OAK_YELLOW_BED = new MoreBedVariantBlock(DyeColor.YELLOW, "pale_oak", "yellow");
     public static final MoreBedVariantBlock JUNGLE_YELLOW_BED = new MoreBedVariantBlock(DyeColor.YELLOW, "jungle", "yellow");
     public static final MoreBedVariantBlock MANGROVE_YELLOW_BED = new MoreBedVariantBlock(DyeColor.YELLOW, "mangrove", "yellow");
     public static final MoreBedVariantBlock SPRUCE_YELLOW_BED = new MoreBedVariantBlock(DyeColor.YELLOW, "spruce", "yellow");
@@ -98,7 +98,7 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock CHERRY_LIME_BED = new MoreBedVariantBlock(DyeColor.LIME, SoundType.CHERRY_WOOD, "cherry", "lime");
     public static final MoreBedVariantBlock CRIMSON_LIME_BED = new MoreBedVariantBlock(DyeColor.LIME, SoundType.NETHER_WOOD, "crimson", "lime");
     public static final MoreBedVariantBlock DARK_OAK_LIME_BED = new MoreBedVariantBlock(DyeColor.LIME, "dark_oak", "lime");
-    public static final MoreBedVariantBlock PALE_OAK_LIME_BED = new MoreBedVariantBlock(DyeColor.LIME, MapColor.COLOR_BROWN, "pale_oak", "lime");
+    public static final MoreBedVariantBlock PALE_OAK_LIME_BED = new MoreBedVariantBlock(DyeColor.LIME, "pale_oak", "lime");
     public static final MoreBedVariantBlock JUNGLE_LIME_BED = new MoreBedVariantBlock(DyeColor.LIME, "jungle", "lime");
     public static final MoreBedVariantBlock MANGROVE_LIME_BED = new MoreBedVariantBlock(DyeColor.LIME, "mangrove", "lime");
     public static final MoreBedVariantBlock SPRUCE_LIME_BED = new MoreBedVariantBlock(DyeColor.LIME, "spruce", "lime");
@@ -112,7 +112,7 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock CHERRY_PINK_BED = new MoreBedVariantBlock(DyeColor.PINK, SoundType.CHERRY_WOOD, "cherry", "pink");
     public static final MoreBedVariantBlock CRIMSON_PINK_BED = new MoreBedVariantBlock(DyeColor.PINK, SoundType.NETHER_WOOD, "crimson", "pink");
     public static final MoreBedVariantBlock DARK_OAK_PINK_BED = new MoreBedVariantBlock(DyeColor.PINK, "dark_oak", "pink");
-    public static final MoreBedVariantBlock PALE_OAK_PINK_BED = new MoreBedVariantBlock(DyeColor.PINK, MapColor.COLOR_BROWN, "pale_oak", "pink");
+    public static final MoreBedVariantBlock PALE_OAK_PINK_BED = new MoreBedVariantBlock(DyeColor.PINK, "pale_oak", "pink");
     public static final MoreBedVariantBlock JUNGLE_PINK_BED = new MoreBedVariantBlock(DyeColor.PINK, "jungle", "pink");
     public static final MoreBedVariantBlock MANGROVE_PINK_BED = new MoreBedVariantBlock(DyeColor.PINK, "mangrove", "pink");
     public static final MoreBedVariantBlock SPRUCE_PINK_BED = new MoreBedVariantBlock(DyeColor.PINK, "spruce", "pink");
@@ -126,7 +126,7 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock CHERRY_GRAY_BED = new MoreBedVariantBlock(DyeColor.GRAY, SoundType.CHERRY_WOOD, "cherry", "gray");
     public static final MoreBedVariantBlock CRIMSON_GRAY_BED = new MoreBedVariantBlock(DyeColor.GRAY, SoundType.NETHER_WOOD, "crimson", "gray");
     public static final MoreBedVariantBlock DARK_OAK_GRAY_BED = new MoreBedVariantBlock(DyeColor.GRAY, "dark_oak", "gray");
-    public static final MoreBedVariantBlock PALE_OAK_GRAY_BED = new MoreBedVariantBlock(DyeColor.GRAY, MapColor.COLOR_BROWN, "pale_oak", "gray");
+    public static final MoreBedVariantBlock PALE_OAK_GRAY_BED = new MoreBedVariantBlock(DyeColor.GRAY, "pale_oak", "gray");
     public static final MoreBedVariantBlock JUNGLE_GRAY_BED = new MoreBedVariantBlock(DyeColor.GRAY, "jungle", "gray");
     public static final MoreBedVariantBlock MANGROVE_GRAY_BED = new MoreBedVariantBlock(DyeColor.GRAY, "mangrove", "gray");
     public static final MoreBedVariantBlock SPRUCE_GRAY_BED = new MoreBedVariantBlock(DyeColor.GRAY, "spruce", "gray");
@@ -140,7 +140,7 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock CHERRY_LIGHT_GRAY_BED = new MoreBedVariantBlock(DyeColor.LIGHT_GRAY, SoundType.CHERRY_WOOD, "cherry", "light_gray");
     public static final MoreBedVariantBlock CRIMSON_LIGHT_GRAY_BED = new MoreBedVariantBlock(DyeColor.LIGHT_GRAY, SoundType.NETHER_WOOD, "crimson", "light_gray");
     public static final MoreBedVariantBlock DARK_OAK_LIGHT_GRAY_BED = new MoreBedVariantBlock(DyeColor.LIGHT_GRAY, "dark_oak", "light_gray");
-    public static final MoreBedVariantBlock PALE_OAK_LIGHT_GRAY_BED = new MoreBedVariantBlock(DyeColor.LIGHT_GRAY, MapColor.COLOR_BROWN, "pale_oak", "light_gray");
+    public static final MoreBedVariantBlock PALE_OAK_LIGHT_GRAY_BED = new MoreBedVariantBlock(DyeColor.LIGHT_GRAY, "pale_oak", "light_gray");
     public static final MoreBedVariantBlock JUNGLE_LIGHT_GRAY_BED = new MoreBedVariantBlock(DyeColor.LIGHT_GRAY, "jungle", "light_gray");
     public static final MoreBedVariantBlock MANGROVE_LIGHT_GRAY_BED = new MoreBedVariantBlock(DyeColor.LIGHT_GRAY, "mangrove", "light_gray");
     public static final MoreBedVariantBlock SPRUCE_LIGHT_GRAY_BED = new MoreBedVariantBlock(DyeColor.LIGHT_GRAY, "spruce", "light_gray");
@@ -154,7 +154,7 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock CHERRY_CYAN_BED = new MoreBedVariantBlock(DyeColor.CYAN, SoundType.CHERRY_WOOD, "cherry", "cyan");
     public static final MoreBedVariantBlock CRIMSON_CYAN_BED = new MoreBedVariantBlock(DyeColor.CYAN, SoundType.NETHER_WOOD, "crimson", "cyan");
     public static final MoreBedVariantBlock DARK_OAK_CYAN_BED = new MoreBedVariantBlock(DyeColor.CYAN, "dark_oak", "cyan");
-    public static final MoreBedVariantBlock PALE_OAK_CYAN_BED = new MoreBedVariantBlock(DyeColor.CYAN, MapColor.COLOR_BROWN, "pale_oak", "cyan");
+    public static final MoreBedVariantBlock PALE_OAK_CYAN_BED = new MoreBedVariantBlock(DyeColor.CYAN, "pale_oak", "cyan");
     public static final MoreBedVariantBlock JUNGLE_CYAN_BED = new MoreBedVariantBlock(DyeColor.CYAN, "jungle", "cyan");
     public static final MoreBedVariantBlock MANGROVE_CYAN_BED = new MoreBedVariantBlock(DyeColor.CYAN, "mangrove", "cyan");
     public static final MoreBedVariantBlock SPRUCE_CYAN_BED = new MoreBedVariantBlock(DyeColor.CYAN, "spruce", "cyan");
@@ -168,7 +168,7 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock CHERRY_PURPLE_BED = new MoreBedVariantBlock(DyeColor.PURPLE, SoundType.CHERRY_WOOD, "cherry", "purple");
     public static final MoreBedVariantBlock CRIMSON_PURPLE_BED = new MoreBedVariantBlock(DyeColor.PURPLE, SoundType.NETHER_WOOD, "crimson", "purple");
     public static final MoreBedVariantBlock DARK_OAK_PURPLE_BED = new MoreBedVariantBlock(DyeColor.PURPLE, "dark_oak", "purple");
-    public static final MoreBedVariantBlock PALE_OAK_PURPLE_BED = new MoreBedVariantBlock(DyeColor.PURPLE, MapColor.COLOR_BROWN, "pale_oak", "purple");
+    public static final MoreBedVariantBlock PALE_OAK_PURPLE_BED = new MoreBedVariantBlock(DyeColor.PURPLE, "pale_oak", "purple");
     public static final MoreBedVariantBlock JUNGLE_PURPLE_BED = new MoreBedVariantBlock(DyeColor.PURPLE, "jungle", "purple");
     public static final MoreBedVariantBlock MANGROVE_PURPLE_BED = new MoreBedVariantBlock(DyeColor.PURPLE, "mangrove", "purple");
     public static final MoreBedVariantBlock SPRUCE_PURPLE_BED = new MoreBedVariantBlock(DyeColor.PURPLE, "spruce", "purple");
@@ -182,7 +182,7 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock CHERRY_BLUE_BED = new MoreBedVariantBlock(DyeColor.BLUE, SoundType.CHERRY_WOOD, "cherry", "blue");
     public static final MoreBedVariantBlock CRIMSON_BLUE_BED = new MoreBedVariantBlock(DyeColor.BLUE, SoundType.NETHER_WOOD, "crimson", "blue");
     public static final MoreBedVariantBlock DARK_OAK_BLUE_BED = new MoreBedVariantBlock(DyeColor.BLUE, "dark_oak", "blue");
-    public static final MoreBedVariantBlock PALE_OAK_BLUE_BED = new MoreBedVariantBlock(DyeColor.BLUE, MapColor.COLOR_BROWN, "pale_oak", "blue");
+    public static final MoreBedVariantBlock PALE_OAK_BLUE_BED = new MoreBedVariantBlock(DyeColor.BLUE, "pale_oak", "blue");
     public static final MoreBedVariantBlock JUNGLE_BLUE_BED = new MoreBedVariantBlock(DyeColor.BLUE, "jungle", "blue");
     public static final MoreBedVariantBlock MANGROVE_BLUE_BED = new MoreBedVariantBlock(DyeColor.BLUE, "mangrove", "blue");
     public static final MoreBedVariantBlock SPRUCE_BLUE_BED = new MoreBedVariantBlock(DyeColor.BLUE, "spruce", "blue");
@@ -196,7 +196,7 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock CHERRY_BROWN_BED = new MoreBedVariantBlock(DyeColor.BROWN, SoundType.CHERRY_WOOD, "cherry", "brown");
     public static final MoreBedVariantBlock CRIMSON_BROWN_BED = new MoreBedVariantBlock(DyeColor.BROWN, SoundType.NETHER_WOOD, "crimson", "brown");
     public static final MoreBedVariantBlock DARK_OAK_BROWN_BED = new MoreBedVariantBlock(DyeColor.BROWN, "dark_oak", "brown");
-    public static final MoreBedVariantBlock PALE_OAK_BROWN_BED = new MoreBedVariantBlock(DyeColor.BROWN, MapColor.COLOR_BROWN, "pale_oak", "brown");
+    public static final MoreBedVariantBlock PALE_OAK_BROWN_BED = new MoreBedVariantBlock(DyeColor.BROWN, "pale_oak", "brown");
     public static final MoreBedVariantBlock JUNGLE_BROWN_BED = new MoreBedVariantBlock(DyeColor.BROWN, "jungle", "brown");
     public static final MoreBedVariantBlock MANGROVE_BROWN_BED = new MoreBedVariantBlock(DyeColor.BROWN, "mangrove", "brown");
     public static final MoreBedVariantBlock SPRUCE_BROWN_BED = new MoreBedVariantBlock(DyeColor.BROWN, "spruce", "brown");
@@ -210,7 +210,7 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock CHERRY_GREEN_BED = new MoreBedVariantBlock(DyeColor.GREEN, SoundType.CHERRY_WOOD, "cherry", "green");
     public static final MoreBedVariantBlock CRIMSON_GREEN_BED = new MoreBedVariantBlock(DyeColor.GREEN, SoundType.NETHER_WOOD, "crimson", "green");
     public static final MoreBedVariantBlock DARK_OAK_GREEN_BED = new MoreBedVariantBlock(DyeColor.GREEN, "dark_oak", "green");
-    public static final MoreBedVariantBlock PALE_OAK_GREEN_BED = new MoreBedVariantBlock(DyeColor.GREEN, MapColor.COLOR_BROWN, "pale_oak", "green");
+    public static final MoreBedVariantBlock PALE_OAK_GREEN_BED = new MoreBedVariantBlock(DyeColor.GREEN, "pale_oak", "green");
     public static final MoreBedVariantBlock JUNGLE_GREEN_BED = new MoreBedVariantBlock(DyeColor.GREEN, "jungle", "green");
     public static final MoreBedVariantBlock MANGROVE_GREEN_BED = new MoreBedVariantBlock(DyeColor.GREEN, "mangrove", "green");
     public static final MoreBedVariantBlock SPRUCE_GREEN_BED = new MoreBedVariantBlock(DyeColor.GREEN, "spruce", "green");
@@ -224,7 +224,7 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock CHERRY_RED_BED = new MoreBedVariantBlock(DyeColor.RED, SoundType.CHERRY_WOOD, "cherry", "red");
     public static final MoreBedVariantBlock CRIMSON_RED_BED = new MoreBedVariantBlock(DyeColor.RED, SoundType.NETHER_WOOD, "crimson", "red");
     public static final MoreBedVariantBlock DARK_OAK_RED_BED = new MoreBedVariantBlock(DyeColor.RED, "dark_oak", "red");
-    public static final MoreBedVariantBlock PALE_OAK_RED_BED = new MoreBedVariantBlock(DyeColor.RED, MapColor.COLOR_BROWN, "pale_oak", "red");
+    public static final MoreBedVariantBlock PALE_OAK_RED_BED = new MoreBedVariantBlock(DyeColor.RED, "pale_oak", "red");
     public static final MoreBedVariantBlock JUNGLE_RED_BED = new MoreBedVariantBlock(DyeColor.RED, "jungle", "red");
     public static final MoreBedVariantBlock MANGROVE_RED_BED = new MoreBedVariantBlock(DyeColor.RED, "mangrove", "red");
     public static final MoreBedVariantBlock SPRUCE_RED_BED = new MoreBedVariantBlock(DyeColor.RED, "spruce", "red");
@@ -238,7 +238,7 @@ public class MbdvBlockInit {
     public static final MoreBedVariantBlock CHERRY_BLACK_BED = new MoreBedVariantBlock(DyeColor.BLACK, SoundType.CHERRY_WOOD, "cherry", "black");
     public static final MoreBedVariantBlock CRIMSON_BLACK_BED = new MoreBedVariantBlock(DyeColor.BLACK, SoundType.NETHER_WOOD, "crimson", "black");
     public static final MoreBedVariantBlock DARK_OAK_BLACK_BED = new MoreBedVariantBlock(DyeColor.BLACK, "dark_oak", "black");
-    public static final MoreBedVariantBlock PALE_OAK_BLACK_BED = new MoreBedVariantBlock(DyeColor.BLACK, MapColor.COLOR_BROWN, "pale_oak", "black");
+    public static final MoreBedVariantBlock PALE_OAK_BLACK_BED = new MoreBedVariantBlock(DyeColor.BLACK, "pale_oak", "black");
     public static final MoreBedVariantBlock JUNGLE_BLACK_BED = new MoreBedVariantBlock(DyeColor.BLACK, "jungle", "black");
     public static final MoreBedVariantBlock MANGROVE_BLACK_BED = new MoreBedVariantBlock(DyeColor.BLACK, "mangrove", "black");
     public static final MoreBedVariantBlock SPRUCE_BLACK_BED = new MoreBedVariantBlock(DyeColor.BLACK, "spruce", "black");
