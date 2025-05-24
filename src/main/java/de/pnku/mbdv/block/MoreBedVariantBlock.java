@@ -23,15 +23,15 @@ public class MoreBedVariantBlock extends BedBlock implements IBedShape {
     public final String bedWoodType;
     public final String bedColor;
 
-    public MoreBedVariantBlock(DyeColor dyeColour, MapColor mapColour, String bedWoodType, String bedColor) {
-        super(dyeColour, Properties.copy(Blocks.WHITE_BED).mapColor(mapColour));
+    public MoreBedVariantBlock(DyeColor color, String bedWoodType, String bedColor) {
+        super(color, Properties.copy(Blocks.WHITE_BED).mapColor((blockState) -> blockState.getValue(BedBlock.PART) == BedPart.FOOT ? color.getMapColor() : MapColor.WOOL));
         this.bedWoodType = bedWoodType;
         this.bedColor = bedColor;
         this.registerDefaultState(this.stateDefinition.any().setValue(PART, BedPart.FOOT).setValue(OCCUPIED, false).setValue(mBedV$NORTH, false).setValue(mBedV$EAST, false).setValue(mBedV$SOUTH, false).setValue(mBedV$WEST, false));
     }
 
-    public MoreBedVariantBlock(DyeColor dyeColour, MapColor colour, SoundType sound, String bedWoodType, String bedColor) {
-        super(dyeColour, Properties.copy(Blocks.WHITE_BED).mapColor(colour).sound(sound));
+    public MoreBedVariantBlock(DyeColor color, SoundType sound, String bedWoodType, String bedColor) {
+        super(color, Properties.copy(Blocks.WHITE_BED).mapColor((blockState) -> blockState.getValue(BedBlock.PART) == BedPart.FOOT ? color.getMapColor() : MapColor.WOOL).sound(sound));
         this.bedWoodType = bedWoodType;
         this.bedColor = bedColor;
         this.registerDefaultState(this.stateDefinition.any().setValue(PART, BedPart.FOOT).setValue(OCCUPIED, false).setValue(mBedV$NORTH, false).setValue(mBedV$EAST, false).setValue(mBedV$SOUTH, false).setValue(mBedV$WEST, false));
