@@ -87,6 +87,9 @@ public abstract class BedBlockMixin extends HorizontalDirectionalBlock implement
         if (shouldApply(this.getClass())) {
             builder.add(FACING, PART, OCCUPIED, mBedV$NORTH, mBedV$EAST, mBedV$SOUTH, mBedV$WEST);
         }
+        else {
+            builder.add(FACING, PART, OCCUPIED);
+        }
     }
 
     @Inject(method = "updateShape(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/core/Direction;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/LevelAccessor;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;",
