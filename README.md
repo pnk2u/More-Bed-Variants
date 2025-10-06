@@ -89,6 +89,9 @@ Want to help translate? Feel free to open a PR to the **default branch (`1.21(.1
 - Re-add creative mode tab
 #### 1.0.2-h:
 - Fix game crash on startup
+
+<!--CHANGELOG:END-->
+
 > _`The section above is automatically updated with each new release and only includes already published releases.`_
 ---
 #### Support/Contact
