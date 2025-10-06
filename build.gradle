@@ -134,7 +134,7 @@ dependencies {
 	//modRuntimeOnly "maven.modrinth:ebe:${project.ebe_version}"
 
 	// Compat: Bedspreads
-	modLocalRuntime "maven.modrinth:bedspreads:${project.bedspreads_version}"
+	//modLocalRuntime "maven.modrinth:bedspreads:${project.bedspreads_version}"
 }
 
 static def version_reduced(String input) { // Reduces a version string by one minor version and sets patch to 0

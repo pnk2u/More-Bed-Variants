@@ -16,10 +16,10 @@ import java.util.Map;
 @Mixin(BlockEntityRenderers.class)
 public class BlockEntityRenderersMixin {
 
-    @Shadow @Final private static Map<BlockEntityType<?>, BlockEntityRendererProvider<?>> PROVIDERS;
+    @Shadow @Final private static Map<BlockEntityType<?>, BlockEntityRendererProvider<?, ?>> PROVIDERS;
 
     @Inject(method = "register", at = @At("TAIL"))
-    private static <T extends BlockEntity>  void injectedRegisterAtTail(BlockEntityType<? extends T> type, BlockEntityRendererProvider<T> factory, CallbackInfo ci) {
+    private static <T extends BlockEntity>  void injectedRegisterAtTail(BlockEntityType<? extends T> type, BlockEntityRendererProvider<T, ?> factory, CallbackInfo ci) {
             PROVIDERS.remove(BlockEntityType.BED);
     }
 }
