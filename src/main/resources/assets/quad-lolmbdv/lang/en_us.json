@@ -214,7 +214,7 @@
   "commands.setbedshape.pillowed.connected": "§7Set bed shape to: §fPillowed (§oconnected§r§f)§r",
   "commands.setbedshape.pillowed.unconnected": "§7Set bed shape to: §fPillowed (§ounconnected§r§f)§r",
   "resourcePack.quad-lolmbdv.enhanced-beds-lighting-fix.name": "Bed Lighting Fix for §o§dEBE§r",
-  "resourcePack.quad-lolmbdv.enhanced-beds-lighting-fix.description": "§o§dE§rnhanced §o§dB§rlock §o§dE§rntities",
+  "resourcePack.quad-lolmbdv.enhanced-beds-lighting-fix.description": "§o§dE§rnhanced §o§dB§rlock §o§dE§rntities - Apply below included packs!",
   "resourcePack.quad-lolmbdv.more-pillowed-bed-variants.name": "More §aPillowed§r Bed Variants",
   "resourcePack.quad-lolmbdv.more-pillowed-bed-variants.description": "Adds a §apillow§r to §lall§r beds.",
   "resourcePack.quad-lolmbdv.more-pillowed-connected-bed-variants.name": "More §aPillowed§r (§eC§r) Bed Variants",
