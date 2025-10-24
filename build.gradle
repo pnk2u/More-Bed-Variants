@@ -134,6 +134,7 @@ dependencies {
 	//modRuntimeOnly "maven.modrinth:ebe:${project.ebe_version}"
 
 	// Compat: Bedspreads
+	modCompileOnly "maven.modrinth:bedspreads:${project.bedspreads_version}"
 	modLocalRuntime "maven.modrinth:bedspreads:${project.bedspreads_version}"
 }
 
