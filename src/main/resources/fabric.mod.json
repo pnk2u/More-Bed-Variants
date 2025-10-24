@@ -29,6 +29,10 @@
 			"environment": "client",
 			"config": "quad-lolmbdv.client.mixins.json"
 		},
+		{
+			"environment": "client",
+			"config": "quad-lolmbdv.compat.bedspreads.client.mixins.json"
+		},
 		"quad-lolmbdv.mixins.json"
 	],
 	"accessWidener": "quad-lolmbdv.accesswidener",
