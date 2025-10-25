@@ -11,7 +11,9 @@ import de.pnku.mbdv.MoreBedVariantsClient;
 import de.pnku.mbdv.block.MoreBedVariantBlock;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.BedItem;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
@@ -22,7 +24,10 @@ public abstract class DecoratedBedRendererMixin {
 
     @Unique
     ResourceLocation getResourceLocationFromBedspreadsData(BedspreadsData data) {
-        Block bedBlock = ((BlockItem)data.bed().getItem()).getBlock();
+        Block bedBlock;
+        Item item = data.bed().getItem();
+        if (data != BedspreadsData.EMPTY && item instanceof BedItem bedItem) bedBlock = bedItem.getBlock();
+        else return null;
         if (bedBlock instanceof MoreBedVariantBlock moreBedVariantBlock) {
             String bedVariant = moreBedVariantBlock.bedWoodType.replace("stripped_", "").replace("bound_", ""); // (Stripped) Bound Bamboo Beds use regular bamboo variant
             String newPath = "entity/bed/" + bedVariant;
@@ -32,7 +37,7 @@ public abstract class DecoratedBedRendererMixin {
         }
     }
 
-    @WrapOperation(method = "Lcom/illusivesoulworks/bedspreads/client/DecoratedBedRenderer;render(Lcom/illusivesoulworks/bedspreads/common/DecoratedBedBlockEntity;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;II)V", at = @At(value = "INVOKE", target = "Lnet/minecraft/resources/ResourceLocation;fromNamespaceAndPath(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"))
+    @WrapOperation(method = "Lcom/illusivesoulworks/bedspreads/client/DecoratedBedRenderer;render(Lcom/illusivesoulworks/bedspreads/common/DecoratedBedBlockEntity;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;IILnet/minecraft/world/phys/Vec3;)V", at = @At(value = "INVOKE", target = "Lnet/minecraft/resources/ResourceLocation;fromNamespaceAndPath(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraft/resources/ResourceLocation;"))
     ResourceLocation wrappedFromNamespaceAndPathInRender(String namespace, String path, Operation<ResourceLocation> original, DecoratedBedBlockEntity bedEntity) {
         BedspreadsData data = bedEntity.getItem().getOrDefault(BedspreadsRegistry.BEDSPREADS_DATA.get(), BedspreadsData.EMPTY);
         ResourceLocation newLocation = getResourceLocationFromBedspreadsData(data);
