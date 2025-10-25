@@ -14,7 +14,7 @@
 		"issues": "https://github.com/pnk2u/More-Bed-Variants/issues"
 	},
 	"license": "${mod_license}",
-	"icon": "logo.png",
+	"icon": "icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
@@ -29,20 +29,31 @@
 			"environment": "client",
 			"config": "quad-lolmbdv.client.mixins.json"
 		},
+		{
+			"environment": "client",
+			"config": "quad-lolmbdv.compat.bedspreads.client.mixins.json"
+		},
 		"quad-lolmbdv.mixins.json"
 	],
 	"accessWidener": "quad-lolmbdv.accesswidener",
 	"depends": {
 		"fabricloader": ">=${loader_version}",
-		"minecraft": ">=${minecraft_version_0}",
+		"minecraft": ">${minecraft_version_0} <${minecraft_version_1}",
 		"java": ">=17",
 		"fabric-api": ">=0.92.0"
 	},
 	"custom": {
 		"modmenu": {
 			"links": {
-				"modmenu.discord": "https://discord.com/invite/sA42pp6cuX"
+				"modmenu.discord": "https://discord.lieonlion.dev"
 			}
+		},
+		"mc-publish": {
+			"modrinth": "nKaiA11S",
+			"curseforge": "1077380",
+			"dependencies": [
+				"fabric-api(required)#(ignore)"
+			]
 		}
 	}
 }

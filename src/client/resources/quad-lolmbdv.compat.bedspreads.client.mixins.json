@@ -1,0 +1,12 @@
+{
+  "required": false,
+  "plugin": "de.pnku.mbdv.mixin.compat.bedspreads.MbdvCompatBedspreadsClientMixinPlugin",
+  "package": "de.pnku.mbdv.mixin.compat.bedspreads.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "DecoratedBedBlockEntityRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
