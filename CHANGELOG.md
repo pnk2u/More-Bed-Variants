@@ -1,4 +1,4 @@
-<!--publish=false-->
+<!--publish=true-->
 ## 2.1.0:
 - `1.20.1`,`1.21(.1)`, `1.21.4(5)`: Add compatibility for [Bedspreads](https://modrinth.com/mod/bedspreads) mod allowing for Beds to be combined with Banners and their associated patterns as can be seen here:  
   ![Bedspreads Example Image](https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/More-Bed-Variants/pres/changelogs/2_1_0-example.png)
