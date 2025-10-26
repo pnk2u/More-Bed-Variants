@@ -25,6 +25,11 @@ Want to help translate? Feel free to open a PR to the **default branch (`1.21(.1
 ### Changelog History
 
 <!--CHANGELOG:START-->
+## 2.1.0:
+- `1.20.1`,`1.21(.1)`, `1.21.4(5)`: Add compatibility for [Bedspreads](https://modrinth.com/mod/bedspreads) mod allowing for Beds to be combined with Banners and their associated patterns as can be seen here:  
+  ![Bedspreads Example Image](https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/More-Bed-Variants/pres/changelogs/2_1_0-example.png)
+  > **Note** for `1.21.6⁺`:  
+  > As Bedspreads has only been released for up to `1.21.5` at this time, the compatibility for `1.21.6⁺` was unable to be tested. It might not work as intended. As always, let me know if you find any issues!
 ### 2.0.3:
 - `1.21.9(10)`: Update to 1.21.9(10)
 - `1.21.5(-8)`: Update built-in resource packs' format up to 1.21.8
@@ -89,7 +94,6 @@ Want to help translate? Feel free to open a PR to the **default branch (`1.21(.1
 - Re-add creative mode tab
 #### 1.0.2-h:
 - Fix game crash on startup
-
 <!--CHANGELOG:END-->
 
 > _`The section above is automatically updated with each new release and only includes already published releases.`_
