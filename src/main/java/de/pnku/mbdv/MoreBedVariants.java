@@ -14,8 +14,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class MoreBedVariants implements ModInitializer {
-    public static final String MODID = "quad-lolmbdv";
-    public static final Logger LOGGER = LoggerFactory.getLogger(MODID);
+    public static final String MOD_ID = "quad-lolmbdv";
+    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
     @Override
     public void onInitialize() {
@@ -41,7 +41,7 @@ public class MoreBedVariants implements ModInitializer {
     }
 
     public static ResourceLocation withModId(String path) {
-        return ResourceLocation.fromNamespaceAndPath(MODID, path);
+        return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
     }
 
     private static void registerCommands(CommandDispatcher<CommandSourceStack> dispatcher) {

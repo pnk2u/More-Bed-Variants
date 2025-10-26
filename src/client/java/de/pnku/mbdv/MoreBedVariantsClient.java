@@ -11,6 +11,8 @@ import net.minecraft.server.packs.PackType;
 import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.util.profiling.ProfilerFiller;
 import org.jetbrains.annotations.NotNull;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executor;
@@ -18,24 +20,26 @@ import java.util.concurrent.Executor;
 import static de.pnku.mbdv.MoreBedVariants.*;
 
 public class MoreBedVariantsClient implements ClientModInitializer {
+    public static final String MOD_ID = "quad-lolmbdv";
+    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID + " (Client)");
 
     @Override
     public void onInitializeClient() {
         if (FabricLoader.getInstance().isModLoaded("enhancedblockentities")) {
             ResourceManagerHelper.registerBuiltinResourcePack(
                     withModId("enhanced-beds-lighting-fix"),
-                    FabricLoader.getInstance().getModContainer(MODID).orElseThrow(),
+                    FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(),
                     Component.translatable("resourcePack.quad-lolmbdv.enhanced-beds-lighting-fix.name"),
                     ResourcePackActivationType.ALWAYS_ENABLED);
         }
             ResourceManagerHelper.registerBuiltinResourcePack(
                     withModId("more-pillowed-bed-variants"),
-                    FabricLoader.getInstance().getModContainer(MODID).orElseThrow(),
+                    FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(),
                     Component.translatable("resourcePack.quad-lolmbdv.more-pillowed-bed-variants.name"),
                     ResourcePackActivationType.NORMAL);
             ResourceManagerHelper.registerBuiltinResourcePack(
                     withModId("more-pillowed-connected-bed-variants"),
-                    FabricLoader.getInstance().getModContainer(MODID).orElseThrow(),
+                    FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(),
                     Component.translatable("resourcePack.quad-lolmbdv.more-pillowed-connected-bed-variants.name"),
                     ResourcePackActivationType.NORMAL);
 
@@ -62,5 +66,9 @@ public class MoreBedVariantsClient implements ClientModInitializer {
                     return mBedVListener.toString();
                 }
         });
+    }
+
+    public static ResourceLocation withModId(String path) {
+        return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
     }
 }
