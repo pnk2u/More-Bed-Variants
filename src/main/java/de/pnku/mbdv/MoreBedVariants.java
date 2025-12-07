@@ -10,6 +10,7 @@ import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
+import net.minecraft.server.permissions.Permissions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -46,7 +47,7 @@ public class MoreBedVariants implements ModInitializer {
 
     private static void registerCommands(CommandDispatcher<CommandSourceStack> dispatcher) {
         dispatcher  .register(Commands.literal("setbedshape")
-                    .requires(source -> source.hasPermission(2) && source.getServer().isDedicatedServer())
+                    .requires(source -> source.permissions().hasPermission(Permissions.COMMANDS_GAMEMASTER) && source.getServer().isDedicatedServer())
                         .executes(context -> {
                             context.getSource().sendFailure(Component.translatable("commands.setbedshape.warn"));
                             return -1;
