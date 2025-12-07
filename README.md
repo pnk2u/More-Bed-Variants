@@ -1,102 +1,95 @@
-# <img width='24' src="./src/main/resources/icon.png"> More Bed Variants
-> ![Mod Icon](https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/More-Bed-Variants/pres/logo/logo_c.png)
->
-> A mod adding wood variants for Minecraft's Beds and enhancing their way of being rendered allowing for additional resourcepack capabilities and improved performance.
+<a name="more-bed-variants"></a>
+# <img height='48' align=right src="./src/main/resources/icon.png"> <p align="center">&emsp;&emsp;&emsp; More Bed Variants <sub><a title="More Bed Variants on Modrinth" href="https://www.modrinth.com/mod/more-bed-variants"><img width="40" src="https://img.shields.io/badge/-%20-%230f91?style=flat&logo=modrinth"></a></sub> <a title="More Bed Variants on Curseforge" href="https://www.curseforge.com/minecraft/mc-mods/more-bed-variants"><sub><img width="40" src="https://img.shields.io/badge/--%23f062?style=flat&logo=curseforge"></sub></a> </p>
+> <img align=left height="153" src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/More-Bed-Variants/pres/logo/logo_c.png">  
+>  A mod adding wood variants for Minecraft's Bed Blocks. <br><br><br><br>  
+>  <details><summary><h5>Show in-game example image</h5></summary><br><img src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/More-Bed-Variants/pres/mr_desc_banner.png"><sup><br><!--CAPTION:PLACEHOLDER--></sup></details>  
+<br>  
 
-### Compatibility
+<a name="compatibility"></a>
+### <img height="24" align="left" src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/puzzle.svg"> Compatibility
 
-- Minecraft: `1.20.1`, `1.21(.1)`, `1.21.4`~`1.21.10`
-- Mod Loader: _Fabric_
-- Requires: [`Fabric API`](https://modrinth.com/mod/fabric-api)
-- Added support for:
-    - [<img width='16' src="https://raw.githubusercontent.com/TeamMidnightDust/BetterBeds/main/common/src/main/resources/assets/betterbeds/icon.png"> `Better Beds`](https://modrinth.com/mod/better-beds)
-    - [<img width='16' src="https://raw.githubusercontent.com/FoundationGames/EnhancedBlockEntities/1.21.4/src/main/resources/assets/enhancedblockentities/icon.png"> `Enhanced Block Entities`](https://modrinth.com/mod/enhanced-block-entities)
+<table>
+  <thead>
+    <tr>
+      <td><strong>Minecraft</strong></td>
+      <td>
+        <a href="https://modrinth.com/mod/more-bed-variants/versions?g=1.20.1"><code>1.20.1</code></a><br>
+        <a href="https://modrinth.com/mod/more-bed-variants/versions?g=1.21&g=1.21.1"><code>1.21(.1)</code></a>, <a href="https://modrinth.com/mod/more-bed-variants/versions?g=1.21.4&g=1.21.5&g=1.21.6&g=1.21.7&g=1.21.8&g=1.21.9&g=1.21.10?g=1.21.11"><code>1.21.4</code>~<code>1.21.11</code></a>
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Mod Loaders</strong></td>
+      <td><sub><img width="16" src="https://raw.githubusercontent.com/FabricMC/fabric/1.21.10/src/main/resources/assets/fabric/icon.png"></sub><a href="https://fabricmc.net/use/installer/"><code>Fabric Loader</code></a></td>
+    </tr>
+  </tbody>
+  <thead>
+    <tr>
+      <td><strong>Requires</strong></td>
+      <td>
+        <a href="https://modrinth.com/mod/fabric-api"><sub><img width="16" src="https://raw.githubusercontent.com/FabricMC/fabric/1.21.10/src/main/resources/assets/fabric/icon.png"></sub><code>Fabric API</code></a>
+      </td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Added support</strong></td>
+      <td>
+        <a href="https://modrinth.com/mod/better-beds"><sub><img width="16" src="https://raw.githubusercontent.com/TeamMidnightDust/BetterBeds/main/common/src/main/resources/assets/betterbeds/icon.png"></sub><code>Better Beds</code></a><br>
+        <a href="https://modrinth.com/mod/enhanced-block-entities"><sub><img width="16" src="https://raw.githubusercontent.com/FoundationGames/EnhancedBlockEntities/1.21/src/main/resources/assets/enhancedblockentities/icon.png"></sub><code>Enhanced Block Entities</code></a><br>
+        <a href="https://modrinth.com/mod/bedspreads"><sub><img width="16" src="https://raw.githubusercontent.com/TheIllusiveC4/Bedspreads/1.21.x/common/src/main/resources/bedspreads_icon.png"></sub><code>Bedspreads</code></a>
+    </tr>
+  </tbody>
+</table>
+<br>
 
-### ᴬ⃯ ᵦ⃔ Translations
+<a name="translations"></a>
+### <img height="24" align="left" src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/translate.svg"> Translations
 
 Currently available in:
 - English
 - German
-- Chinese, Simplified (@[qiuqimc](/../../../../qiuqimc) with [PR #4](../../pull/4), added in [`1.5.1`](/../../#151))
-- Ukrainian (@[StarmanMine142](/../../../../StarmanMine142) with [PR #6](../../pull/6)/[7](../../pull/7), added in [`1.5.2`](/../../#152) and updated with [PR #8](../../pull/8), added in [`1.6.1`](/../../#161))
+- Chinese Simplified (@[qiuqimc](/../../../../qiuqimc) with [PR 4](../../pull/4), added in [`1.5.1`](./CHANGELOG_history.md#1.5.1))
+- Ukrainian (@[StarmanMine142](/../../../../StarmanMine142) with [PR #6](../../pull/6)/[7](../../pull/7), added in [`1.5.2`](./CHANGELOG_history.md#1.5.2) and updated with [PR #8](../../pull/8), added in [`1.6.1`](./CHANGELOG_history.md#1.6.1))
 
-Want to help translate? Feel free to open a PR to the **default branch (`1.21(.1)`)**.
+> [!NOTE]
+> > Want to help translate? If you can, please open a PR to the **default branch** [`1.21(.1)`](../../tree/1.21(.1)).  
+> > Otherwise, simply send your translation via email (contact@pnku.de) or join the [Discord](https://discord.lieonlion.dev).
 
-### Changelog History
+<br>
 
+
+<img height="53" align="left" src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/changelog.svg">  
+
+### Versions
+<a name="most-recent-version"></a>
 <!--CHANGELOG:START-->
-## 2.1.0:
-- `1.20.1`,`1.21(.1)`, `1.21.4(5)`: Add compatibility for [Bedspreads](https://modrinth.com/mod/bedspreads) mod allowing for Beds to be combined with Banners and their associated patterns as can be seen here:  
+<a name="2.1.0"></a>
+### 2.1.0[*](#footnote-*):
+- `1.20.1`, `1.21(.1)`, `1.21.4(5)`: Add compatibility for [Bedspreads](https://modrinth.com/mod/bedspreads) mod allowing for Beds to be combined with Banners and their associated patterns as can be seen here:  
   ![Bedspreads Example Image](https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/More-Bed-Variants/pres/changelogs/2_1_0-example.png)
   > **Note** for `1.21.6⁺`:  
   > As Bedspreads has only been released for up to `1.21.5` at this time, the compatibility for `1.21.6⁺` was unable to be tested. It might not work as intended. As always, let me know if you find any issues!
-### 2.0.3:
-- `1.21.9(10)`: Update to 1.21.9(10)
-- `1.21.5(-8)`: Update built-in resource packs' format up to 1.21.8
-### 2.0.2:
-- Fix crash introduced by `2.0.1` (for example when using [The Aether](https://modrinth.com/mod/aether) mod)
-### 2.0.1:
-- Fix crash when using [Traveler's Backpack](https://modrinth.com/mod/travelersbackpack) or any other mod that adds new Blocks based on Beds (in this case the Sleeping Bag Blocks)
-# 2.0.0:
-- **'More Bed Variants' uses block rendering now**:
-    - This also applies to vanilla beds
-    - Decreases performance impact of all beds (Block Entity rendering is no longer used)
-    - Allows for resource packs to add custom bed models:
-        - There's now two new included resource packs:
-            - **More '_Pillowed_ ' Bed Variants**:   
-              ➜ Adds a raised pillow to all beds
-            - **More '_Pillowed_ ' (_Connected_ ) Bed Variants**:   
-              ➜ Adds pillows and also allows beds of the same wood type to connect seamlessly
 
-          ![side-by-side comparison](https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/More-Bed-Variants/pres/mr_desc_banner.png)
-        - Both included resource packs' models are used for the block's outline and collision shape
-          ![block outline](https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/More-Bed-Variants/pres/block_outline.png)
-            - If you would like to use this feature on a dedicated server, you can use the command ``/setbedshape`` to make the shape fit the resource pack the players are using:
-                - ``/setbedshape vanilla``: Vanilla flat beds
-                - ``/setbedshape pillowed unconnected``: Beds with pillow shape
-                - ``/setbedshape pillowed connected``: Connected beds with pillows
-            - > In singleplayer, this happens automatically at start-up and when a resource pack reloads!
-        - Full feature parity with mods like _Better Beds_ and _Enhanced Block Entities (EBE)_.
-            - Fixes rendering bugs found in 1.21 versions of those mods.
-            - Nevertheless aims to be compatible with either but neither are necessary, please report any issues via [GitHub](https://github.com/pnk2u/More-Bed-Variants/issues) or [Discord](https://dsc.lieonlion.dev)!
-- Fixes:
-    - Add Oak beds to custom Creative Mode tab
-    - Fix beds appearing on maps as the wood's color instead of the bed/wool's color (Bed heads appear as _White Wool_ like vanilla beds)
+<h2><sub><sub><sup><ins>Download 2.1.0 + 1.21(.1)</ins>:</sup>&#x200A;
+<a title="Download (Modrinth):&#10;More Bed Variants 2.1.0 + 1.21(.1)" href="https://modrinth.com/mod/more-bed-variants/version/teRAqLNf">
+<img width=26 src="https://img.shields.io/badge/-%20-%230f91?style=flat&logo=modrinth"></a>
+<sup><img width=7 height=10 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"></sup>
+<a title="Download (Curseforge):&#10;More Bed Variants 2.1.0 + 1.21(.1)" href="https://www.curseforge.com/minecraft/mc-mods/more-bed-variants/files/7150730">
+<img width=26 src="https://img.shields.io/badge/--%23f062?style=flat&logo=curseforge"></a>
+</sub></sub></h2>
 
-### 1.6.2:
-- `1.21.5`: Update to 1.21.5
-### 1.6.1:
-- Update Ukrainian Translation for new _**Bound Bamboo** Beds_ (Thanks to [Starman](https://modrinth.com/user/StarmanMine142))
-## 1.6.0:
-- Add two new Bamboo Bed Types inspired by the _Bamboo Raft_ and the _Bamboo Block_ and its _Stripped variant_ respectively. (Thanks to [Redupro](https://modrinth.com/user/Redupro) for the idea and initial design.)
-
-![](https://uwu.catgirl.host/i/twtib.png)  
-![](https://uwu.catgirl.host/i/z2po9.png)![](https://uwu.catgirl.host/i/vz6zp.png)
-### 1.5.2:
-- Add Ukrainian Translation (by [Starman](https://modrinth.com/user/StarmanMine142))
-### 1.5.1:
-- Fix Bed variant items stacking to 64 (shouldn't stack at all)
-- Add Simplified Chinese Translation (by @[qiuqimc](https://github.com/qiuqimc))
-- `1.21.4`: Update to 1.21.4
-## 1.5.0:
-- `1.21.3⁺`: Add _**Pale Oak** Beds_
-## 1.4.0:
-- Add integration with [Quad](https://modrinth.com/mod/quad) `1.3.0⁺`'s block replacement allowing new villages to generate biome-appropriate bed variants (e.g., Savanna villages use _**Acacia** Red/Yellow/Orange Beds_).
-- `1.21.2`, `1.21.3`: Update to 1.21.2, 1.21.3
-## 1.3.0:
-- Villagers can now properly use the _Bed_ variants to sleep in at night
-### 1.2.1:
-- Add missing _Gray Bed_ Variants to bed tags
-## 1.2.0:
-- Add dyeing recipes for all the bed variants and their colors
-- Group both the regular and the dyeing recipes respectively in the recipebook
-## 1.1.0:
-- Re-add creative mode tab
-#### 1.0.2-h:
-- Fix game crash on startup
 <!--CHANGELOG:END-->
+<a name="footnote-*"></a>
+> <strong>*</strong><sup>: Most recent version</sup>  
+> _`The version above is automatically updated with the newest release and only after it has been successfully published.`_
 
-> _`The section above is automatically updated with each new release and only includes already published releases.`_
+<a name="changelog-history"></a>
+> [!TIP]
+> > Looking for changes of previous versions?  
+> > You can find them in the [changelog history](./CHANGELOG_history.md).
+
 ---
 #### Support/Contact
 - Suggestions? Questions? Bug reports?  
