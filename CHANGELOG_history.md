@@ -1,15 +1,32 @@
+<a name="2.1.0"></a>
 ## 2.1.0:
-- `1.20.1`,`1.21(.1)`, `1.21.4(5)`: Add compatibility for [Bedspreads](https://modrinth.com/mod/bedspreads) mod allowing for Beds to be combined with Banners and their associated patterns as can be seen here:  
+- `1.20.1`, `1.21(.1)`, `1.21.4(5)`: Add compatibility for [Bedspreads](https://modrinth.com/mod/bedspreads) mod allowing for Beds to be combined with Banners and their associated patterns as can be seen here:  
   ![Bedspreads Example Image](https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/More-Bed-Variants/pres/changelogs/2_1_0-example.png)
   > **Note** for `1.21.6⁺`:  
   > As Bedspreads has only been released for up to `1.21.5` at this time, the compatibility for `1.21.6⁺` was unable to be tested. It might not work as intended. As always, let me know if you find any issues!
+
+  
+---
+<a name="2.0.3"></a>
 ### 2.0.3:
 - `1.21.9(10)`: Update to 1.21.9(10)
 - `1.21.5(-8)`: Update built-in resource packs' format up to 1.21.8
+
+  
+---
+<a name="2.0.2"></a>
 ### 2.0.2:
 - Fix crash introduced by `2.0.1` (for example when using [The Aether](https://modrinth.com/mod/aether) mod)
+
+  
+---
+<a name="2.0.1"></a>
 ### 2.0.1:
 - Fix crash when using [Traveler's Backpack](https://modrinth.com/mod/travelersbackpack) or any other mod that adds new Blocks based on Beds (in this case the Sleeping Bag Blocks)
+
+  
+---
+<a name="2.0.0"></a>
 # 2.0.0:
 - **'More Bed Variants' uses block rendering now**:
     - This also applies to vanilla beds
@@ -36,34 +53,85 @@
     - Add Oak beds to custom Creative Mode tab
     - Fix beds appearing on maps as the wood's color instead of the bed/wool's color (Bed heads appear as _White Wool_ like vanilla beds)
 
+  
+---
+<a name="1.6.2"></a>
 ### 1.6.2:
 - `1.21.5`: Update to 1.21.5
+
+  
+---
+<a name="1.6.1"></a>
 ### 1.6.1:
 - Update Ukrainian Translation for new _**Bound Bamboo** Beds_ (Thanks to [Starman](https://modrinth.com/user/StarmanMine142))
+
+  
+---
+<a name="1.6.0"></a>
 ## 1.6.0:
 - Add two new Bamboo Bed Types inspired by the _Bamboo Raft_ and the _Bamboo Block_ and its _Stripped variant_ respectively. (Thanks to [Redupro](https://modrinth.com/user/Redupro) for the idea and initial design.)
 
 ![](https://uwu.catgirl.host/i/twtib.png)  
 ![](https://uwu.catgirl.host/i/z2po9.png)![](https://uwu.catgirl.host/i/vz6zp.png)
+
+  
+---
+<a name="1.5.2"></a>
 ### 1.5.2:
 - Add Ukrainian Translation (by [Starman](https://modrinth.com/user/StarmanMine142))
+
+  
+---
+<a name="1.5.1"></a>
 ### 1.5.1:
 - Fix Bed variant items stacking to 64 (shouldn't stack at all)
 - Add Simplified Chinese Translation (by @[qiuqimc](https://github.com/qiuqimc))
 - `1.21.4`: Update to 1.21.4
+
+  
+---
+<a name="1.5.0"></a>
 ## 1.5.0:
 - `1.21.3⁺`: Add _**Pale Oak** Beds_
+
+  
+---
+<a name="1.4.0"></a>
 ## 1.4.0:
 - Add integration with [Quad](https://modrinth.com/mod/quad) `1.3.0⁺`'s block replacement allowing new villages to generate biome-appropriate bed variants (e.g., Savanna villages use _**Acacia** Red/Yellow/Orange Beds_).
 - `1.21.2`, `1.21.3`: Update to 1.21.2, 1.21.3
+
+  
+---
+<a name="1.3.0"></a>
 ## 1.3.0:
 - Villagers can now properly use the _Bed_ variants to sleep in at night
+
+  
+---
+<a name="1.2.1"></a>
 ### 1.2.1:
 - Add missing _Gray Bed_ Variants to bed tags
+
+  
+---
+<a name="1.2.0"></a>
 ## 1.2.0:
 - Add dyeing recipes for all the bed variants and their colors
 - Group both the regular and the dyeing recipes respectively in the recipebook
+
+  
+---
+<a name="1.1.0"></a>
 ## 1.1.0:
 - Re-add creative mode tab
+
+  
+---
+<a name="1.0.2-h"></a>
+### 1.0.2-h:
 #### 1.0.2-h:
 - Fix game crash on startup
+
+  
+---
