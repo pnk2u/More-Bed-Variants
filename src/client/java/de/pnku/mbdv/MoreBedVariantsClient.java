@@ -6,7 +6,7 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.resource.*;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.packs.PackType;
 import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.util.profiling.ProfilerFiller;
@@ -68,7 +68,7 @@ public class MoreBedVariantsClient implements ClientModInitializer {
         });
     }
 
-    public static ResourceLocation withModId(String path) {
-        return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
+    public static Identifier withModId(String path) {
+        return Identifier.fromNamespaceAndPath(MOD_ID, path);
     }
 }

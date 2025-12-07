@@ -9,7 +9,7 @@ import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -40,8 +40,8 @@ public class MoreBedVariants implements ModInitializer {
 
     }
 
-    public static ResourceLocation withModId(String path) {
-        return ResourceLocation.fromNamespaceAndPath(MOD_ID, path);
+    public static Identifier withModId(String path) {
+        return Identifier.fromNamespaceAndPath(MOD_ID, path);
     }
 
     private static void registerCommands(CommandDispatcher<CommandSourceStack> dispatcher) {
