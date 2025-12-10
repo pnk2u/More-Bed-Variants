@@ -1,3 +1,15 @@
+<a name="2.1.1"></a>
+### 2.1.1:
+- `1.21.11`: Update to <ins>1.21.11</ins>
+
+<h2><sub><sub><sup><ins>Download 2.1.1 + 1.21.11</ins>:</sup>&#x200A;
+<a title="Download (Modrinth):&#10;More Bed Variants 2.1.1 + 1.21.11" href="https://www.modrinth.com/mod/nKaiA11S/version/iziF1szB">
+<img width=26 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a>
+<sup><img width=7 height=10 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"></sup>
+<a title="Download (Curseforge):&#10;More Bed Variants 2.1.1 + 1.21.11" href="https://www.curseforge.com/minecraft/mc-mods/more-bed-variants/files/7306424">
+<img width=26 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a>
+</sub></sub></h2>
+
 <a name="2.1.0"></a>
 ## 2.1.0:
 - `1.20.1`, `1.21(.1)`, `1.21.4(5)`: Add compatibility for [Bedspreads](https://modrinth.com/mod/bedspreads) mod allowing for Beds to be combined with Banners and their associated patterns as can be seen here:  
