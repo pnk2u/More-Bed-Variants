@@ -3,7 +3,7 @@
   "textures":
     {
      "bed": "minecraft:entity/bed/black",
-     "bed_frame": "quad-lolmbdv:entity/bed/dark_oak",
+     "bed_frame": "quad-lolmbdv:block/bed_frame_dark_oak",
      "particle": "minecraft:block/dark_oak_planks"
     }
 }

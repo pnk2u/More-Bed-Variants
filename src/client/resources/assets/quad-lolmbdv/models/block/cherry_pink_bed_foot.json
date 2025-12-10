@@ -3,7 +3,7 @@
   "textures":
     {
      "bed": "minecraft:entity/bed/pink",
-     "bed_frame": "quad-lolmbdv:entity/bed/cherry",
+     "bed_frame": "quad-lolmbdv:block/bed_frame_cherry",
      "particle": "minecraft:block/cherry_planks"
     }
 }

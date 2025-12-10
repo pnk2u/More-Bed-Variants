@@ -3,7 +3,7 @@
   "textures":
     {
      "bed": "minecraft:entity/bed/light_blue",
-     "bed_frame": "quad-lolmbdv:entity/bed/spruce",
+     "bed_frame": "quad-lolmbdv:block/bed_frame_spruce",
      "particle": "minecraft:block/spruce_planks"
     }
 }
