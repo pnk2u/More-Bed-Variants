@@ -3,7 +3,7 @@
   "textures":
     {
      "bed": "minecraft:entity/bed/purple",
-     "bed_frame": "quad-lolmbdv:entity/bed/bamboo",
+     "bed_frame": "quad-lolmbdv:block/bed_frame_bamboo",
      "particle": "minecraft:block/bamboo_planks"
     }
 }

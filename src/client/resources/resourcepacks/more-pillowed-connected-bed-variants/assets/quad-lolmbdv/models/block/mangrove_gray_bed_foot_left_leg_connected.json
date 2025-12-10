@@ -3,7 +3,7 @@
   "textures":
     {
      "bed": "minecraft:entity/bed/gray",
-     "bed_frame": "quad-lolmbdv:entity/bed/mangrove",
+     "bed_frame": "quad-lolmbdv:block/bed_frame_mangrove",
      "particle": "minecraft:block/mangrove_planks"
     }
 }
