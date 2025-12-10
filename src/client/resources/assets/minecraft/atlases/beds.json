@@ -1,0 +1,18 @@
+{
+    "sources": [
+        {
+            "type": "filter",
+            "pattern": {
+                "namespace": "minecraft",
+                "path": "entity/bed/.*"
+            }
+        },
+        {
+            "type": "filter",
+            "pattern": {
+                "namespace": "quad-lolmbdv",
+                "path": "entity/bed/.*"
+            }
+        }
+    ]
+}
