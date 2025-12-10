@@ -3,7 +3,7 @@
   "textures":
     {
      "bed": "minecraft:entity/bed/green",
-     "bed_frame": "quad-lolmbdv:entity/bed/warped",
+     "bed_frame": "quad-lolmbdv:block/bed_frame_warped",
      "particle": "minecraft:block/warped_planks"
     }
 }

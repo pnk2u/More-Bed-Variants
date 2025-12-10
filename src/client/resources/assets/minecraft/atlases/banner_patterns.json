@@ -4,6 +4,13 @@
       "type": "directory",
       "source": "entity/bed",
       "prefix": "entity/bed/"
+    },
+    {
+      "type": "filter",
+      "pattern": {
+        "namespace": "minecraft",
+        "path": "entity/bed/.*"
+      }
     }
   ]
 }
