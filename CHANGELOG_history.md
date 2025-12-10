@@ -1,3 +1,18 @@
+<a name="2.1.2"></a>
+### 2.1.2:
+- `1.20.1`, `1.21(.1)`, `1.21.4`: Prevent crash when loading a world with a _Decorated Bed_ (from <ins>Bedspreads</ins> (&#x200A;<sub><a title="Bedspreads&#10;on Modrinth" href="https://modrinth.com/mod/bedspreads/"><img width=20 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a></sub><!--SEPARATOR_V--><img width=5 height=8 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"><sub><a title="Bedspreads&#10;on Curseforge" href="https://www.curseforge.com/minecraft/mc-mods/bedspreads/"><img width=20 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a></sub>&#x200A;)) containing no longer existing _Bed_ variants or otherwise corrupted _Bed_ data
+    > e.g. by downgrading a world from `1.21.4` to `1.21.1` where _**Pale Oak** Beds_ don't exist yet  
+    **Note**: Versions `1.21.5`~`1.21.11` already included this fix
+- `1.21.11`: Fix log spam due to duplicate sprites in multiple texture atlases
+
+<h2><sub><sub><sup><ins>Download 2.1.2 + 1.21.11</ins>:</sup>&#x200A;
+<a title="Download (Modrinth):&#10;More Bed Variants 2.1.2 + 1.21.11" href="https://www.modrinth.com/mod/nKaiA11S/version/MVaPSglJ">
+<img width=26 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a>
+<sup><img width=7 height=10 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"></sup>
+<a title="Download (Curseforge):&#10;2.1.2 + 1.21.11 - More Bed Variants" href="https://www.curseforge.com/minecraft/mc-mods/more-bed-variants/files/7318173">
+<img width=26 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a>
+</sub></sub></h2>
+
 <a name="2.1.1"></a>
 ### 2.1.1:
 - `1.21.11`: Update to <ins>1.21.11</ins>
