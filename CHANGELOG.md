@@ -1,1 +1,5 @@
 <!--publish=false-->
+### 2.1.2:
+- Prevent crash when loading a world with a _Decorated Bed_ (from <ins>Bedspreads</ins> (&#x200A;<sub><a title="Bedspreads&#10;on Modrinth" href="https://modrinth.com/mod/bedspreads/"><img width=20 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a></sub><!--SEPARATOR_V--><img width=5 height=8 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"><sub><a title="Bedspreads&#10;on Curseforge" href="https://www.curseforge.com/minecraft/mc-mods/bedspreads/"><img width=20 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a></sub>&#x200A;)) containing no longer existing _Bed_ variants or otherwise corrupted _Bed_ data
+    > e.g. by downgrading a world from `1.21.4` to `1.21.1` where _**Pale Oak** Beds_ don't exist yet
+- `1.21.11`: Fix log spam due to duplicate sprites in multiple texture atlases

@@ -9,7 +9,7 @@ import de.pnku.mbdv.MoreBedVariantsClient;
 import de.pnku.mbdv.block.MoreBedVariantBlock;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.BedItem;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import org.spongepowered.asm.mixin.Mixin;
@@ -35,11 +35,13 @@ public abstract class DecoratedBedBlockEntityRendererMixin {
         ItemStack bedStack = bedBlockEntity.getItem().getTagElement("BlockEntityTag").contains("BedStack")
                 ? ItemStack.of(bedBlockEntity.getItem().getTagElement("BlockEntityTag").getCompound("BedStack"))
                 : ItemStack.EMPTY;
-        Block bedBlock = ((BedItem) bedStack.getItem()).getBlock();
-        if (bedBlock instanceof MoreBedVariantBlock moreBedVariantBlock) {
-            this.mbedv$bedVariant = moreBedVariantBlock.bedWoodType.replace("stripped_", "").replace("bound_", ""); // (Stripped) Bound Bamboo Beds use regular bamboo variant
-        } else {
-            this.mbedv$bedVariant = "";
+        if (!bedStack.isEmpty()) {
+            Block bedBlock = ((BlockItem) bedStack.getItem()).getBlock();
+            if (bedBlock instanceof MoreBedVariantBlock moreBedVariantBlock) {
+                this.mbedv$bedVariant = moreBedVariantBlock.bedWoodType.replace("stripped_", "").replace("bound_", ""); // (Stripped) Bound Bamboo Beds use regular bamboo variant
+            } else {
+                this.mbedv$bedVariant = "";
+            }
         }
     }
 
