@@ -50,7 +50,7 @@
 Currently available in:
 - English
 - German
-- Chinese Simplified (@[qiuqimc](/../../../../qiuqimc) with [PR 4](../../pull/4), added in [`1.5.1`](./CHANGELOG_history.md#1.5.1))
+- Chinese Simplified (@[qiuqimc](/../../../../qiuqimc) with [PR #4](../../pull/4), added in [`1.5.1`](./CHANGELOG_history.md#1.5.1))
 - Ukrainian (@[StarmanMine142](/../../../../StarmanMine142) with [PR #6](../../pull/6)/[7](../../pull/7), added in [`1.5.2`](./CHANGELOG_history.md#1.5.2) and updated with [PR #8](../../pull/8), added in [`1.6.1`](./CHANGELOG_history.md#1.6.1))
 
 > [!NOTE]
