@@ -47,7 +47,7 @@ public class MoreBedVariantsClient implements ClientModInitializer {
 
         MbdvCreativeTab.registerMbdvCreativeTab();
 
-        ResourceLoader.get(PackType.CLIENT_RESOURCES).registerReloader(
+        ResourceLoader.get(PackType.CLIENT_RESOURCES).registerReloadListener(
                 mBedVListener,
             new PreparableReloadListener() {
                 @Override
