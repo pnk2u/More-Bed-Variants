@@ -1,4 +1,3 @@
-/*
 package de.pnku.mbdv.mixin.compat.bedspreads.client;
 
 import com.illusivesoulworks.bedspreads.client.DecoratedBedRenderer;
@@ -52,4 +51,3 @@ public abstract class DecoratedBedRendererMixin {
     }
 
 }
-*/

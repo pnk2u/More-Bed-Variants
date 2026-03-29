@@ -2,7 +2,7 @@ package de.pnku.mbdv.init;
 
 import de.pnku.mbdv.MoreBedVariants;
 import de.pnku.mbdv.block.MoreBedVariantBlock;
-import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
@@ -302,7 +302,7 @@ public class MbdvItemInit {
     private static void registerWhiteBedItem(Item whiteBed, Item bedAfter) {
         Registry.register(BuiltInRegistries.ITEM, MoreBedVariants.withModId(((MoreBedVariantBlock)((BedItem) whiteBed).getBlock()).bedWoodType + "_" + ((MoreBedVariantBlock) ((BedItem) whiteBed).getBlock()).bedColor + "_bed"), whiteBed);
 
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.COLORED_BLOCKS).register(entries -> entries.insertAfter(bedAfter, whiteBed));
+        ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.COLORED_BLOCKS).register(entries -> entries.addAfter(bedAfter, whiteBed));
         more_bed_items.add(whiteBed);
     }
     private static void registerOtherBedItem (Item otherBed) {
