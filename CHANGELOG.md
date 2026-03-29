@@ -1,6 +1,9 @@
 <!--publish=false-->
 ### 2.1.3:
-- `26.1`: Update to `26.1`
+- `26.1`:
+  - Update to `26.1`
+  - Implement _Villagers_ trading _Bed_ variants
+    > This was formerly a feature of <ins>More Stick Variants (MStV)</ins> (&#x200A;<sub><a title="More Stick Variants (MStV)&#10;on Modrinth" href="https://modrinth.com/mod/more-stick-variants/"><img width=20 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a></sub><!--SEPARATOR_V:MR--><img width=5 height=8 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"><sub><a title="More Stick Variants (MStV)&#10;on Curseforge" href="https://www.curseforge.com/minecraft/mc-mods/more-stick-variants/"><img width=20 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a></sub>&#x200A;) but with Minecraft <ins>26.1</ins>, _Villager_ trading has become data-driven allowing for each _More Variants_ mod to implement this feature for their respective block/item variants without needing to rely on <ins>MStV</ins> (&#x200A;<sub><a title="MStV&#10;on Modrinth" href="https://modrinth.com/mod/more-stick-variants/"><img width=20 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a></sub><!--SEPARATOR_V:MR--><img width=5 height=8 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"><sub><a title="MStV&#10;on Curseforge" href="https://www.curseforge.com/minecraft/mc-mods/more-stick-variants/"><img width=20 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a></sub>&#x200A;) for this functionality.
 - Add Japanese translation (Thanks to [@HayaKoh-WeldyAlin](https://www.github.com/HayaKoh-WeldyAlin))
 - Fix British English translation (Thanks to [@HayaKoh-WeldyAlin](https://www.github.com/HayaKoh-WeldyAlin))
     > _(Stripped) Bound Bamboo Beds_ were incorrectly using the American English spelling "gray" instead of the British English "grey" for the non-vanilla _Bed_ variants
