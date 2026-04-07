@@ -57,6 +57,8 @@ public abstract class BedBlockMixin extends HorizontalDirectionalBlock implement
     @Override
     public boolean skipRendering(BlockState state, BlockState neighborState, Direction face) {
         if (shouldApply(this.getClass())) {
+            if (face.getAxis() == Direction.Axis.Y) return false;
+            if (!state.getBlock().getDescriptionId().contains("sleeping_bag") && neighborState.getBlock().getDescriptionId().contains("sleeping_bag")) return false;
             boolean isHeightMatch;
             boolean isBoundBamboo = state.getBlock() instanceof MoreBedVariantBlock block && block.bedWoodType.contains("bound_bamboo");
             boolean isNeighbourBoundBamboo = neighborState.getBlock() instanceof MoreBedVariantBlock neighbor && neighbor.bedWoodType.contains("bound_bamboo");
@@ -73,7 +75,7 @@ public abstract class BedBlockMixin extends HorizontalDirectionalBlock implement
             } else {
                 isHeightMatch = false;
             }
-            return face.getAxis() != Direction.Axis.Y && isHeightMatch;
+            return isHeightMatch;
         } else { return super.skipRendering(state, neighborState, face); }
     }
 
