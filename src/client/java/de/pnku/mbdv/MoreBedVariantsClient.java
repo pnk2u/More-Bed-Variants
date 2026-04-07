@@ -18,8 +18,6 @@ import org.slf4j.LoggerFactory;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Executor;
 
-import static de.pnku.mbdv.MoreBedVariants.*;
-
 public class MoreBedVariantsClient implements ClientModInitializer {
     public static final String MOD_ID = "quad-lolmbdv";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID + " (Client)");
@@ -47,7 +45,7 @@ public class MoreBedVariantsClient implements ClientModInitializer {
 
         MbdvCreativeTab.registerMbdvCreativeTab();
 
-        ResourceLoader.get(PackType.CLIENT_RESOURCES).registerReloadListener(
+        ResourceLoader.get(PackType.CLIENT_RESOURCES).registerReloader(
                 mBedVListener,
             new PreparableReloadListener() {
                 @Override

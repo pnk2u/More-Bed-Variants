@@ -2,7 +2,7 @@ package de.pnku.mbdv.ui;
 
 import de.pnku.mbdv.MoreBedVariants;
 import de.pnku.mbdv.init.MbdvItemInit;
-import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
@@ -12,7 +12,7 @@ public class MbdvCreativeTab extends CreativeModeTabs {
 
     public static CreativeModeTab COLORED_BEDS;
 
-    public static final CreativeModeTab.Builder MBDV_CMT_BUILDER = FabricCreativeModeTab.builder().title(Component.translatable("itemGroup.coloredBeds")).icon(() -> new ItemStack(MbdvItemInit.CHERRY_GREEN_BED_I)).displayItems(((displayContext, entries) -> {
+    public static final CreativeModeTab.Builder MBDV_CMT_BUILDER = FabricItemGroup.builder().title(Component.translatable("itemGroup.coloredBeds")).icon(() -> new ItemStack(MbdvItemInit.CHERRY_GREEN_BED_I)).displayItems(((displayContext, entries) -> {
         for (Item bedVariantItem : MbdvItemInit.more_bed_items)
         {
             entries.accept(bedVariantItem);
