@@ -4,7 +4,6 @@
   "package": "de.pnku.mbdv.mixin.compat.bedspreads.client",
   "compatibilityLevel": "JAVA_${java_version}",
   "client": [
-    "DecoratedBedRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

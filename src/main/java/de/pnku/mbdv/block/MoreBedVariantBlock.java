@@ -51,8 +51,6 @@ public class MoreBedVariantBlock extends BedBlock implements IBedShape {
 
     @Override
     public boolean skipRendering(BlockState state, BlockState neighborState, Direction face) {
-        if (face.getAxis() == Direction.Axis.Y) return false;
-        if (!state.getBlock().getDescriptionId().contains("sleeping_bag") && neighborState.getBlock().getDescriptionId().contains("sleeping_bag")) return false;
         boolean isHeightMatch;
         boolean isBoundBamboo = state.getBlock() instanceof MoreBedVariantBlock block && block.bedWoodType.contains("bound_bamboo");
         boolean isNeighbourBoundBamboo = neighborState.getBlock() instanceof MoreBedVariantBlock neighbor && neighbor.bedWoodType.contains("bound_bamboo");
@@ -67,7 +65,7 @@ public class MoreBedVariantBlock extends BedBlock implements IBedShape {
                 isHeightMatch = (isBoundBamboo == isNeighbourBoundBamboo);
             }
         } else {isHeightMatch = false;}
-        return isHeightMatch;
+        return face.getAxis() != Direction.Axis.Y && isHeightMatch;
     }
 
     @Override
