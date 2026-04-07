@@ -68,16 +68,16 @@
 ### Versions
 <a name="most-recent-version"></a>
 <!--CHANGELOG:START-->
-<a name="2.1.4"></a>
-#### 2.1.4[*](#footnote-*):
+<a name="2.1.5"></a>
+#### 2.1.5[*](#footnote-*):
 - Fix Beds' sides not rendering when placed next to <ins>Traveler's Backpack</ins> (&#x200A;<sub><a title="Travelers Backpack&#10;on Modrinth" href="https://modrinth.com/mod/travelersbackpack/"><img width=20 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a></sub><!--SEPARATOR_V:GH--><img width=7 height=10 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"><sub><a title="Travelers Backpack&#10;on Curseforge" href="https://www.curseforge.com/minecraft/mc-mods/travelers-backpack/"><img width=20 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a></sub>&#x200A;)'s or <ins>Comforts</ins> (&#x200A;<sub><a title="Comforts&#10;on Modrinth" href="https://modrinth.com/mod/comforts/"><img width=20 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a></sub><!--SEPARATOR_V:GH--><img width=7 height=10 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"><sub><a title="Comforts&#10;on Curseforge" href="https://www.curseforge.com/minecraft/mc-mods/comforts/"><img width=20 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a></sub>&#x200A;) _Sleeping Bags_
+- `2.1.4` remains unreleased as it only partially fixed this issue
 
-
-<h2><sub><sub><sup><ins>Download 2.1.3 + 1.21.5(-8)</ins>:</sup>&#x200A;
-<a title="Download (Modrinth):&#10;More Bed Variants 2.1.3 + 1.21.5(-8)" href="https://www.modrinth.com/mod/nKaiA11S/version/gWILdA0b">
+<h2><sub><sub><sup><ins>Download 2.1.5 + 1.21.5(-8)</ins>:</sup>&#x200A;
+<a title="Download (Modrinth):&#10;More Bed Variants 2.1.5 + 1.21.5(-8)" href="https://www.modrinth.com/mod/nKaiA11S/version/rbw9d6RH">
 <img width=26 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a>
 <sup><img width=7 height=10 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"></sup>
-<a title="Download (Curseforge):&#10;2.1.3 + 1.21.5(-8) - More Bed Variants" href="https://www.curseforge.com/minecraft/mc-mods/more-bed-variants/files/7832145">
+<a title="Download (Curseforge):&#10;2.1.5 + 1.21.5(-8) - More Bed Variants" href="https://www.curseforge.com/minecraft/mc-mods/more-bed-variants/files/7891615">
 <img width=26 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a>
 </sub></sub></h2>
 
