@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "quad-lolmbdv:acacia_light_gray_bed"
+        "recipe": "minecraft:light_gray_bed"
       },
       "trigger": "minecraft:recipe_unlocked"
     },
@@ -37,7 +37,7 @@
   ],
   "rewards": {
     "recipes": [
-      "quad-lolmbdv:acacia_light_gray_bed"
+      "minecraft:light_gray_bed"
     ]
   }
 }
