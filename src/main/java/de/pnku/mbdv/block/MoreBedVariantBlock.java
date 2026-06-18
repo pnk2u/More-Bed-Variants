@@ -27,26 +27,17 @@ public class MoreBedVariantBlock extends BedBlock implements IBedShape {
     public final String bedColor;
 
     public MoreBedVariantBlock(DyeColor color, String bedWoodType, String bedColor) {
-        super(color, Properties.ofFullCopy(Blocks.WHITE_BED).mapColor((blockState) -> blockState.getValue(BedBlock.PART) == BedPart.FOOT ? color.getMapColor() : MapColor.WOOL).setId(ResourceKey.create(Registries.BLOCK, MoreBedVariants.withModId(bedWoodType + "_" + bedColor + "_bed"))));
+        super(color, Properties.ofFullCopy(Blocks.BED.white()).mapColor((blockState) -> blockState.getValue(BedBlock.PART) == BedPart.FOOT ? color.getMapColor() : MapColor.WOOL).setId(ResourceKey.create(Registries.BLOCK, MoreBedVariants.withModId(bedWoodType + "_" + bedColor + "_bed"))));
         this.bedWoodType = bedWoodType;
         this.bedColor = bedColor;
         this.registerDefaultState(this.stateDefinition.any().setValue(PART, BedPart.FOOT).setValue(OCCUPIED, false).setValue(mBedV$NORTH, false).setValue(mBedV$EAST, false).setValue(mBedV$SOUTH, false).setValue(mBedV$WEST, false));
     }
 
     public MoreBedVariantBlock(DyeColor color, SoundType sound, String bedWoodType, String bedColor) {
-        super(color, Properties.ofFullCopy(Blocks.WHITE_BED).mapColor((blockState) -> blockState.getValue(BedBlock.PART) == BedPart.FOOT ? color.getMapColor() : MapColor.WOOL).setId(ResourceKey.create(Registries.BLOCK, MoreBedVariants.withModId(bedWoodType + "_" + bedColor + "_bed"))).sound(sound));
+        super(color, Properties.ofFullCopy(Blocks.BED.white()).mapColor((blockState) -> blockState.getValue(BedBlock.PART) == BedPart.FOOT ? color.getMapColor() : MapColor.WOOL).setId(ResourceKey.create(Registries.BLOCK, MoreBedVariants.withModId(bedWoodType + "_" + bedColor + "_bed"))).sound(sound));
         this.bedWoodType = bedWoodType;
         this.bedColor = bedColor;
         this.registerDefaultState(this.stateDefinition.any().setValue(PART, BedPart.FOOT).setValue(OCCUPIED, false).setValue(mBedV$NORTH, false).setValue(mBedV$EAST, false).setValue(mBedV$SOUTH, false).setValue(mBedV$WEST, false));
-    }
-
-    @Override
-    public @NotNull BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-        if (this.bedWoodType.contains("bound_bamboo")) {
-            return new BoundBambooBedBlockEntity(pos, state);
-        } else {
-            return new MoreBedVariantBlockEntity(pos, state);
-        }
     }
 
     @Override
