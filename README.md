@@ -68,14 +68,14 @@
 ### Versions
 <a name="most-recent-version"></a>
 <!--CHANGELOG:START-->
-<a name="2.1.6"></a>
-#### 2.1.6[*](#footnote-*):
-- Fix _Light Blue_ and _Light Gray Bed_ recipes' crafting results being _**Acacia** Beds_
+<a name="2.1.9"></a>
+#### 2.1.9[*](#footnote-*):
+- Add _Bed Variants_ to `#minecraft:beds` Item tag (previously only in Block tag)
 
-<h2><sub><sub><sup><ins>Download 2.1.6 + 1.21.11</ins>:</sup>&#x200A;
-<a title="Download (Modrinth):&#10;More Bed Variants 2.1.6 + 1.21.11" href="https://www.modrinth.com/mod/nKaiA11S/version/elDM8fxh">
+<h2><sub><sub><sup><ins>Download 2.1.9 + 1.21.11</ins>:</sup>&#x200A;
+<a title="Download (Modrinth):&#10;More Bed Variants 2.1.9 + 1.21.11" href="https://www.modrinth.com/mod/nKaiA11S/version/uhZo1fEJ">
 <img width=26 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a>&#x200A;
-<a title="Download (Curseforge):&#10;2.1.6 + 1.21.11 - More Bed Variants" href="https://www.curseforge.com/minecraft/mc-mods/more-bed-variants/files/7994244">
+<a title="Download (Curseforge):&#10;2.1.9 + 1.21.11 - More Bed Variants" href="https://www.curseforge.com/minecraft/mc-mods/more-bed-variants/files/8651656">
 <img width=26 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a>
 </sub></sub></h2>
 
