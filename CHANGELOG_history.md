@@ -1,3 +1,14 @@
+<a name="2.1.9"></a>
+### 2.1.9:
+- Add _Bed Variants_ to `#minecraft:beds` Item tag (previously only in Block tag)
+
+<h2><sub><sub><sup><ins>Download 2.1.9 + 1.20.1</ins>:</sup>&#x200A;
+<a title="Download (Modrinth):&#10;More Bed Variants 2.1.9 + 1.20.1" href="https://www.modrinth.com/mod/nKaiA11S/version/b9GSBeRn">
+<img width=26 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a>&#x200A;
+<a title="Download (Curseforge):&#10;2.1.9 + 1.20.1 - More Bed Variants" href="https://www.curseforge.com/minecraft/mc-mods/more-bed-variants/files/8651624">
+<img width=26 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a>
+</sub></sub></h2>
+
 <a name="2.1.7"></a>
 ### 2.1.7:
 - `1.20.1`, `1.21(.1)`: Add support for upcoming _More Variants_ Add-on mod: _<ins>More Variants: Pale Oak Backport</ins>_ (&#x200A;<sub><a title="More Variants: Pale Oak Backport&#10;on Modrinth" href="https://modrinth.com/mod/more-variants-pale-oak-backport/"><img width=20 src="https://img.shields.io/badge/-%20-%23032a?style=flat&logo=modrinth"></a></sub><!--SEPARATOR_V:MR--><img width=5 height=8 src="https://raw.githubusercontent.com/pnk2u/resources/main/ModProjects/shared/pres/icon/separator_v.svg"><sub><a title="More Variants: Pale Oak Backport&#10;on Curseforge" href="https://www.curseforge.com/minecraft/mc-mods/more-variants-pale-oak-backport/"><img width=20 src="https://img.shields.io/badge/--%23302a?style=flat&logo=curseforge"></a></sub>&#x200A;)
