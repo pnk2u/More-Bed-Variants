@@ -4,7 +4,7 @@
   "group": "bed_from_planks",
   "key": {
     "W": "minecraft:brown_wool",
-    "_": "minecraft:oak_planks"
+    "_": "#quad-lolmbdv:vanilla_bed_planks"
   },
   "pattern": [
     "WWW",
