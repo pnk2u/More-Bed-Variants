@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "bed",
+  "ingredients": [
+    "#quad-lolmbdv:poplar_beds",
+    "minecraft:gray_dye"
+  ],
+  "result": {
+    "count": 1,
+    "id": "quad-lolmbdv:poplar_gray_bed"
+  }
+}
