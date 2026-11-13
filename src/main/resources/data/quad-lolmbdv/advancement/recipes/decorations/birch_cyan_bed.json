@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "quad-lolmbdv:birch_cyan_bed"
+        "recipes": "quad-lolmbdv:birch_cyan_bed"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

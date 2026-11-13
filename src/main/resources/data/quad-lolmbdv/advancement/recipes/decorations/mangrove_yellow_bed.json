@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "quad-lolmbdv:mangrove_yellow_bed"
+        "recipes": "quad-lolmbdv:mangrove_yellow_bed"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

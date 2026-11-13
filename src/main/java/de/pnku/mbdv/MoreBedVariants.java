@@ -20,7 +20,7 @@ public class MoreBedVariants implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        MbdvBlockInit.registerBedBlocks();
+        MbdvBlockInit.registerBedBlockEntityTypes();
         MbdvItemInit.registerBedItems();
         ServerLifecycleEvents.START_DATA_PACK_RELOAD.register((server, resourceManager) -> {
             BedShapeState.needsToBeChecked = true;

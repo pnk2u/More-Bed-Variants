@@ -12,7 +12,7 @@ public class MbdvCreativeTab extends CreativeModeTabs {
 
     public static CreativeModeTab COLORED_BEDS;
 
-    public static final CreativeModeTab.Builder MBDV_CMT_BUILDER = FabricCreativeModeTab.builder().title(Component.translatable("itemGroup.coloredBeds")).icon(() -> new ItemStack(MbdvItemInit.CHERRY_GREEN_BED_I)).displayItems(((displayContext, entries) -> {
+    public static final CreativeModeTab.Builder MBDV_CMT_BUILDER = FabricCreativeModeTab.builder().title(Component.translatable("itemGroup.coloredBeds")).icon(() -> new ItemStack(MbdvItemInit.CHERRY_BED_ITEMS.green())).displayItems(((displayContext, entries) -> {
         for (Item bedVariantItem : MbdvItemInit.more_bed_items)
         {
             entries.accept(bedVariantItem);

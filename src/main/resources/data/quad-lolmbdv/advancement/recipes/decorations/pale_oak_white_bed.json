@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "quad-lolmbdv:pale_oak_white_bed"
+        "recipes": "quad-lolmbdv:pale_oak_white_bed"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

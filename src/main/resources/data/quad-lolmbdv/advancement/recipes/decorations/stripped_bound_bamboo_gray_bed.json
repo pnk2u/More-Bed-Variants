@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "quad-lolmbdv:stripped_bound_bamboo_gray_bed"
+        "recipes": "quad-lolmbdv:stripped_bound_bamboo_gray_bed"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

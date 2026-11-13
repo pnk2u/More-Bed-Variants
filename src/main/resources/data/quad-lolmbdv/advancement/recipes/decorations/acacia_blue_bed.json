@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "quad-lolmbdv:acacia_blue_bed"
+        "recipes": "quad-lolmbdv:acacia_blue_bed"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

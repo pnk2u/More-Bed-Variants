@@ -3,7 +3,7 @@
   "package": "de.pnku.mbdv.mixin",
   "compatibilityLevel": "JAVA_${java_version}",
   "mixins": [
-    "BedBlockMixin"
+    "AbstractBedBlockMixin", "BedBlockMixin"
   ],
   "injectors": {
     "defaultRequire": 1

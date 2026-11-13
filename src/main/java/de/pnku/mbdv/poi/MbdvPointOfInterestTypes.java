@@ -10,9 +10,9 @@ import net.minecraft.world.level.block.state.properties.BedPart;
 import java.util.stream.Collectors;
 
 public class MbdvPointOfInterestTypes {
-    public static void registerBedHeadAsPoiBlock(MoreBedVariantBlock bedVariantBlock)
+    public static void registerBedHeadAsPoiBlock(Block block)
     {
-        var blockStates = bedVariantBlock.getStateDefinition().getPossibleStates().stream().filter((blockState) -> {
+        var blockStates = block.getStateDefinition().getPossibleStates().stream().filter((blockState) -> {
             return blockState.getValue(MoreBedVariantBlock.PART) == BedPart.HEAD;
         }).collect(Collectors.toSet());
         var holder = BuiltInRegistries.POINT_OF_INTEREST_TYPE.get(PoiTypes.HOME).orElseThrow();

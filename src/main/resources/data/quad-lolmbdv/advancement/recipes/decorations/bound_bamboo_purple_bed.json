@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "quad-lolmbdv:bound_bamboo_purple_bed"
+        "recipes": "quad-lolmbdv:bound_bamboo_purple_bed"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

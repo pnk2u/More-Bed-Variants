@@ -6,24 +6,17 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.ScheduledTickAccess;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BedPart;
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
-import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
-import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -36,12 +29,6 @@ import static net.minecraft.world.level.block.state.properties.BedPart.HEAD;
 
 @Mixin(value = BedBlock.class)
 public abstract class BedBlockMixin extends HorizontalDirectionalBlock implements IBedShape {
-    @Shadow
-    @Final
-    public static EnumProperty<BedPart> PART;
-    @Shadow
-    @Final
-    public static BooleanProperty OCCUPIED;
 
     protected BedBlockMixin(BlockBehaviour.Properties properties) {
         super(properties);
@@ -86,72 +73,6 @@ public abstract class BedBlockMixin extends HorizontalDirectionalBlock implement
         }
         else {
             builder.add(FACING, PART, OCCUPIED);
-        }
-    }
-
-    @Inject(method = "updateShape(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/LevelReader;Lnet/minecraft/world/level/ScheduledTickAccess;Lnet/minecraft/core/BlockPos;Lnet/minecraft/core/Direction;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/util/RandomSource;)Lnet/minecraft/world/level/block/state/BlockState;",
-            at = @At("RETURN"), cancellable = true)
-    public void injectedUpdateShapeAtReturn(BlockState state, LevelReader level, ScheduledTickAccess scheduledTickAccess, BlockPos pos, Direction direction, BlockPos neighborPos, BlockState neighborState, RandomSource random, CallbackInfoReturnable<BlockState> cir) {
-        if (shouldApply(this.getClass())) {
-            BlockState bed = cir.getReturnValue();
-            BlockState north = level.getBlockState(pos.north(1));
-            BlockState east = level.getBlockState(pos.east(1));
-            BlockState south = level.getBlockState(pos.south(1));
-            BlockState west = level.getBlockState(pos.west(1));
-
-            if (bed.getBlock() instanceof BedBlock) {
-                String bedWood;
-                if ((bed.getBlock() instanceof MoreBedVariantBlock)) {
-                    bedWood = ((MoreBedVariantBlock) bed.getBlock()).bedWoodType;
-                } else {
-                    bedWood = "oak";
-                }
-                if (north.getBlock() instanceof BedBlock && north.getValue(PART) == bed.getValue(PART) && north.getValue(FACING) == bed.getValue(FACING)) {
-                    String nWood;
-                    if (north.getBlock() instanceof MoreBedVariantBlock) {
-                        nWood = ((MoreBedVariantBlock) north.getBlock()).bedWoodType;
-                    } else {
-                        nWood = "oak";
-                    }
-                    bed = bed.setValue(mBedV$NORTH, (bedWood.equals(nWood)));
-                } else {
-                    bed = bed.setValue(mBedV$NORTH, false);
-                }
-                if (east.getBlock() instanceof BedBlock && east.getValue(PART) == bed.getValue(PART) && east.getValue(FACING) == bed.getValue(FACING)) {
-                    String eWood;
-                    if (east.getBlock() instanceof MoreBedVariantBlock) {
-                        eWood = ((MoreBedVariantBlock) east.getBlock()).bedWoodType;
-                    } else {
-                        eWood = "oak";
-                    }
-                    bed = bed.setValue(mBedV$EAST, (bedWood.equals(eWood)));
-                } else {
-                    bed = bed.setValue(mBedV$EAST, false);
-                }
-                if (south.getBlock() instanceof BedBlock && south.getValue(PART) == bed.getValue(PART) && south.getValue(FACING) == bed.getValue(FACING)) {
-                    String sWood;
-                    if (south.getBlock() instanceof MoreBedVariantBlock) {
-                        sWood = ((MoreBedVariantBlock) south.getBlock()).bedWoodType;
-                    } else {
-                        sWood = "oak";
-                    }
-                    bed = bed.setValue(mBedV$SOUTH, (bedWood.equals(sWood)));
-                } else {
-                    bed = bed.setValue(mBedV$SOUTH, false);
-                }
-                if (west.getBlock() instanceof BedBlock && west.getValue(PART) == bed.getValue(PART) && west.getValue(FACING) == bed.getValue(FACING)) {
-                    String wWood;
-                    if (west.getBlock() instanceof MoreBedVariantBlock) {
-                        wWood = ((MoreBedVariantBlock) west.getBlock()).bedWoodType;
-                    } else {
-                        wWood = "oak";
-                    }
-                    bed = bed.setValue(mBedV$WEST, (bedWood.equals(wWood)));
-                } else {
-                    bed = bed.setValue(mBedV$WEST, false);
-                }
-                cir.setReturnValue(bed);
-            }
         }
     }
 
